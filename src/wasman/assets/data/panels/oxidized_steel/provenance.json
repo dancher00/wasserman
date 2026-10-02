@@ -1,0 +1,27 @@
+{
+  "source": "https://polyhaven.com/a/rust_coarse_01",
+  "license": "CC0-1.0",
+  "texture_width_m": 2.2,
+  "resolution": "4k",
+  "scale_note": "Visual tiling assumption; no geometry displacement",
+  "panel_size_m": [
+    0.08,
+    1.15,
+    1.15
+  ],
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rust_coarse_01/rust_coarse_01_diff_4k.jpg",
+      "sha256": "ef20bdab32d55c32a9f6e60b28c4b20b84cb7af928b20b5e60a72e5ebed117fd"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rust_coarse_01/rust_coarse_01_rough_4k.jpg",
+      "sha256": "641f4f5950767502ee3ea8f9c0a0591e0025b63b69f2f49b58a0368f4f9f7435"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/rust_coarse_01/rust_coarse_01_nor_gl_4k.jpg",
+      "sha256": "9349ed45f4a1398eeb199e5ddcf7542e33298579a3b3e555201bbe1e53743f0f"
+    }
+  },
+  "note": "Existing weathered surfaces used as subsea infrastructure appearances, not marine biology scans"
+}

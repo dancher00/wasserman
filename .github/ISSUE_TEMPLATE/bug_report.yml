@@ -1,0 +1,27 @@
+name: Installation or execution bug
+description: Report a reproducible problem with installation, collection or evaluation.
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Describe the expected behavior and the result you observed.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include the source revision, task, asset profile and command. For evaluation, identify the checkpoint and reset seeds.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include Linux version, GPU/driver, Python and installation method.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or recorded evidence
+      description: Attach the relevant error, report or per-episode outcome. Keep authentication tokens and licensed assets out of attachments.

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software release. The accompanying manuscript presents the benchmark and experiments."
+type: software
+title: "WasserMan: Benchmark for Underwater Manipulation Policy Learning"
+authors:
+  - name: "WasserMan contributors"
+version: "0.1.0"
+date-released: 2026-09-26
+license: Apache-2.0
+repository-code: "https://github.com/dancher00/wasserman"
+url: "https://github.com/dancher00/wasserman"
+keywords:
+  - underwater manipulation
+  - robotics
+  - simulation benchmark
+  - imitation learning

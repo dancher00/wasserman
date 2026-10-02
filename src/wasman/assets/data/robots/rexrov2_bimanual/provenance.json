@@ -1,0 +1,18 @@
+{
+  "custom_mount": true,
+  "source": "src/wasman/assets/data/robots/rexrov2_oberon7_centered/rexrov2_oberon7_centered.urdf",
+  "source_sha256": "1424242fda8c8e32c6224a9839e9160c5e3496e81e1343bfff969ffab3f75258",
+  "mounts_m": [
+    [
+      1.3,
+      0.5,
+      -0.665
+    ],
+    [
+      1.3,
+      -0.5,
+      -0.665
+    ]
+  ],
+  "changes": "Duplicate native Oberon links/actuators; one unchanged Rex base; no buoyancy compensation or motor increase. Not a manufactured platform claim."
+}

@@ -1,0 +1,27 @@
+{
+  "geometry": "original procedural finite swimming pool; metre units",
+  "dimensions": {
+    "length_m": 25.0,
+    "width_m": 25.0,
+    "water_depth_m": 2.5,
+    "freeboard_m": 0.2,
+    "wall_thickness_m": 0.2,
+    "floor_thickness_m": 0.15
+  },
+  "dimension_source": "https://resources.fina.org/fina/document/2026/02/18/e6815ecc-06d9-4f0b-98e9-4c441cf5e6a3/2026-02-18_World-Aquatics_CR-Final.pdf",
+  "dimension_basis": "World Aquatics Feb 2026 15.1.2:25m length;15.6.2.1:25m permanent ten-lane width;15.4.2:2.5m recommended depth. Freeboard/wall/floor thickness are design assumptions.",
+  "texture_source": "https://ambientcg.com/view?id=Tiles107",
+  "texture_license": "CC0-1.0",
+  "texture_provenance": "tiles107/provenance.json",
+  "texture_origin": "ambientCG procedural PBR material, not a photograph or measured pool scan",
+  "texture_repeat_m": 0.4,
+  "tile_module_m": 0.05,
+  "dark_tile_albedo": "Authored shader scale(-.55,-.55,-.55)+bias(.57,.595,.635), same source maps",
+  "collision": "floor, four walls and above-water coping; no water-surface collider",
+  "boundary_geometry": "PoolGeometry.wet_boundary_rectangles(), same inner floor/walls as collision asset",
+  "marking_source": "World Aquatics February 2026 sections 15.13.1\u201315.13.4",
+  "markings": "0.20m dark tile lanes,21m length,1m T-bars at2m from ends;0.5m crosses15m fromeachend;full-height end-wall targets with0.5m crosses0.3m belowwater. Materialchoice not mandated.",
+  "marking_construction": "Coplanar mesh face subsets sharing tile UVs, normal and roughness; no raised decals",
+  "limitations": "No free-surface fluid solver or optical refraction calibration; no swimming certification claim. No competition equipment/touch panels or dimensional allowance for them.",
+  "usd_sha256": "afc89bc2dd7269ae509b741d8b7738e3e961c641980035e4d84bdac3952da489"
+}

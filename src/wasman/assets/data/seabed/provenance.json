@@ -1,0 +1,21 @@
+{
+  "source": "https://polyhaven.com/a/sand_03",
+  "license": "CC0-1.0",
+  "resolution": "4k",
+  "texture_width_m": 2.0,
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/sand_03/sand_03_diff_4k.jpg",
+      "sha256": "d908610f9923b69971066fec65fbaca57617602db34dfcaaca7f0099edb8e413"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/sand_03/sand_03_nor_gl_4k.jpg",
+      "sha256": "775b9270b879a518fc52288f7bb1779e93643d6a717ff6547124a075de4110e2"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/sand_03/sand_03_rough_4k.jpg",
+      "sha256": "60e8825680e422fee588e4c45283953c7cf229a0d4b1223b8103f7cb0f3e97b0"
+    }
+  },
+  "physics": "Flat rigid collision at z=0. Visual sand only; no granular soil or sediment simulation."
+}

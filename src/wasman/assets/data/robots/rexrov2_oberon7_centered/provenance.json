@@ -1,0 +1,4459 @@
+{
+  "kind": "Custom WASMAN centerline mount and conservative per-CAD-instance collision hulls",
+  "license": "Apache-2.0; original LICENSE/NOTICE retained in sibling native asset",
+  "source_urdf_sha256": "1c95c9bb4cfec2e75e701743a7328cdd63ccf34c79d752950537bb63aefe565f",
+  "generated_urdf_sha256": "1424242fda8c8e32c6224a9839e9160c5e3496e81e1343bfff969ffab3f75258",
+  "native_mount_xyz_m": [
+    1.3,
+    -0.5,
+    -0.665
+  ],
+  "custom_mount_xyz_m": [
+    1.3,
+    0,
+    -0.665
+  ],
+  "custom_mount_rpy_rad": [
+    0,
+    0,
+    0
+  ],
+  "visual_scale": [
+    1,
+    1,
+    1
+  ],
+  "mass_inertia_joint_limits": "unchanged from native URDF; composite inertia must be recomputed",
+  "collision_components": [
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Thruster_Mittig-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.31314489245414734,
+          -0.19100819528102875,
+          0.06268817186355591
+        ],
+        [
+          0.6624056100845337,
+          0.17015880346298218,
+          0.41194888949394226
+        ]
+      ],
+      "source_triangles": 7960,
+      "path": "collision/base_link_000.stl",
+      "sha256": "f8fe435f3cac72807d5aa2cbb5ada3a8c73b13ec00cbad9979d64b9edb9c5010",
+      "hull_vertices": 258,
+      "hull_triangles": 512,
+      "hull_bounds_m": [
+        [
+          0.31314489245414734,
+          -0.19100819528102875,
+          0.06268817186355591
+        ],
+        [
+          0.6624056100845337,
+          0.17015880346298218,
+          0.41194888949394226
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "SF30k-2_000-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.0005079507827759,
+          -0.14858360588550568,
+          0.38995951414108276
+        ],
+        [
+          -0.642801821231842,
+          0.13141639530658722,
+          0.7880398035049438
+        ]
+      ],
+      "source_triangles": 7257,
+      "path": "collision/base_link_001.stl",
+      "sha256": "34167782b35a668b8032d53afa1542e486cfdd6536d98834a94ff09e8733afaa",
+      "hull_vertices": 201,
+      "hull_triangles": 398,
+      "hull_bounds_m": [
+        [
+          -1.0005079507827759,
+          -0.14858360588550568,
+          0.38995951414108276
+        ],
+        [
+          -0.642801821231842,
+          0.13141639530658722,
+          0.7880398035049438
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "SF30k-2_001-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.9195039868354797,
+          -0.7174906134605408,
+          0.10041269659996033
+        ],
+        [
+          1.0053709745407104,
+          0.7174906134605408,
+          0.740838885307312
+        ]
+      ],
+      "source_triangles": 14454,
+      "path": "collision/base_link_002.stl",
+      "sha256": "7a3a289bc07fd578a924a93a87dabc144eb7b739769202a5a297eebf6f78f293",
+      "hull_vertices": 404,
+      "hull_triangles": 804,
+      "hull_bounds_m": [
+        [
+          -0.9195039868354797,
+          -0.7174906134605408,
+          0.10041269659996033
+        ],
+        [
+          1.0053709745407104,
+          0.7174906134605408,
+          0.740838885307312
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_003-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.1657721188995565,
+          -0.33409515903021986,
+          -0.7727085314405135
+        ],
+        [
+          -0.8486676783431691,
+          0.3340951344978479,
+          0.023920122319787213
+        ]
+      ],
+      "source_triangles": 3192,
+      "path": "collision/base_link_003.stl",
+      "sha256": "9cf3bd3fff0a52bb1bb1de3dd1273a4917c1e13191bed1e5d117994faf783e88",
+      "hull_vertices": 355,
+      "hull_triangles": 706,
+      "hull_bounds_m": [
+        [
+          -1.1657721188995565,
+          -0.33409515903021986,
+          -0.7727085314405135
+        ],
+        [
+          -0.8486676783431691,
+          0.3340951344978479,
+          0.023920122319787213
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_012-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6540491386316354,
+          -0.27624769261267657,
+          -0.7900732115790234
+        ],
+        [
+          -0.10043783695748326,
+          0.27636690607179426,
+          -0.5284658971526568
+        ]
+      ],
+      "source_triangles": 7252,
+      "path": "collision/base_link_004.stl",
+      "sha256": "5674dbb448c0b49d0ec0f7f9560d207d176e871aaac6cdfddbad4ddd27762fe6",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.6540491386316354,
+          -0.27624769261267657,
+          -0.7900732115790234
+        ],
+        [
+          -0.10043783695748326,
+          0.27636690607179426,
+          -0.5284658971526568
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Circle_001-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.3969355374205721,
+          -0.08300044121215353,
+          -0.2984753919284758
+        ],
+        [
+          -0.3563287082655666,
+          0.02030334403039789,
+          -0.244651305486266
+        ]
+      ],
+      "source_triangles": 1312,
+      "path": "collision/base_link_005.stl",
+      "sha256": "baacfb55080657c7cf078f249390b5b885696f6b8915fac27dc85b3e7a7fd932",
+      "hull_vertices": 154,
+      "hull_triangles": 304,
+      "hull_bounds_m": [
+        [
+          -0.3969355374205721,
+          -0.08300044121215353,
+          -0.2984753919284758
+        ],
+        [
+          -0.3563287082655666,
+          0.02030334403039789,
+          -0.244651305486266
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Circle_001-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.3841191464929844,
+          -0.06084221797262476,
+          -0.2583647973618384
+        ],
+        [
+          -0.3691450833252854,
+          -0.04635440462147293,
+          -0.24559344823052692
+        ]
+      ],
+      "source_triangles": 416,
+      "path": "collision/base_link_006.stl",
+      "sha256": "3484970b8f30a6caf702c88a52b047fdb9e14e8c0578a2163976ceb55709b9d5",
+      "hull_vertices": 132,
+      "hull_triangles": 260,
+      "hull_bounds_m": [
+        [
+          -0.3841191464929844,
+          -0.06084221797262476,
+          -0.2583647973618384
+        ],
+        [
+          -0.3691450833252854,
+          -0.04635440462147293,
+          -0.24559344823052692
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Circle_001-mesh_2",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.38855712477356485,
+          -0.0471014320706655,
+          -0.2446513057311384
+        ],
+        [
+          -0.36470710088697084,
+          -0.023251383047576707,
+          -0.2339908071688044
+        ]
+      ],
+      "source_triangles": 416,
+      "path": "collision/base_link_007.stl",
+      "sha256": "5fd515f8262ceb6bfcd446ac094a95c8f5ad90756681493491a160ed4e902bf1",
+      "hull_vertices": 128,
+      "hull_triangles": 252,
+      "hull_bounds_m": [
+        [
+          -0.38855712477356485,
+          -0.0471014320706655,
+          -0.2446513057311384
+        ],
+        [
+          -0.36470710088697084,
+          -0.023251383047576707,
+          -0.2339908071688044
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Sphere-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6228240959227906,
+          -0.2461918079670397,
+          -0.6007117681439267
+        ],
+        [
+          -0.13044015033926312,
+          0.24619238098726526,
+          -0.4835204303156063
+        ]
+      ],
+      "source_triangles": 768,
+      "path": "collision/base_link_008.stl",
+      "sha256": "8f6865a79bede92b5f9c89bd1689234359cfd84e008d7ad375a66d607954602e",
+      "hull_vertices": 384,
+      "hull_triangles": 764,
+      "hull_bounds_m": [
+        [
+          -0.6228240959227906,
+          -0.2461918079670397,
+          -0.6007117681439267
+        ],
+        [
+          -0.13044015033926312,
+          0.24619238098726526,
+          -0.4835204303156063
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Sphere-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6276474027529086,
+          -0.25101489350343237,
+          -0.7857585606349274
+        ],
+        [
+          -0.12561684350914515,
+          0.2510154952715154,
+          -0.29847363782460634
+        ]
+      ],
+      "source_triangles": 9600,
+      "path": "collision/base_link_009.stl",
+      "sha256": "3b71693655c2ad00a5e55ab0e2a2bb55858b2003e29a941c5eb9a248d553b815",
+      "hull_vertices": 2944,
+      "hull_triangles": 5884,
+      "hull_bounds_m": [
+        [
+          -0.6276474027529086,
+          -0.25101489350343237,
+          -0.7857585606349274
+        ],
+        [
+          -0.12561684350914515,
+          0.2510154952715154,
+          -0.29847363782460634
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Sphere_001-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.39963531935364227,
+          -0.23771154937402292,
+          -0.4621488909734582
+        ],
+        [
+          -0.18071441987731462,
+          -0.11773845375748433,
+          -0.40598789308190186
+        ]
+      ],
+      "source_triangles": 3776,
+      "path": "collision/base_link_010.stl",
+      "sha256": "66b5050a5f0b58dafdbe1352470bf9330b49148042caf4dec20290bac91088bc",
+      "hull_vertices": 1032,
+      "hull_triangles": 2060,
+      "hull_bounds_m": [
+        [
+          -0.39963531935364227,
+          -0.23771154937402292,
+          -0.4621488909734582
+        ],
+        [
+          -0.18071441987731462,
+          -0.11773845375748433,
+          -0.40598789308190186
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_002-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.8916528075280706,
+          -0.22977892673203018,
+          -0.23062804159014855
+        ],
+        [
+          0.24095977977055028,
+          0.22977898692436244,
+          -0.20292830984640498
+        ]
+      ],
+      "source_triangles": 56,
+      "path": "collision/base_link_011.stl",
+      "sha256": "f62ab5acec8875ab3f68580a1decfb894bd6566f7a4192e17b411a100ce2378f",
+      "hull_vertices": 12,
+      "hull_triangles": 20,
+      "hull_bounds_m": [
+        [
+          -0.8916528075280706,
+          -0.22977892673203018,
+          -0.23062804159014855
+        ],
+        [
+          0.24095977977055028,
+          0.22977898692436244,
+          -0.20292830984640498
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.612789959778025,
+          -0.30883510253554647,
+          -0.16902457750634248
+        ],
+        [
+          -0.03881503514001811,
+          -0.10368624056092123,
+          0.04453920175054499
+        ]
+      ],
+      "source_triangles": 13824,
+      "path": "collision/base_link_012.stl",
+      "sha256": "59876dd2a580b5114204a6b29d831a5a9c0927bcd92ad352763cb53edad89033",
+      "hull_vertices": 717,
+      "hull_triangles": 1430,
+      "hull_bounds_m": [
+        [
+          -0.612789959778025,
+          -0.30883510253554647,
+          -0.16902457750634248
+        ],
+        [
+          -0.03881503514001811,
+          -0.10368624056092123,
+          0.04453920175054499
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6939294662887119,
+          -0.1941781430825915,
+          -0.20927897518997013
+        ],
+        [
+          0.0423243823473171,
+          0.19417818377755242,
+          0.08479379731865883
+        ]
+      ],
+      "source_triangles": 11520,
+      "path": "collision/base_link_013.stl",
+      "sha256": "b9f08c897f4316e81fe1597f9f60fcd06323853a076816a7f62db8d029de7ca8",
+      "hull_vertices": 531,
+      "hull_triangles": 1058,
+      "hull_bounds_m": [
+        [
+          -0.6939294662887119,
+          -0.1941781430825915,
+          -0.20927897518997013
+        ],
+        [
+          0.0423243823473171,
+          0.19417818377755242,
+          0.08479379731865883
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve-mesh_2",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6256718166983517,
+          -0.21808216068905723,
+          -0.15349170442810817
+        ],
+        [
+          -0.025933058380698593,
+          -0.1883753672668259,
+          0.02900638917633197
+        ]
+      ],
+      "source_triangles": 3636,
+      "path": "collision/base_link_014.stl",
+      "sha256": "6bef2491bda7e9a13557189cef9c69e41be981628c7e64c8d8ed6521b22c5d34",
+      "hull_vertices": 141,
+      "hull_triangles": 278,
+      "hull_bounds_m": [
+        [
+          -0.6256718166983517,
+          -0.21808216068905723,
+          -0.15349170442810817
+        ],
+        [
+          -0.025933058380698593,
+          -0.1883753672668259,
+          0.02900638917633197
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve-mesh_3",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6246235884062374,
+          -0.18837538480055782,
+          -0.1524433332058234
+        ],
+        [
+          -0.026981423631672573,
+          -0.18446441140763334,
+          0.027958015627926297
+        ]
+      ],
+      "source_triangles": 1536,
+      "path": "collision/base_link_015.stl",
+      "sha256": "eed76c477889e36ed6816c92f35fc8695554076e0e67da19f8b635f75ee2e74d",
+      "hull_vertices": 146,
+      "hull_triangles": 288,
+      "hull_bounds_m": [
+        [
+          -0.6246235884062374,
+          -0.18837538480055782,
+          -0.1524433332058234
+        ],
+        [
+          -0.026981423631672573,
+          -0.18446441140763334,
+          0.027958015627926297
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_005-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.6448762508826409,
+          0.18461260636050292,
+          -0.16022567676214455
+        ],
+        [
+          -0.44891017375338715,
+          0.19245093013167863,
+          0.03574040591955759
+        ]
+      ],
+      "source_triangles": 1320,
+      "path": "collision/base_link_016.stl",
+      "sha256": "75d92980f1d35d959bf81d64ded1962d83019f09c150a6661751e6e63a201202",
+      "hull_vertices": 143,
+      "hull_triangles": 282,
+      "hull_bounds_m": [
+        [
+          -0.6448762508826409,
+          0.18461260636050292,
+          -0.16022567676214455
+        ],
+        [
+          -0.44891017375338715,
+          0.19245093013167863,
+          0.03574040591955759
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_005-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.2026949177825887,
+          0.18461260636050292,
+          -0.16022567676214455
+        ],
+        [
+          -0.006728840653335014,
+          0.19245093013167863,
+          0.03574040591955759
+        ]
+      ],
+      "source_triangles": 1320,
+      "path": "collision/base_link_017.stl",
+      "sha256": "29b2e4f50136562cdab79f27ad065d5b4e72a2c391bfadcd9afb2edbdd46229c",
+      "hull_vertices": 143,
+      "hull_triangles": 282,
+      "hull_bounds_m": [
+        [
+          -0.2026949177825887,
+          0.18461260636050292,
+          -0.16022567676214455
+        ],
+        [
+          -0.006728840653335014,
+          0.19245093013167863,
+          0.03574040591955759
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_007-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.4010482092191772,
+          -0.10630894778599176,
+          -0.19915162188582836
+        ],
+        [
+          -0.25431535214794393,
+          0.08939273906176258,
+          0.07466636014752803
+        ]
+      ],
+      "source_triangles": 444,
+      "path": "collision/base_link_018.stl",
+      "sha256": "73c4524991030c2fbd560949bcb5622b11a81d0305c8454e0f131ed1938a73e1",
+      "hull_vertices": 48,
+      "hull_triangles": 92,
+      "hull_bounds_m": [
+        [
+          -0.4010482092191772,
+          -0.10630894778599176,
+          -0.19915162188582836
+        ],
+        [
+          -0.25431535214794393,
+          0.08939273906176258,
+          0.07466636014752803
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_007-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.372587022030208,
+          -0.13950287025059804,
+          -0.1812566725767359
+        ],
+        [
+          -0.27884352951161184,
+          -0.10979606086679553,
+          0.05657990404409549
+        ]
+      ],
+      "source_triangles": 3636,
+      "path": "collision/base_link_019.stl",
+      "sha256": "e0f519a13137b0d59b45db2aa23dae4ce40a3939ee50e5ff8bd715c8f781f68c",
+      "hull_vertices": 148,
+      "hull_triangles": 292,
+      "hull_bounds_m": [
+        [
+          -0.372587022030208,
+          -0.13950287025059804,
+          -0.1812566725767359
+        ],
+        [
+          -0.27884352951161184,
+          -0.10979606086679553,
+          0.05657990404409549
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_007-mesh_2",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.3715386327976103,
+          -0.1097960916853143,
+          -0.18020830582618796
+        ],
+        [
+          -0.2798918982003811,
+          -0.10588511099518791,
+          0.05553153870197665
+        ]
+      ],
+      "source_triangles": 1536,
+      "path": "collision/base_link_020.stl",
+      "sha256": "b790279dda67e92f3771a5c438a4ec98c4a35c5725b083dd318a2ed843b0cc70",
+      "hull_vertices": 133,
+      "hull_triangles": 262,
+      "hull_bounds_m": [
+        [
+          -0.3715386327976103,
+          -0.1097960916853143,
+          -0.18020830582618796
+        ],
+        [
+          -0.2798918982003811,
+          -0.10588511099518791,
+          0.05553153870197665
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_006-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.7640282987268093,
+          -0.1583769163505273,
+          -0.19543832166696612
+        ],
+        [
+          0.11242319599678341,
+          0.1583769275553545,
+          0.08582371407607942
+        ]
+      ],
+      "source_triangles": 6848,
+      "path": "collision/base_link_021.stl",
+      "sha256": "0691783f41192763c366327f9c15efaed5b0e6ea10e367a01d93ebba5200048b",
+      "hull_vertices": 206,
+      "hull_triangles": 408,
+      "hull_bounds_m": [
+        [
+          -0.7640282987268093,
+          -0.1583769163505273,
+          -0.19543832166696612
+        ],
+        [
+          0.11242319599678341,
+          0.1583769275553545,
+          0.08582371407607942
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.7790157612033501,
+          -0.22658346754119355,
+          -0.20202160777933856
+        ],
+        [
+          0.12862373045923836,
+          0.22658346253758452,
+          0.1173936277750939
+        ]
+      ],
+      "source_triangles": 7256,
+      "path": "collision/base_link_022.stl",
+      "sha256": "3fafcc94d942a7ceccace328df6246be0efc0a9fddba5cbac0f9a912b27c56d9",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.7790157612033501,
+          -0.22658346754119355,
+          -0.20202160777933856
+        ],
+        [
+          0.12862373045923836,
+          0.22658346253758452,
+          0.1173936277750939
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_002-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.4423170379004037,
+          -0.09616798517919417,
+          -0.12243702379566632
+        ],
+        [
+          -0.40605714758952804,
+          -0.03663406235484336,
+          0.03319480233441101
+        ]
+      ],
+      "source_triangles": 256,
+      "path": "collision/base_link_023.stl",
+      "sha256": "59f7481d3e2fef4029a6e30420ea6411a164e743fc6d780d477eff29b98c058a",
+      "hull_vertices": 70,
+      "hull_triangles": 136,
+      "hull_bounds_m": [
+        [
+          -0.4423170379004037,
+          -0.09616798517919417,
+          -0.12243702379566632
+        ],
+        [
+          -0.40605714758952804,
+          -0.03663406235484336,
+          0.03319480233441101
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_002-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.00013581436746962217,
+          -0.0961679851791942,
+          -0.12243703734443225
+        ],
+        [
+          0.03612407594340608,
+          -0.036634062354843386,
+          0.03319478878564507
+        ]
+      ],
+      "source_triangles": 256,
+      "path": "collision/base_link_024.stl",
+      "sha256": "260491af822a7a751b39f89ff4fd73363f99b91fbf070fba7237a87970dba656",
+      "hull_vertices": 70,
+      "hull_triangles": 136,
+      "hull_bounds_m": [
+        [
+          -0.00013581436746962217,
+          -0.0961679851791942,
+          -0.12243703734443225
+        ],
+        [
+          0.03612407594340608,
+          -0.036634062354843386,
+          0.03319478878564507
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_008-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.15715727534576132,
+          -0.1853973442627295,
+          -0.05371931044282269
+        ],
+        [
+          -0.0525845829836327,
+          -0.1853973429701734,
+          -0.024149219608623623
+        ]
+      ],
+      "source_triangles": 256,
+      "excluded": "zero-volume visual sheet; not a solid collision component"
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cube_003-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.43917407618047966,
+          -0.09458670816301347,
+          -0.17041151888721442
+        ],
+        [
+          -0.21618948518664152,
+          0.0945867150109763,
+          0.04592625714891545
+        ]
+      ],
+      "source_triangles": 1216,
+      "path": "collision/base_link_026.stl",
+      "sha256": "1dfec527db01fbe1c96824ddb0ce61dbbf6b33a5e6810f25f0484139cc6f6ddb",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.43917407618047966,
+          -0.09458670816301347,
+          -0.17041151888721442
+        ],
+        [
+          -0.21618948518664152,
+          0.0945867150109763,
+          0.04592625714891545
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve_012-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.0338149658573466,
+          -0.5133627862447022,
+          -0.7322522415100275
+        ],
+        [
+          0.29075865407114654,
+          -0.2731028547012365,
+          -0.10689580922848241
+        ]
+      ],
+      "source_triangles": 69616,
+      "path": "collision/base_link_027.stl",
+      "sha256": "dd97e043ff38055902ef5f817f59d6c723798931dab37290e3ca1820767b75c8",
+      "hull_vertices": 470,
+      "hull_triangles": 936,
+      "hull_bounds_m": [
+        [
+          -1.0338149658573466,
+          -0.5133627862447022,
+          -0.7322522415100275
+        ],
+        [
+          0.29075865407114654,
+          -0.2731028547012365,
+          -0.10689580922848241
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_032-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.230978464412722,
+          -0.2521742615847218,
+          0.4540295882309959
+        ],
+        [
+          1.26105922370775,
+          -0.222093504391336,
+          0.4644506508941983
+        ]
+      ],
+      "source_triangles": 110,
+      "path": "collision/base_link_028.stl",
+      "sha256": "7fa7a81dc4c0020a6ab451c90a49909ffb7859ed3e15bca6f0b2c12971b71f37",
+      "hull_vertices": 70,
+      "hull_triangles": 136,
+      "hull_bounds_m": [
+        [
+          1.230978464412722,
+          -0.2521742615847218,
+          0.4540295882309959
+        ],
+        [
+          1.26105922370775,
+          -0.222093504391336,
+          0.4644506508941983
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_032-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2309783571057722,
+          0.22170747790655107,
+          0.4540295977799865
+        ],
+        [
+          1.2610591164008003,
+          0.25178823509993686,
+          0.46445066044318895
+        ]
+      ],
+      "source_triangles": 110,
+      "path": "collision/base_link_029.stl",
+      "sha256": "eab43a94193d51e94fd9dc29b8c229da79821bc966b87e1a1c11edd6826771e6",
+      "hull_vertices": 70,
+      "hull_triangles": 136,
+      "hull_bounds_m": [
+        [
+          1.2309783571057722,
+          0.22170747790655107,
+          0.4540295977799865
+        ],
+        [
+          1.2610591164008003,
+          0.25178823509993686,
+          0.46445066044318895
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_025-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2358802073589061,
+          -0.24316136272146435,
+          0.3639660120062648
+        ],
+        [
+          1.2561575681490178,
+          -0.23110620904948087,
+          0.4085839592563082
+        ]
+      ],
+      "source_triangles": 16128,
+      "path": "collision/base_link_030.stl",
+      "sha256": "3ad5e8e04bbe7d59740388c1dc2e598208cd198c6928580e41d022e9d423c2c9",
+      "hull_vertices": 2965,
+      "hull_triangles": 5926,
+      "hull_bounds_m": [
+        [
+          1.2358802073589061,
+          -0.24316136272146435,
+          0.3639660120062648
+        ],
+        [
+          1.2561575681490178,
+          -0.23110620904948087,
+          0.4085839592563082
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_025-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2358801866447995,
+          0.23072052830803932,
+          0.36396607364656525
+        ],
+        [
+          1.2561575474349111,
+          0.2427756819800228,
+          0.4085840208966086
+        ]
+      ],
+      "source_triangles": 16128,
+      "path": "collision/base_link_031.stl",
+      "sha256": "70ff9ee784649b3c52fcf111150d1311be2da464e4a7a29694e3b12fb488a86c",
+      "hull_vertices": 2965,
+      "hull_triangles": 5926,
+      "hull_bounds_m": [
+        [
+          1.2358801866447995,
+          0.23072052830803932,
+          0.36396607364656525
+        ],
+        [
+          1.2561575474349111,
+          0.2427756819800228,
+          0.4085840208966086
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_033-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1922839374075873,
+          -0.246021748953693,
+          0.41800672578896436
+        ],
+        [
+          1.2030008867509314,
+          -0.2280105055413597,
+          0.43601796920130037
+        ]
+      ],
+      "source_triangles": 2112,
+      "path": "collision/base_link_032.stl",
+      "sha256": "fd14e7fcfea565e4d769082affe5704502ed38c41ee98c3cf25758597a001b34",
+      "hull_vertices": 448,
+      "hull_triangles": 892,
+      "hull_bounds_m": [
+        [
+          1.1922839374075873,
+          -0.246021748953693,
+          0.41800672578896436
+        ],
+        [
+          1.2030008867509314,
+          -0.2280105055413597,
+          0.43601796920130037
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_033-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1922839166936101,
+          0.2278598606794037,
+          0.41800660071253737
+        ],
+        [
+          1.2030008660369542,
+          0.24587110409173696,
+          0.4360178441248733
+        ]
+      ],
+      "source_triangles": 2112,
+      "path": "collision/base_link_033.stl",
+      "sha256": "57d1702ce85535120ea6238ebd34f3298188d4c6a7b71e809500e5dc0353f5b9",
+      "hull_vertices": 448,
+      "hull_triangles": 892,
+      "hull_bounds_m": [
+        [
+          1.1922839166936101,
+          0.2278598606794037,
+          0.41800660071253737
+        ],
+        [
+          1.2030008660369542,
+          0.24587110409173696,
+          0.4360178441248733
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_027-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2409973996482346,
+          -0.2952180883116228,
+          0.4215153942881331
+        ],
+        [
+          1.2510403230936773,
+          -0.17904952057763543,
+          0.4315583550649564
+        ]
+      ],
+      "source_triangles": 248,
+      "path": "collision/base_link_034.stl",
+      "sha256": "e8ae5f337ebc29fccc545a640cbb90e260e5403fcfb9e1080cc806b4683488b1",
+      "hull_vertices": 91,
+      "hull_triangles": 177,
+      "hull_bounds_m": [
+        [
+          1.2409973996482346,
+          -0.2952180883116228,
+          0.4215153942881331
+        ],
+        [
+          1.2510403230936773,
+          -0.17904952057763543,
+          0.4315583550649564
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_027-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2409973789341793,
+          0.17866356458640914,
+          0.42151539098349544
+        ],
+        [
+          1.251040302379622,
+          0.29483213232039646,
+          0.4315583517603187
+        ]
+      ],
+      "source_triangles": 248,
+      "path": "collision/base_link_035.stl",
+      "sha256": "5cc3d664f0076f79e0f4eb578ca02b0c3f407f585289df33fe3d121e667fcf71",
+      "hull_vertices": 89,
+      "hull_triangles": 174,
+      "hull_bounds_m": [
+        [
+          1.2409973789341793,
+          0.17866356458640914,
+          0.42151539098349544
+        ],
+        [
+          1.251040302379622,
+          0.29483213232039646,
+          0.4315583517603187
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_016-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1567612757454324,
+          -0.326419417669101,
+          0.32120450874998674
+        ],
+        [
+          1.3353405464955734,
+          -0.1478481086281907,
+          0.34430295143118694
+        ]
+      ],
+      "source_triangles": 120384,
+      "path": "collision/base_link_036.stl",
+      "sha256": "69191f643095183b6d147d212656e84d7f57b692e0ee299a1b8ca82043a76fc7",
+      "hull_vertices": 5437,
+      "hull_triangles": 10870,
+      "hull_bounds_m": [
+        [
+          1.1567612757454324,
+          -0.326419417669101,
+          0.32120450874998674
+        ],
+        [
+          1.3353405464955734,
+          -0.1478481086281907,
+          0.34430295143118694
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_016-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1567612550313564,
+          0.14746247336039908,
+          0.3212045216815701
+        ],
+        [
+          1.3353405257814974,
+          0.32603378240130937,
+          0.3443029643627703
+        ]
+      ],
+      "source_triangles": 120384,
+      "path": "collision/base_link_037.stl",
+      "sha256": "dc48380ac165d8bdfe4eeb952cce53abf61c61d5c67c9dbbe149576582b5160e",
+      "hull_vertices": 5437,
+      "hull_triangles": 10870,
+      "hull_bounds_m": [
+        [
+          1.1567612550313564,
+          0.14746247336039908,
+          0.3212045216815701
+        ],
+        [
+          1.3353405257814974,
+          0.32603378240130937,
+          0.3443029643627703
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_019-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2184870823505185,
+          -0.2928402130412465,
+          0.40891526140980644
+        ],
+        [
+          1.273550608796873,
+          -0.1814273500097858,
+          0.4721996613147454
+        ]
+      ],
+      "source_triangles": 720,
+      "path": "collision/base_link_038.stl",
+      "sha256": "b8c89e7e2e8b7c12d6e07808d5d4a43e33a7fbe5673ceee8d6c3adde86cbb56c",
+      "hull_vertices": 99,
+      "hull_triangles": 194,
+      "hull_bounds_m": [
+        [
+          1.2184870823505185,
+          -0.2928402130412465,
+          0.40891526140980644
+        ],
+        [
+          1.273550608796873,
+          -0.1814273500097858,
+          0.4721996613147454
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_019-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2184870616364525,
+          0.18104167798825227,
+          0.4089152581051508
+        ],
+        [
+          1.273550588082807,
+          0.292454541019713,
+          0.47219965801008973
+        ]
+      ],
+      "source_triangles": 720,
+      "path": "collision/base_link_039.stl",
+      "sha256": "c38f378764535524cc07cd9dac7e839424501b1e343877ae42e425ff80e8c1e3",
+      "hull_vertices": 99,
+      "hull_triangles": 194,
+      "hull_bounds_m": [
+        [
+          1.2184870616364525,
+          0.18104167798825227,
+          0.4089152581051508
+        ],
+        [
+          1.273550588082807,
+          0.292454541019713,
+          0.47219965801008973
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_015-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1704822464811653,
+          -0.31269412968402255,
+          0.322589840254478
+        ],
+        [
+          1.3216097329957548,
+          -0.16269131564155503,
+          0.4395310533357349
+        ]
+      ],
+      "source_triangles": 41856,
+      "path": "collision/base_link_040.stl",
+      "sha256": "8a09dc8f860b18b5210fa6c28803b883593ee88cbd9ad8f9704f38687274ded0",
+      "hull_vertices": 2434,
+      "hull_triangles": 4864,
+      "hull_bounds_m": [
+        [
+          1.1704822464811653,
+          -0.31269412968402255,
+          0.322589840254478
+        ],
+        [
+          1.3216097329957548,
+          -0.16269131564155503,
+          0.4395310533357349
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_015-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.162332669151978,
+          -0.32084627994458226,
+          0.3225898377394189
+        ],
+        [
+          1.3297651477215016,
+          -0.15342124640827992,
+          0.4407762107072505
+        ]
+      ],
+      "source_triangles": 71040,
+      "path": "collision/base_link_041.stl",
+      "sha256": "68d59b120165e00259bf19ff289a2e8c916e71f8aecdf7b0ce5fd5c8f9b86b3d",
+      "hull_vertices": 7375,
+      "hull_triangles": 14743,
+      "hull_bounds_m": [
+        [
+          1.162332669151978,
+          -0.32084627994458226,
+          0.3225898377394189
+        ],
+        [
+          1.3297651477215016,
+          -0.15342124640827992,
+          0.4407762107072505
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_015-mesh_2",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1704822257670893,
+          0.1611877613454775,
+          0.32258985318606137
+        ],
+        [
+          1.3216097122816788,
+          0.31119057538794503,
+          0.43953106626731825
+        ]
+      ],
+      "source_triangles": 41856,
+      "path": "collision/base_link_042.stl",
+      "sha256": "a3aace17d0cca075717adbbfdf5373fa7ddcd3a5a511ce183a6eb0d292752e28",
+      "hull_vertices": 2434,
+      "hull_triangles": 4864,
+      "hull_bounds_m": [
+        [
+          1.1704822257670893,
+          0.1611877613454775,
+          0.32258985318606137
+        ],
+        [
+          1.3216097122816788,
+          0.31119057538794503,
+          0.43953106626731825
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_015-mesh_3",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.162332648437902,
+          0.15303561108491784,
+          0.32258985067100227
+        ],
+        [
+          1.3297651270074256,
+          0.32046064462122015,
+          0.44077622363883384
+        ]
+      ],
+      "source_triangles": 71040,
+      "path": "collision/base_link_043.stl",
+      "sha256": "32301d2b9674f5f3d017c99752984b3d6a3c8aa60905494a4a4740e29ef739b6",
+      "hull_vertices": 7374,
+      "hull_triangles": 14741,
+      "hull_bounds_m": [
+        [
+          1.162332648437902,
+          0.15303561108491784,
+          0.32258985067100227
+        ],
+        [
+          1.3297651270074256,
+          0.32046064462122015,
+          0.44077622363883384
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_018-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1727789749085928,
+          -0.30986195750726425,
+          0.321905950399447
+        ],
+        [
+          1.3193772577524132,
+          -0.16380386942019243,
+          0.3302187070599024
+        ]
+      ],
+      "source_triangles": 59904,
+      "path": "collision/base_link_044.stl",
+      "sha256": "4368eb999f62f214ede2ed9de0a4ec33b03fc1598cb44ebde7a45d327ee9b38b",
+      "hull_vertices": 6824,
+      "hull_triangles": 13644,
+      "hull_bounds_m": [
+        [
+          1.1727789749085928,
+          -0.30986195750726425,
+          0.321905950399447
+        ],
+        [
+          1.3193772577524132,
+          -0.16380386942019243,
+          0.3302187070599024
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_018-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.1727789541945268,
+          0.16401993352223454,
+          0.32190594709479137
+        ],
+        [
+          1.3193772370383472,
+          0.31007802160930636,
+          0.33021870375524676
+        ]
+      ],
+      "source_triangles": 59904,
+      "path": "collision/base_link_045.stl",
+      "sha256": "315db36b617b1b60a0ea26ef999a24f1ca1c4bc673fe914c07a0526000678107",
+      "hull_vertices": 6824,
+      "hull_triangles": 13644,
+      "hull_bounds_m": [
+        [
+          1.1727789541945268,
+          0.16401993352223454,
+          0.32190594709479137
+        ],
+        [
+          1.3193772370383472,
+          0.31007802160930636,
+          0.33021870375524676
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_026-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2354909911695633,
+          -0.24766166421496907,
+          0.4036822449055151
+        ],
+        [
+          1.2565467552047582,
+          -0.22660590435856495,
+          0.41175256255432935
+        ]
+      ],
+      "source_triangles": 380,
+      "path": "collision/base_link_046.stl",
+      "sha256": "bf585c364e0dfa566e64b224b862e46aab75e4461bd6de050e7982c537fe4ad4",
+      "hull_vertices": 192,
+      "hull_triangles": 380,
+      "hull_bounds_m": [
+        [
+          1.2354909911695633,
+          -0.24766166421496907,
+          0.4036822449055151
+        ],
+        [
+          1.2565467552047582,
+          -0.22660590435856495,
+          0.41175256255432935
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_026-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2354909704554906,
+          0.22622022681453058,
+          0.40368225242501876
+        ],
+        [
+          1.2565467344906855,
+          0.2472759866709347,
+          0.41175257007383304
+        ]
+      ],
+      "source_triangles": 380,
+      "path": "collision/base_link_047.stl",
+      "sha256": "306595a46d4a94c46b7f96dbe11e0b39a0ec1ff3acee155697b6df0daa879a07",
+      "hull_vertices": 192,
+      "hull_triangles": 380,
+      "hull_bounds_m": [
+        [
+          1.2354909704554906,
+          0.22622022681453058,
+          0.40368225242501876
+        ],
+        [
+          1.2565467344906855,
+          0.2472759866709347,
+          0.41175257007383304
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cube_007-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.2424128773152077,
+          -0.23738512625315925,
+          0.37609569496789375
+        ],
+        [
+          1.2496249042374672,
+          -0.23688244641130815,
+          0.38330772174430194
+        ]
+      ],
+      "source_triangles": 50,
+      "path": "collision/base_link_048.stl",
+      "sha256": "1b87c6271406b300e2175d8adcf9cd7985eaa16108a357ede2a59f7f9b4424b4",
+      "hull_vertices": 19,
+      "hull_triangles": 27,
+      "hull_bounds_m": [
+        [
+          1.2424128773152077,
+          -0.23738512625315925,
+          0.37609569496789375
+        ],
+        [
+          1.2496249042374672,
+          -0.23688244641130815,
+          0.38330772174430194
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cube_007-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          1.242412856601101,
+          0.23649676477634443,
+          0.37609575660819416
+        ],
+        [
+          1.2496248835233605,
+          0.23699944461819553,
+          0.38330778338460236
+        ]
+      ],
+      "source_triangles": 50,
+      "path": "collision/base_link_049.stl",
+      "sha256": "331cc4bd1fd9f9e2ff9f5ea578ea1cce79b04bc791d75991d35c3212e7029c64",
+      "hull_vertices": 20,
+      "hull_triangles": 28,
+      "hull_bounds_m": [
+        [
+          1.242412856601101,
+          0.23649676477634443,
+          0.37609575660819416
+        ],
+        [
+          1.2496248835233605,
+          0.23699944461819553,
+          0.38330778338460236
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve_008-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.4240015623877034,
+          0.4941201635615204,
+          -0.7053090488257509
+        ],
+        [
+          -0.11960754963346752,
+          0.584485446909936,
+          -0.3412998470742743
+        ]
+      ],
+      "source_triangles": 4654,
+      "path": "collision/base_link_050.stl",
+      "sha256": "d773bcb5e964ef5d55fabadbb74421f97da95a01957f1b050d0133aed68ac463",
+      "hull_vertices": 605,
+      "hull_triangles": 1206,
+      "hull_bounds_m": [
+        [
+          -0.4240015623877034,
+          0.4941201635615204,
+          -0.7053090488257509
+        ],
+        [
+          -0.11960754963346752,
+          0.584485446909936,
+          -0.3412998470742743
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "CUBezierCurve_008-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.11960761519780792,
+          0.22328533473571988,
+          -0.6965578026702947
+        ],
+        [
+          0.17603504010094323,
+          0.5757343497213653,
+          -0.6236946615563689
+        ]
+      ],
+      "source_triangles": 4654,
+      "path": "collision/base_link_051.stl",
+      "sha256": "e5d225666b9d31462f38bb758789db780cacc75e1ee5e75556272000639d4192",
+      "hull_vertices": 700,
+      "hull_triangles": 1396,
+      "hull_bounds_m": [
+        [
+          -0.11960761519780792,
+          0.22328533473571988,
+          -0.6965578026702947
+        ],
+        [
+          0.17603504010094323,
+          0.5757343497213653,
+          -0.6236946615563689
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cube_001-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.39557948093611756,
+          -0.7165322911394367,
+          -0.7285523864300671
+        ],
+        [
+          0.542186340232834,
+          0.7165322911394367,
+          -0.6239734438387927
+        ]
+      ],
+      "source_triangles": 412,
+      "path": "collision/base_link_052.stl",
+      "sha256": "2b8a2b379650fe01507debbf195c9574be429365ded8b0b340fb823eb41d7bb0",
+      "hull_vertices": 112,
+      "hull_triangles": 220,
+      "hull_bounds_m": [
+        [
+          0.39557948093611756,
+          -0.7165322911394367,
+          -0.7285523864300671
+        ],
+        [
+          0.542186340232834,
+          0.7165322911394367,
+          -0.6239734438387927
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cube_001-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.4187274811764435,
+          -0.7165322911394367,
+          -0.23231166627721223
+        ],
+        [
+          0.5653343404731599,
+          0.7165322911394367,
+          -0.1277327236859378
+        ]
+      ],
+      "source_triangles": 412,
+      "path": "collision/base_link_053.stl",
+      "sha256": "f443f85fa54379da67d99673d9c92e131d45f1163dce7efb0f3b58cc27b0636d",
+      "hull_vertices": 112,
+      "hull_triangles": 220,
+      "hull_bounds_m": [
+        [
+          0.4187274811764435,
+          -0.7165322911394367,
+          -0.23231166627721223
+        ],
+        [
+          0.5653343404731599,
+          0.7165322911394367,
+          -0.1277327236859378
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_028-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.8696837723255157,
+          -0.5902575850486755,
+          -0.2976714223623276
+        ],
+        [
+          -0.5762917697429657,
+          0.5902575850486755,
+          -0.23250220669433475
+        ]
+      ],
+      "source_triangles": 44,
+      "path": "collision/base_link_054.stl",
+      "sha256": "c20ef570950f0cb0b0c388ab0f18eef19fbf829d87d32b0419ae1e9cdc877491",
+      "hull_vertices": 10,
+      "hull_triangles": 16,
+      "hull_bounds_m": [
+        [
+          -0.8696837723255157,
+          -0.5902575850486755,
+          -0.2976714223623276
+        ],
+        [
+          -0.5762917697429657,
+          0.5902575850486755,
+          -0.23250220669433475
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_031-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.1669445615261793,
+          -0.5902575850486755,
+          -0.7952350974082947
+        ],
+        [
+          0.12644744105637074,
+          0.5902575850486755,
+          -0.7300658817403018
+        ]
+      ],
+      "source_triangles": 44,
+      "path": "collision/base_link_055.stl",
+      "sha256": "d71d3b68b6dd389ee677af5cd6323b25c5bf3dd264e9bf7658d8d7e137a2c602",
+      "hull_vertices": 10,
+      "hull_triangles": 16,
+      "hull_bounds_m": [
+        [
+          -0.1669445615261793,
+          -0.5902575850486755,
+          -0.7952350974082947
+        ],
+        [
+          0.12644744105637074,
+          0.5902575850486755,
+          -0.7300658817403018
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_032-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.8696837723255157,
+          -0.5902575850486755,
+          -0.7952350974082947
+        ],
+        [
+          -0.5762917697429657,
+          0.5902575850486755,
+          -0.7300658817403018
+        ]
+      ],
+      "source_triangles": 44,
+      "path": "collision/base_link_056.stl",
+      "sha256": "aeee4aa169e0554fe08cb6bb1e52520e7efd9ae57cdfed2d9d8058b97651a83f",
+      "hull_vertices": 10,
+      "hull_triangles": 16,
+      "hull_bounds_m": [
+        [
+          -0.8696837723255157,
+          -0.5902575850486755,
+          -0.7952350974082947
+        ],
+        [
+          -0.5762917697429657,
+          0.5902575850486755,
+          -0.7300658817403018
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_029-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.07550956308841705,
+          -0.5902575850486755,
+          -0.2976714223623276
+        ],
+        [
+          0.217882439494133,
+          0.5902575850486755,
+          -0.23250220669433475
+        ]
+      ],
+      "source_triangles": 44,
+      "path": "collision/base_link_057.stl",
+      "sha256": "71c605a391ba01fa6a2bf88ca3ae690534527fc4b166613b4b15a7ac0af49cb8",
+      "hull_vertices": 10,
+      "hull_triangles": 16,
+      "hull_bounds_m": [
+        [
+          -0.07550956308841705,
+          -0.5902575850486755,
+          -0.2976714223623276
+        ],
+        [
+          0.217882439494133,
+          0.5902575850486755,
+          -0.23250220669433475
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_013-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.15862108767032623,
+          -0.579928383231163,
+          -0.7566262930631638
+        ],
+        [
+          0.4073505997657776,
+          0.35424990952014923,
+          0.4077848196029663
+        ]
+      ],
+      "source_triangles": 7672,
+      "path": "collision/base_link_058.stl",
+      "sha256": "c59cb0367eb60d0d42da9445dca6d1c5f5b7ca7fc8d807f400f557aa14f792a1",
+      "hull_vertices": 902,
+      "hull_triangles": 1800,
+      "hull_bounds_m": [
+        [
+          -0.15862108767032623,
+          -0.579928383231163,
+          -0.7566262930631638
+        ],
+        [
+          0.4073505997657776,
+          0.35424990952014923,
+          0.4077848196029663
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Cylinder_013-mesh_1",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.1368383914232254,
+          -0.5876535922288895,
+          -0.7270205914974213
+        ],
+        [
+          0.3591158986091614,
+          -0.26795490086078644,
+          0.3704652786254883
+        ]
+      ],
+      "source_triangles": 6080,
+      "path": "collision/base_link_059.stl",
+      "sha256": "a24f67f393c6f3dd1be35d7fe874c7be6b5a30818fe53e9d79bec3ff5445b9ac",
+      "hull_vertices": 152,
+      "hull_triangles": 300,
+      "hull_bounds_m": [
+        [
+          -0.1368383914232254,
+          -0.5876535922288895,
+          -0.7270205914974213
+        ],
+        [
+          0.3591158986091614,
+          -0.26795490086078644,
+          0.3704652786254883
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_1608-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.3274231230045928,
+          -0.7635001263618477,
+          -0.7953001861460507
+        ],
+        [
+          1.345851009849909,
+          0.7635001263618477,
+          -0.7299020886421204
+        ]
+      ],
+      "source_triangles": 228,
+      "path": "collision/base_link_060.stl",
+      "sha256": "4dfec0f85cb6f6fe3592822e6c89f9611122516d1f3fa6ec883d88c438643b69",
+      "hull_vertices": 89,
+      "hull_triangles": 174,
+      "hull_bounds_m": [
+        [
+          -1.3274231230045928,
+          -0.7635001263618477,
+          -0.7953001861460507
+        ],
+        [
+          1.345851009849909,
+          0.7635001263618477,
+          -0.7299020886421204
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_000-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.7237416003719446,
+          -0.600875126249079,
+          -0.7953001861460507
+        ],
+        [
+          1.1723297818290774,
+          0.600875126249079,
+          -0.7299020886421204
+        ]
+      ],
+      "source_triangles": 60,
+      "path": "collision/base_link_061.stl",
+      "sha256": "3a0641df4deab1701873f1c5106c0f52ec24e8349023b4ce1a20334d6c8a4aca",
+      "hull_vertices": 14,
+      "hull_triangles": 24,
+      "hull_bounds_m": [
+        [
+          0.7237416003719446,
+          -0.600875126249079,
+          -0.7953001861460507
+        ],
+        [
+          1.1723297818290774,
+          0.600875126249079,
+          -0.7299020886421204
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_034-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.2829466521922086,
+          -0.728994452991298,
+          -0.7299018335336989
+        ],
+        [
+          0.7237417808769351,
+          0.7289943337821008,
+          0.432086937671631
+        ]
+      ],
+      "source_triangles": 1312,
+      "path": "collision/base_link_062.stl",
+      "sha256": "a5b7099180e42f7434e10e12cc9d0e4fb0e2163515e2b6c2336484b96a57f043",
+      "hull_vertices": 34,
+      "hull_triangles": 64,
+      "hull_bounds_m": [
+        [
+          -1.2829466521922086,
+          -0.728994452991298,
+          -0.7299018335336989
+        ],
+        [
+          0.7237417808769351,
+          0.7289943337821008,
+          0.432086937671631
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_1610-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.3274231230045928,
+          -0.7634946047067288,
+          0.4320840537548065
+        ],
+        [
+          1.345851009849909,
+          0.7634946047067288,
+          0.4974850118160248
+        ]
+      ],
+      "source_triangles": 3060,
+      "path": "collision/base_link_063.stl",
+      "sha256": "2da275741c344de522c520fde1d5b190a16abf37f0218ec92668632f79ecd866",
+      "hull_vertices": 428,
+      "hull_triangles": 852,
+      "hull_bounds_m": [
+        [
+          -1.3274231230045928,
+          -0.7634946047067288,
+          0.4320840537548065
+        ],
+        [
+          1.345851009849909,
+          0.7634946047067288,
+          0.4974850118160248
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_035-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.10006799236265351,
+          -0.7135374208039025,
+          -0.2471068052536225
+        ],
+        [
+          0.4679144027631992,
+          0.7125421547854671,
+          0.4597022352384954
+        ]
+      ],
+      "source_triangles": 632,
+      "path": "collision/base_link_064.stl",
+      "sha256": "867cfaa9b29f72de839d0e5bec632d03f909c6a9235f589d5d8c5c113f44331f",
+      "hull_vertices": 43,
+      "hull_triangles": 82,
+      "hull_bounds_m": [
+        [
+          -0.10006799236265351,
+          -0.7135374208039025,
+          -0.2471068052536225
+        ],
+        [
+          0.4679144027631992,
+          0.7125421547854671,
+          0.4597022352384954
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "Plane_026-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -1.293745994567871,
+          -0.7391961812973022,
+          0.4736975133419037
+        ],
+        [
+          1.3060879707336426,
+          0.7391961812973022,
+          0.8724923133850098
+        ]
+      ],
+      "source_triangles": 4452,
+      "path": "collision/base_link_065.stl",
+      "sha256": "f8aeeb51217912113cb644524b877a7ff8a333ba2398dd4377928ba121cfe787",
+      "hull_vertices": 659,
+      "hull_triangles": 1314,
+      "hull_bounds_m": [
+        [
+          -1.293745994567871,
+          -0.7391961812973022,
+          0.4736975133419037
+        ],
+        [
+          1.3060879707336426,
+          0.7391961812973022,
+          0.8724923133850098
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_005-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.24841408438050158,
+          -0.4624495503460484,
+          0.06547221145166737
+        ],
+        [
+          0.260088590240837,
+          -0.40709035580538544,
+          0.13735167369347479
+        ]
+      ],
+      "source_triangles": 80,
+      "path": "collision/base_link_066.stl",
+      "sha256": "f4ad1f3e9d65a1971513aecd4df65935e64644106c0b8b14d6987b458e88fce5",
+      "hull_vertices": 82,
+      "hull_triangles": 160,
+      "hull_bounds_m": [
+        [
+          0.24841408438050158,
+          -0.4624495503460484,
+          0.06547221145166737
+        ],
+        [
+          0.260088590240837,
+          -0.40709035580538544,
+          0.13735167369347479
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_1611-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          -0.9191800748807779,
+          -0.15300580297241773,
+          0.7027926103270516
+        ],
+        [
+          -0.6002459979534649,
+          0.15300580297241773,
+          0.8607233127214897
+        ]
+      ],
+      "source_triangles": 1360,
+      "path": "collision/base_link_067.stl",
+      "sha256": "2d92af945196a0b54d8d15413b808b8e34a9db38f29b4f1b42dd722a9c6a54a2",
+      "hull_vertices": 272,
+      "hull_triangles": 540,
+      "hull_bounds_m": [
+        [
+          -0.9191800748807779,
+          -0.15300580297241773,
+          0.7027926103270516
+        ],
+        [
+          -0.6002459979534649,
+          0.15300580297241773,
+          0.8607233127214897
+        ]
+      ]
+    },
+    {
+      "link": "base_link",
+      "source": "meshes/rexrov2/RexROV2_no_props.dae",
+      "source_node": "ShapeIndexedFaceSet_1612-mesh",
+      "source_sha256": "d96a00f8e43575b4a4ec2fe55c99568348a8b52f3859fed23578c19403ae5c06",
+      "source_bounds_m": [
+        [
+          0.7231994271278381,
+          -0.5742995738983154,
+          0.6669706702232361
+        ],
+        [
+          1.0113890171051025,
+          0.5742995738983154,
+          0.8655518293380737
+        ]
+      ],
+      "source_triangles": 1360,
+      "path": "collision/base_link_068.stl",
+      "sha256": "e2c54e3cfbfd5a8d69657fa623a32bbfbe12fd95685b1682df3083789706a836",
+      "hull_vertices": 358,
+      "hull_triangles": 712,
+      "hull_bounds_m": [
+        [
+          0.7231994271278381,
+          -0.5742995738983154,
+          0.6669706702232361
+        ],
+        [
+          1.0113890171051025,
+          0.5742995738983154,
+          0.8655518293380737
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Azimuth_Plate-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.25161166568039717,
+          -0.08712147771930134,
+          0.04765963170513615
+        ],
+        [
+          0.030475277611509338,
+          0.11101158211392767,
+          0.0641697421759364
+        ]
+      ],
+      "source_triangles": 732,
+      "path": "collision/oberon_base_000.stl",
+      "sha256": "5c3200534b03afd3faede1daadf6aad7c9b6c153b0b305c415454f1dbab88dcd",
+      "hull_vertices": 29,
+      "hull_triangles": 54,
+      "hull_bounds_m": [
+        [
+          -0.25161166568039717,
+          -0.08712147771930134,
+          0.04765963170513615
+        ],
+        [
+          0.030475277611509338,
+          0.11101158211392767,
+          0.0641697421759364
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Azimuth_Plate_001-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.25161166568039717,
+          -0.0871214758566562,
+          -0.06404066093243643
+        ],
+        [
+          0.03047527761150906,
+          0.11101158397657282,
+          -0.038615069294061444
+        ]
+      ],
+      "source_triangles": 732,
+      "path": "collision/oberon_base_001.stl",
+      "sha256": "d71c84471a3cb8c7d98c2101522048e652f7307b2904e2b2f453fd3f7fba1b9f",
+      "hull_vertices": 44,
+      "hull_triangles": 84,
+      "hull_bounds_m": [
+        [
+          -0.25161166568039717,
+          -0.0871214758566562,
+          -0.06404066093243643
+        ],
+        [
+          0.03047527761150906,
+          0.11101158397657282,
+          -0.038615069294061444
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder_000-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.24278371993061304,
+          -0.07920366715560423,
+          -0.08153537026328772
+        ],
+        [
+          -0.218839879823577,
+          -0.05525983386137899,
+          0.07407952973252563
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_base_002.stl",
+      "sha256": "6578c308076bdbfd079dd9ec298a3121fe6021a2bc6a6ef0c3f6fd8de2804ac6",
+      "hull_vertices": 96,
+      "hull_triangles": 188,
+      "hull_bounds_m": [
+        [
+          -0.24278371993061304,
+          -0.07920366715560423,
+          -0.08153537026328772
+        ],
+        [
+          -0.218839879823577,
+          -0.05525983386137899,
+          0.07407952973252563
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder_009-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.07464483341334112,
+          -0.0792036288986505,
+          -0.08153537026328772
+        ],
+        [
+          -0.05070100011911589,
+          -0.055259795604429986,
+          0.07407950550919828
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_base_003.stl",
+      "sha256": "a31861100321c18dfa09e38a3a0f83096cef4ef90cf7a5143e041f9f4aabdac7",
+      "hull_vertices": 96,
+      "hull_triangles": 188,
+      "hull_bounds_m": [
+        [
+          -0.07464483341334112,
+          -0.0792036288986505,
+          -0.08153537026328772
+        ],
+        [
+          -0.05070100011911589,
+          -0.055259795604429986,
+          0.07407950550919828
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder_008-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.07464484976714064,
+          0.0792349642505394,
+          -0.08153534603996038
+        ],
+        [
+          -0.05070101647291541,
+          0.1031787975447599,
+          0.07407952973252563
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_base_004.stl",
+      "sha256": "7f4361fce904cd6b3cc53b5b0ba9ffa3a03a19964383b4809cd7a36bbbda2a3f",
+      "hull_vertices": 96,
+      "hull_triangles": 188,
+      "hull_bounds_m": [
+        [
+          -0.07464484976714064,
+          0.0792349642505394,
+          -0.08153534603996038
+        ],
+        [
+          -0.05070101647291541,
+          0.1031787975447599,
+          0.07407952973252563
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder_006-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.2345603727730914,
+          -0.01819441512335065,
+          -0.03847665948138079
+        ],
+        [
+          -0.20903678566395115,
+          0.007329196209100449,
+          0.04756203157172045
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_base_005.stl",
+      "sha256": "64e65685a439a1ef589d4004389d9541eec55570d033a3c706bbadda0f6c2f45",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.2345603727730914,
+          -0.01819441512335065,
+          -0.03847665948138079
+        ],
+        [
+          -0.20903678566395115,
+          0.007329196209100449,
+          0.04756203157172045
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.08106255237635808,
+          0.07281726088433355,
+          -0.03847661428153515
+        ],
+        [
+          -0.04428330250898499,
+          0.10959650923774868,
+          0.047562090680003166
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_base_006.stl",
+      "sha256": "a3868e736f45dc59b359b5352a2a131a5092da9280994dd8333dd275b8eb1184",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.08106255237635808,
+          0.07281726088433355,
+          -0.03847661428153515
+        ],
+        [
+          -0.04428330250898499,
+          0.10959650923774868,
+          0.047562090680003166
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder-mesh_1",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.08106252845276404,
+          -0.08562133226485164,
+          -0.03847661428153515
+        ],
+        [
+          -0.04428327858539095,
+          -0.048842083911436504,
+          0.047562090680003166
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_base_007.stl",
+      "sha256": "90d7e98c7b56d4b25dfd37d54b15a4fc9fe5b13a5777036538120c13b5f559f0",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.08106252845276404,
+          -0.08562133226485164,
+          -0.03847661428153515
+        ],
+        [
+          -0.04428327858539095,
+          -0.048842083911436504,
+          0.047562090680003166
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder-mesh_2",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.24920139755953358,
+          -0.08562135765314854,
+          -0.03847661428153515
+        ],
+        [
+          -0.2124221476921605,
+          -0.04884210929973343,
+          0.047562090680003166
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_base_008.stl",
+      "sha256": "8b6758df0a2f115e14a0149a1275f434bb9d340f38ac84f67b9992cdbfb2ece0",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.24920139755953358,
+          -0.08562135765314854,
+          -0.03847661428153515
+        ],
+        [
+          -0.2124221476921605,
+          -0.04884210929973343,
+          0.047562090680003166
+        ]
+      ]
+    },
+    {
+      "link": "oberon_base",
+      "source": "meshes/oberon7/serial_arm/visual/Base.dae",
+      "source_node": "Cylinder_011-mesh",
+      "source_sha256": "62d3407148a37f2cabdd994ed8e67ed6243aea03c3977faa4d3c94d0da2e7132",
+      "source_bounds_m": [
+        [
+          -0.01841460730773528,
+          -0.018527440912098462,
+          -0.06652262235356243
+        ],
+        [
+          0.01836463650379323,
+          0.01825180289942197,
+          0.06652262235356243
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_base_009.stl",
+      "sha256": "4981658bb9e26b8fb397ca9ff95c77ff29a2d00c84ad8d555273c775fa1d3ae7",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.01841460730773528,
+          -0.018527440912098462,
+          -0.06652262235356243
+        ],
+        [
+          0.01836463650379323,
+          0.01825180289942197,
+          0.06652262235356243
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cylinder_010-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          -0.036850146346683654,
+          -0.03679106434961955,
+          -0.03674156551355168
+        ],
+        [
+          0.0485906139296148,
+          0.06961821054492794,
+          -0.021284239052278053
+        ]
+      ],
+      "source_triangles": 476,
+      "path": "collision/oberon_shoulder_link_000.stl",
+      "sha256": "19754d5179219dfc9d5af621cf2125b3dca808f52fb43e00ea270b5ef5f81c85",
+      "hull_vertices": 55,
+      "hull_triangles": 106,
+      "hull_bounds_m": [
+        [
+          -0.036850146346683654,
+          -0.03679106434961955,
+          -0.03674156551355168
+        ],
+        [
+          0.0485906139296148,
+          0.06961821054492794,
+          -0.021284239052278053
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cylinder_030-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          -0.036850146346683654,
+          -0.03679106434961955,
+          0.03037124375268263
+        ],
+        [
+          0.0485906139296148,
+          0.06961821054492794,
+          0.045828519265143086
+        ]
+      ],
+      "source_triangles": 476,
+      "path": "collision/oberon_shoulder_link_001.stl",
+      "sha256": "479863b2612e40483c43c7677cb489c12b4e5a58880c9b83b1f2cd1e534b08db",
+      "hull_vertices": 77,
+      "hull_triangles": 150,
+      "hull_bounds_m": [
+        [
+          -0.036850146346683654,
+          -0.03679106434961955,
+          0.03037124375268263
+        ],
+        [
+          0.0485906139296148,
+          0.06961821054492794,
+          0.045828519265143086
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cube_002-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          0.011163326040283583,
+          -0.058848968673027614,
+          0.06854608211863722
+        ],
+        [
+          0.03344082710724253,
+          0.058848976730169054,
+          0.10492367045373907
+        ]
+      ],
+      "source_triangles": 24,
+      "path": "collision/oberon_shoulder_link_002.stl",
+      "sha256": "eb1a8085b6350dd80af6599ec9481f3384ca3824cfae873b62eb3e31ad0a6e12",
+      "hull_vertices": 8,
+      "hull_triangles": 12,
+      "hull_bounds_m": [
+        [
+          0.011163326040283583,
+          -0.058848968673027614,
+          0.06854608211863722
+        ],
+        [
+          0.03344082710724253,
+          0.058848976730169054,
+          0.10492367045373907
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cube_001-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          0.02662746969464977,
+          -0.04130033953334609,
+          -0.06114490398521788
+        ],
+        [
+          0.1152813601513732,
+          0.041300363831423076,
+          0.1031543267263606
+        ]
+      ],
+      "source_triangles": 1080,
+      "path": "collision/oberon_shoulder_link_003.stl",
+      "sha256": "bde6065395bdd77fea75e6c343b8341668188d06fe592d47e4825a69638eda45",
+      "hull_vertices": 50,
+      "hull_triangles": 96,
+      "hull_bounds_m": [
+        [
+          0.02662746969464977,
+          -0.04130033953334609,
+          -0.06114490398521788
+        ],
+        [
+          0.1152813601513732,
+          0.041300363831423076,
+          0.1031543267263606
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cylinder_005-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          0.07469944383007208,
+          -0.05168838767768912,
+          -0.04989706066734878
+        ],
+        [
+          0.10391137272145361,
+          0.05199579265710184,
+          -0.020685142899679265
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_shoulder_link_004.stl",
+      "sha256": "bde560403cbeb780c0b495dbdad2cd2db7fa5e5eda2eeee2dfe64ac733db7f5e",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.07469944383007208,
+          -0.05168838767768912,
+          -0.04989706066734878
+        ],
+        [
+          0.10391137272145361,
+          0.05199579265710184,
+          -0.020685142899679265
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cylinder_004-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          0.05671618775225483,
+          -0.06514945824823203,
+          0.00253112282139889
+        ],
+        [
+          0.08237573603422389,
+          0.0654568692512282,
+          0.028190661578515908
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_shoulder_link_005.stl",
+      "sha256": "f4e6979f776e209ed58c0bfc2603c812f56977d2df6edbf552c5df6d3efbfcba",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.05671618775225483,
+          -0.06514945824823203,
+          0.00253112282139889
+        ],
+        [
+          0.08237573603422389,
+          0.0654568692512282,
+          0.028190661578515908
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Mesh-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          -0.06965431564260269,
+          -0.06674977350800311,
+          0.10412845538546955
+        ],
+        [
+          0.026655656563188815,
+          0.06674977970345801,
+          0.17848197683529676
+        ]
+      ],
+      "source_triangles": 960,
+      "path": "collision/oberon_shoulder_link_006.stl",
+      "sha256": "56de23126d460e1e7ef66c3c7a757bd3eae56b1d6aea636c77e43d177c79970f",
+      "hull_vertices": 204,
+      "hull_triangles": 404,
+      "hull_bounds_m": [
+        [
+          -0.06965431564260269,
+          -0.06674977350800311,
+          0.10412845538546955
+        ],
+        [
+          0.026655656563188815,
+          0.06674977970345801,
+          0.17848197683529676
+        ]
+      ]
+    },
+    {
+      "link": "oberon_shoulder_link",
+      "source": "meshes/oberon7/serial_arm/visual/ShoulderLink.dae",
+      "source_node": "Cylinder_007-mesh",
+      "source_sha256": "1e4ff215f4eca2cc02c30f0b5731b7dfda4985e37e0c5e1a9e72764acdb21b70",
+      "source_bounds_m": [
+        [
+          -0.015325651444405583,
+          0.025431467538630625,
+          -0.03778636974362892
+        ],
+        [
+          0.010197956860146108,
+          0.05095507281526315,
+          0.046603530254645475
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_shoulder_link_007.stl",
+      "sha256": "7c291d82191311621fe23f0a411cbd8cda6c5eb641a5d5adf46793214881f73c",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.015325651444405583,
+          0.025431467538630625,
+          -0.03778636974362892
+        ],
+        [
+          0.010197956860146108,
+          0.05095507281526315,
+          0.046603530254645475
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Plane_007-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.09710186011188393,
+          0.036508334865673946,
+          -0.052473251707077374
+        ],
+        [
+          0.32970461079700414,
+          0.04024240698519994,
+          0.052473248347729
+        ]
+      ],
+      "source_triangles": 22,
+      "path": "collision/oberon_upper_arm_000.stl",
+      "sha256": "c90ff0241b80792991e3110db9e612df512432ea30c98ee59544fe4f43387922",
+      "hull_vertices": 10,
+      "hull_triangles": 16,
+      "hull_bounds_m": [
+        [
+          0.09710186011188393,
+          0.036508334865673946,
+          -0.052473251707077374
+        ],
+        [
+          0.32970461079700414,
+          0.04024240698519994,
+          0.052473248347729
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Circle_005-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.3294982124011804,
+          0.03234198764140235,
+          -0.053047732056967445
+        ],
+        [
+          0.3342488305165653,
+          0.08541810985911825,
+          0.053104482225515025
+        ]
+      ],
+      "source_triangles": 260,
+      "path": "collision/oberon_upper_arm_001.stl",
+      "sha256": "471eaa1da36c31fb4503fe6183d5eec27490023708b73a06398d9fcf638b4793",
+      "hull_vertices": 132,
+      "hull_triangles": 260,
+      "hull_bounds_m": [
+        [
+          0.3294982124011804,
+          0.03234198764140235,
+          -0.053047732056967445
+        ],
+        [
+          0.3342488305165653,
+          0.08541810985911825,
+          0.053104482225515025
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Plane-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          -0.03208649731898394,
+          -0.052012143382263336,
+          -0.0573732549989926
+        ],
+        [
+          0.5847224072819271,
+          0.036508359691646335,
+          0.05743011961807583
+        ]
+      ],
+      "source_triangles": 10700,
+      "path": "collision/oberon_upper_arm_002.stl",
+      "sha256": "0b54db913da7b83469192efab7b8b3ef628a6f7d7de7b9e97800de068a3e9849",
+      "hull_vertices": 93,
+      "hull_triangles": 182,
+      "hull_bounds_m": [
+        [
+          -0.03208649731898394,
+          -0.052012143382263336,
+          -0.0573732549989926
+        ],
+        [
+          0.5847224072819271,
+          0.036508359691646335,
+          0.05743011961807583
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Circle-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.09710183637091274,
+          0.0365083022586686,
+          -0.05737267384525124
+        ],
+        [
+          0.5588563190194725,
+          0.08987711584818181,
+          0.05742953490757008
+        ]
+      ],
+      "source_triangles": 272,
+      "path": "collision/oberon_upper_arm_003.stl",
+      "sha256": "91114119ebca012619363a491b9d37f5d825ff7c884f25de91d25cc1fff47c68",
+      "hull_vertices": 137,
+      "hull_triangles": 270,
+      "hull_bounds_m": [
+        [
+          0.09710183637091274,
+          0.0365083022586686,
+          -0.05737267384525124
+        ],
+        [
+          0.5588563190194725,
+          0.08987711584818181,
+          0.05742953490757008
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Circle_003-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          -0.013105110153289325,
+          -0.013105126614466089,
+          -0.05998151365101015
+        ],
+        [
+          0.013105110153291109,
+          0.013105096335331967,
+          0.05998154393017065
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_upper_arm_004.stl",
+      "sha256": "0abbd7b15229d142d933fca73d976acbab90cad8f82d2e793decea48ccd91800",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.013105110153289325,
+          -0.013105126614466089,
+          -0.05998151365101015
+        ],
+        [
+          0.013105110153291109,
+          0.013105096335331967,
+          0.05998154393017065
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Circle_003-mesh_1",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.25073280662255953,
+          -0.033092217466539994,
+          -0.06061737512012368
+        ],
+        [
+          0.27694302692913997,
+          -0.006881994516741936,
+          0.05934568246105711
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_upper_arm_005.stl",
+      "sha256": "3392e445c20bf91284ca5396126b89d99d3b57605b5ea812cbdd6011192db68c",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.25073280662255953,
+          -0.033092217466539994,
+          -0.06061737512012368
+        ],
+        [
+          0.27694302692913997,
+          -0.006881994516741936,
+          0.05934568246105711
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Circle_000-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.5003361952737244,
+          0.0013358055135176822,
+          -0.06388595197724922
+        ],
+        [
+          0.5216222858357198,
+          0.022621896121871956,
+          0.06394278878609282
+        ]
+      ],
+      "source_triangles": 220,
+      "path": "collision/oberon_upper_arm_006.stl",
+      "sha256": "167f698ffef797954f7409611499835cbbdd05eae2b398cd4c286ccb93c7b149",
+      "hull_vertices": 94,
+      "hull_triangles": 184,
+      "hull_bounds_m": [
+        [
+          0.5003361952737244,
+          0.0013358055135176822,
+          -0.06388595197724922
+        ],
+        [
+          0.5216222858357198,
+          0.022621896121871956,
+          0.06394278878609282
+        ]
+      ]
+    },
+    {
+      "link": "oberon_upper_arm",
+      "source": "meshes/oberon7/serial_arm/visual/UpperArm.dae",
+      "source_node": "Cylinder_022-mesh",
+      "source_sha256": "584c4077fcab4068ea1f2a2ce50dc056c33535bff3b4ac40993c1a6bf39e7f5f",
+      "source_bounds_m": [
+        [
+          0.5442123214339636,
+          -0.024235748199438002,
+          -0.05954675173453302
+        ],
+        [
+          0.5680989466340565,
+          -0.00034907732408090593,
+          0.059852867231174924
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_upper_arm_007.stl",
+      "sha256": "74ac86907c643084697b5b5fca6cb92112fad7ee69a8f348ba94ae99a29376a4",
+      "hull_vertices": 128,
+      "hull_triangles": 252,
+      "hull_bounds_m": [
+        [
+          0.5442123214339636,
+          -0.024235748199438002,
+          -0.05954675173453302
+        ],
+        [
+          0.5680989466340565,
+          -0.00034907732408090593,
+          0.059852867231174924
+        ]
+      ]
+    },
+    {
+      "link": "oberon_elbow_link",
+      "source": "meshes/oberon7/serial_arm/visual/ElbowLink.dae",
+      "source_node": "Cylinder_022-mesh",
+      "source_sha256": "3344699c091b7c9b069687b3cbc2459ff4ae7730c8146e72b2c10630bb8628c3",
+      "source_bounds_m": [
+        [
+          -0.011946571580134931,
+          -0.011946389713256844,
+          -0.05969981718763683
+        ],
+        [
+          0.011946129834246354,
+          0.011946270205302919,
+          0.059699817187915526
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_elbow_link_000.stl",
+      "sha256": "fc81577c4e264ae5557b8073cc58165cf8e7f3bc8ae6f2fd6c0fc25e5350e022",
+      "hull_vertices": 128,
+      "hull_triangles": 252,
+      "hull_bounds_m": [
+        [
+          -0.011946571580134931,
+          -0.011946389713256844,
+          -0.05969981718763683
+        ],
+        [
+          0.011946129834246354,
+          0.011946270205302919,
+          0.059699817187915526
+        ]
+      ]
+    },
+    {
+      "link": "oberon_elbow_link",
+      "source": "meshes/oberon7/serial_arm/visual/ElbowLink.dae",
+      "source_node": "Circle_018-mesh",
+      "source_sha256": "3344699c091b7c9b069687b3cbc2459ff4ae7730c8146e72b2c10630bb8628c3",
+      "source_bounds_m": [
+        [
+          0.05701178780914777,
+          -0.19402607308623154,
+          -0.07756220963069309
+        ],
+        [
+          0.21237983140781921,
+          0.049645821828659065,
+          0.07756214186540113
+        ]
+      ],
+      "source_triangles": 2764,
+      "path": "collision/oberon_elbow_link_001.stl",
+      "sha256": "9c1306c61d856fb539f0c6575cb38cc23edb2f53e0649810f03fcfa27cb875fe",
+      "hull_vertices": 795,
+      "hull_triangles": 1586,
+      "hull_bounds_m": [
+        [
+          0.05701178780914777,
+          -0.19402607308623154,
+          -0.07756220963069309
+        ],
+        [
+          0.21237983140781921,
+          0.049645821828659065,
+          0.07756214186540113
+        ]
+      ]
+    },
+    {
+      "link": "oberon_elbow_link",
+      "source": "meshes/oberon7/serial_arm/visual/ElbowLink.dae",
+      "source_node": "Cylinder_023-mesh",
+      "source_sha256": "3344699c091b7c9b069687b3cbc2459ff4ae7730c8146e72b2c10630bb8628c3",
+      "source_bounds_m": [
+        [
+          -0.0019661065789500706,
+          -0.06323715352552559,
+          -0.05218485006534971
+        ],
+        [
+          0.02449637625410548,
+          -0.036774767599037306,
+          0.052183742392694604
+        ]
+      ],
+      "source_triangles": 252,
+      "path": "collision/oberon_elbow_link_002.stl",
+      "sha256": "7e0a49551900116dfe56f7c57ea832294c9528d19a984ec9a72fd52475100b9a",
+      "hull_vertices": 128,
+      "hull_triangles": 252,
+      "hull_bounds_m": [
+        [
+          -0.0019661065789500706,
+          -0.06323715352552559,
+          -0.05218485006534971
+        ],
+        [
+          0.02449637625410548,
+          -0.036774767599037306,
+          0.052183742392694604
+        ]
+      ]
+    },
+    {
+      "link": "oberon_elbow_link",
+      "source": "meshes/oberon7/serial_arm/visual/ElbowLink.dae",
+      "source_node": "Cube_003-mesh",
+      "source_sha256": "3344699c091b7c9b069687b3cbc2459ff4ae7730c8146e72b2c10630bb8628c3",
+      "source_bounds_m": [
+        [
+          -0.032932616876498504,
+          -0.12846433774923555,
+          -0.04902471745025322
+        ],
+        [
+          0.08249118982672285,
+          0.03293228524168294,
+          0.049024744201381074
+        ]
+      ],
+      "source_triangles": 192,
+      "path": "collision/oberon_elbow_link_003.stl",
+      "sha256": "51545a15b8de58023fc53ec3e90496d467aaaba0fdf3a6fde795837068e2f5a3",
+      "hull_vertices": 43,
+      "hull_triangles": 82,
+      "hull_bounds_m": [
+        [
+          -0.032932616876498504,
+          -0.12846433774923555,
+          -0.04902471745025322
+        ],
+        [
+          0.08249118982672285,
+          0.03293228524168294,
+          0.049024744201381074
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_029-mesh",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          0.027787364051221192,
+          -0.05536935030918657,
+          0.010102010682500887
+        ],
+        [
+          0.06307037952164037,
+          0.05561548416557888,
+          0.21242542879674609
+        ]
+      ],
+      "source_triangles": 662,
+      "path": "collision/oberon_forearm_000.stl",
+      "sha256": "3f9756f668a5b5b6722445b1fd39e558008cf86a2acb5178adc99cb8d8d5179e",
+      "hull_vertices": 150,
+      "hull_triangles": 296,
+      "hull_bounds_m": [
+        [
+          0.027787364051221192,
+          -0.05536935030918657,
+          0.010102010682500887
+        ],
+        [
+          0.06307037952164037,
+          0.05561548416557888,
+          0.21242542879674609
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_025-mesh",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          -0.034860531948381075,
+          -0.055706563357632084,
+          -0.002657880529952413
+        ],
+        [
+          0.034129304125038576,
+          0.05570626328119108,
+          0.33216906413033653
+        ]
+      ],
+      "source_triangles": 956,
+      "path": "collision/oberon_forearm_001.stl",
+      "sha256": "deebca17ef35791f8d4c796f85c48a73e65a3145c3286ebf5677c4b7cb2868aa",
+      "hull_vertices": 39,
+      "hull_triangles": 74,
+      "hull_bounds_m": [
+        [
+          -0.034860531948381075,
+          -0.055706563357632084,
+          -0.002657880529952413
+        ],
+        [
+          0.034129304125038576,
+          0.05570626328119108,
+          0.33216906413033653
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_025-mesh_1",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          -0.01541789600615124,
+          -0.06479400727813121,
+          0.3044541602160461
+        ],
+        [
+          0.007549094658569841,
+          0.06505172460031437,
+          0.3274211887010203
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_forearm_002.stl",
+      "sha256": "749de8033886fa3f7aed8255ea3a98f31a8d9e81d6877e4dee1640cc086daceb",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.01541789600615124,
+          -0.06479400727813121,
+          0.3044541602160461
+        ],
+        [
+          0.007549094658569841,
+          0.06505172460031437,
+          0.3274211887010203
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_027-mesh",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          -0.07577898163429123,
+          -0.07572773218152698,
+          -0.0004045214650929296
+        ],
+        [
+          0.07572637571314199,
+          0.07572773347516246,
+          0.010152417628103523
+        ]
+      ],
+      "source_triangles": 1024,
+      "path": "collision/oberon_forearm_003.stl",
+      "sha256": "f15d16b7cea620f67e772f54288343061994e1812707a7beb9182d1394721fec",
+      "hull_vertices": 256,
+      "hull_triangles": 508,
+      "hull_bounds_m": [
+        [
+          -0.07577898163429123,
+          -0.07572773218152698,
+          -0.0004045214650929296
+        ],
+        [
+          0.07572637571314199,
+          0.07572773347516246,
+          0.010152417628103523
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_038-mesh",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          -0.009138683607775928,
+          -0.05809454232217509,
+          0.07963641733245011
+        ],
+        [
+          0.013870050076326825,
+          0.058352286165279495,
+          0.10264514804921514
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_forearm_004.stl",
+      "sha256": "030ffd11f88d8d69ff367909b447061b929cbde6a2210abfe69a9664d431cd28",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.009138683607775928,
+          -0.05809454232217509,
+          0.07963641733245011
+        ],
+        [
+          0.013870050076326825,
+          0.058352286165279495,
+          0.10264514804921514
+        ]
+      ]
+    },
+    {
+      "link": "oberon_forearm",
+      "source": "meshes/oberon7/serial_arm/visual/Forearm.dae",
+      "source_node": "Circle_031-mesh",
+      "source_sha256": "d2d134c52e8dfd91d3095b6c3f313288c9bb7addd71bcf09831ea7836dbadeb6",
+      "source_bounds_m": [
+        [
+          -0.06553889527013647,
+          -0.0553039596417747,
+          0.00961226427816165
+        ],
+        [
+          -0.028832495610914114,
+          0.05505914277069637,
+          0.3049080504551095
+        ]
+      ],
+      "source_triangles": 664,
+      "path": "collision/oberon_forearm_005.stl",
+      "sha256": "e441e29bff8258adfbb0870d82d2a01622e1a4410b73504f29c37fb358beb227",
+      "hull_vertices": 152,
+      "hull_triangles": 300,
+      "hull_bounds_m": [
+        [
+          -0.06553889527013647,
+          -0.0553039596417747,
+          0.00961226427816165
+        ],
+        [
+          -0.028832495610914114,
+          0.05505914277069637,
+          0.3049080504551095
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Plane_013-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.061723513611994046,
+          -0.04211120521481697,
+          -0.042113927710207125
+        ],
+        [
+          0.19303682166511427,
+          0.04211504200657976,
+          0.04211384474512674
+        ]
+      ],
+      "source_triangles": 7650,
+      "path": "collision/oberon_wrist_link_000.stl",
+      "sha256": "f7454b5d02c32f209232bf760d78927e4cc39cdb3d721f0b785a1d6277be2e7d",
+      "hull_vertices": 1022,
+      "hull_triangles": 2040,
+      "hull_bounds_m": [
+        [
+          0.061723513611994046,
+          -0.04211120521481697,
+          -0.042113927710207125
+        ],
+        [
+          0.19303682166511427,
+          0.04211504200657976,
+          0.04211384474512674
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_026-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          -0.011474145056828857,
+          -0.011474710890663509,
+          -0.06492295786354742
+        ],
+        [
+          0.011474495260266667,
+          0.011473844106306927,
+          0.06492276407680213
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_wrist_link_001.stl",
+      "sha256": "761e28c7bb5c3653d71f40938f7d42baf737a0125ca4ae7cb5f703c0587f526d",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.011474145056828857,
+          -0.011474710890663509,
+          -0.06492295786354742
+        ],
+        [
+          0.011474495260266667,
+          0.011473844106306927,
+          0.06492276407680213
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Plane_015-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.07011318021512589,
+          -0.061342521290504375,
+          -0.06134603529632809
+        ],
+        [
+          0.19303573281388964,
+          0.06134727742551476,
+          0.061345942831066196
+        ]
+      ],
+      "source_triangles": 9560,
+      "path": "collision/oberon_wrist_link_002.stl",
+      "sha256": "df307106353e201d9863142a91ef3c696d5ffdea634e04471de5482f11469abb",
+      "hull_vertices": 774,
+      "hull_triangles": 1544,
+      "hull_bounds_m": [
+        [
+          0.07011318021512589,
+          -0.061342521290504375,
+          -0.06134603529632809
+        ],
+        [
+          0.19303573281388964,
+          0.06134727742551476,
+          0.061345942831066196
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_009-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.06247902675051426,
+          -0.02059074192668389,
+          -0.017832173403058826
+        ],
+        [
+          0.07180638123325284,
+          0.020590767390500683,
+          0.017832104005145503
+        ]
+      ],
+      "source_triangles": 20,
+      "path": "collision/oberon_wrist_link_003.stl",
+      "sha256": "64e04ac8daa288cb8512f646c2dd0b294d3b0e33f117635b2129cdd92c706b7b",
+      "hull_vertices": 12,
+      "hull_triangles": 20,
+      "hull_bounds_m": [
+        [
+          0.06247902675051426,
+          -0.02059074192668389,
+          -0.017832173403058826
+        ],
+        [
+          0.07180638123325284,
+          0.020590767390500683,
+          0.017832104005145503
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_040-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          -0.026166912071469164,
+          -0.026358373790842316,
+          -0.06383486690802105
+        ],
+        [
+          0.0638246339434723,
+          0.059484630748107295,
+          0.06383478575221833
+        ]
+      ],
+      "source_triangles": 192,
+      "path": "collision/oberon_wrist_link_004.stl",
+      "sha256": "1213e584fca279d77696f35d416e1d77978203ff20df10334fb3db765f00633e",
+      "hull_vertices": 47,
+      "hull_triangles": 90,
+      "hull_bounds_m": [
+        [
+          -0.026166912071469164,
+          -0.026358373790842316,
+          -0.06383486690802105
+        ],
+        [
+          0.0638246339434723,
+          0.059484630748107295,
+          0.06383478575221833
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Plane_039-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.06382440976626508,
+          -0.02635832173765699,
+          -0.06409263882878484
+        ],
+        [
+          0.07854586281305617,
+          0.04838322715913364,
+          0.06383472788070615
+        ]
+      ],
+      "source_triangles": 628,
+      "path": "collision/oberon_wrist_link_005.stl",
+      "sha256": "ca83a2be98997edd44f6e6e2a4d95b0a1e638499344a4007f5e8d9ffcc47cab8",
+      "hull_vertices": 30,
+      "hull_triangles": 56,
+      "hull_bounds_m": [
+        [
+          0.06382440976626508,
+          -0.02635832173765699,
+          -0.06409263882878484
+        ],
+        [
+          0.07854586281305617,
+          0.04838322715913364,
+          0.06383472788070615
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Plane_040-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.06465584433003843,
+          -0.06141034624190908,
+          -0.06091226515211096
+        ],
+        [
+          0.0786232196283786,
+          0.06042989656028099,
+          0.06092805637588674
+        ]
+      ],
+      "source_triangles": 1668,
+      "path": "collision/oberon_wrist_link_006.stl",
+      "sha256": "1490fcd8404b8c9e307b11bf60e14c9382507e5418f446283609a0f82ff2c71f",
+      "hull_vertices": 387,
+      "hull_triangles": 770,
+      "hull_bounds_m": [
+        [
+          0.06465584433003843,
+          -0.06141034624190908,
+          -0.06091226515211096
+        ],
+        [
+          0.0786232196283786,
+          0.06042989656028099,
+          0.06092805637588674
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_030-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.0593549591464339,
+          -0.05760156774786419,
+          -0.024021964979228278
+        ],
+        [
+          0.07004437448950526,
+          0.056621420149157206,
+          0.024037774771373744
+        ]
+      ],
+      "source_triangles": 560,
+      "path": "collision/oberon_wrist_link_007.stl",
+      "sha256": "7ab4511983b1c35ddec216380935044e4b315fcbe4a6b8c3960a58e164ba8fb2",
+      "hull_vertices": 100,
+      "hull_triangles": 196,
+      "hull_bounds_m": [
+        [
+          0.0593549591464339,
+          -0.05760156774786419,
+          -0.024021964979228278
+        ],
+        [
+          0.07004437448950526,
+          0.056621420149157206,
+          0.024037774771373744
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_039-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          -0.026166910302926085,
+          -0.026358372050310892,
+          -0.04392551542899192
+        ],
+        [
+          0.06382463217493568,
+          0.059484629007576,
+          0.043925437300989446
+        ]
+      ],
+      "source_triangles": 192,
+      "path": "collision/oberon_wrist_link_008.stl",
+      "sha256": "53ba8fd02d29ed693ad07f6c0c0f7e016ef71aeae84af90929620e08f949d8f9",
+      "hull_vertices": 43,
+      "hull_triangles": 82,
+      "hull_bounds_m": [
+        [
+          -0.026166910302926085,
+          -0.026358372050310892,
+          -0.04392551542899192
+        ],
+        [
+          0.06382463217493568,
+          0.059484629007576,
+          0.043925437300989446
+        ]
+      ]
+    },
+    {
+      "link": "oberon_wrist_link",
+      "source": "meshes/oberon7/serial_arm/visual/Wrist.dae",
+      "source_node": "Circle_028-mesh",
+      "source_sha256": "311c139d343934997be3b9054325276253f40fa31eb3b71b4812dbe2d1e94ac2",
+      "source_bounds_m": [
+        [
+          0.007344615063485056,
+          0.021004715627813378,
+          -0.06518680090080925
+        ],
+        [
+          0.032182478429033726,
+          0.04584243565453125,
+          0.0651867004684872
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_wrist_link_009.stl",
+      "sha256": "f1f4a9bf9b4e42638bd08ad756261b85297ca9e3f6e8c5c3da72c04f474947a5",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.007344615063485056,
+          0.021004715627813378,
+          -0.06518680090080925
+        ],
+        [
+          0.032182478429033726,
+          0.04584243565453125,
+          0.0651867004684872
+        ]
+      ]
+    },
+    {
+      "link": "oberon_end_effector",
+      "source": "meshes/oberon7/parallel_gripper/visual/BaseGripper.dae",
+      "source_node": "Plane_018-mesh",
+      "source_sha256": "3fbbdd00681dcc6829fc1565c47eed02e6e65b73492739f172d76a57aee8b79c",
+      "source_bounds_m": [
+        [
+          0.012033564901680956,
+          -0.05871374966147998,
+          -0.03604189577557636
+        ],
+        [
+          0.05721578666556253,
+          0.05871347155649079,
+          0.036041835675170275
+        ]
+      ],
+      "source_triangles": 796,
+      "path": "collision/oberon_end_effector_000.stl",
+      "sha256": "1e0be151a5ac6c8e5949bd7806cb1012c3fac405633228656a0d80023d82e976",
+      "hull_vertices": 47,
+      "hull_triangles": 90,
+      "hull_bounds_m": [
+        [
+          0.012033564901680956,
+          -0.05871374966147998,
+          -0.03604189577557636
+        ],
+        [
+          0.05721578666556253,
+          0.05871347155649079,
+          0.036041835675170275
+        ]
+      ]
+    },
+    {
+      "link": "oberon_end_effector",
+      "source": "meshes/oberon7/parallel_gripper/visual/BaseGripper.dae",
+      "source_node": "Plane_019-mesh",
+      "source_sha256": "3fbbdd00681dcc6829fc1565c47eed02e6e65b73492739f172d76a57aee8b79c",
+      "source_bounds_m": [
+        [
+          -0.017110487778900663,
+          -0.0571501022579589,
+          -0.05714895840302874
+        ],
+        [
+          0.01203376617397784,
+          0.057145633175010084,
+          0.05714887895900237
+        ]
+      ],
+      "source_triangles": 5168,
+      "path": "collision/oberon_end_effector_001.stl",
+      "sha256": "88a17ee090d7efb894cfc97a5e413a87701efb0dbed5caa8e5354524819222f5",
+      "hull_vertices": 779,
+      "hull_triangles": 1554,
+      "hull_bounds_m": [
+        [
+          -0.017110487778900663,
+          -0.0571501022579589,
+          -0.05714895840302874
+        ],
+        [
+          0.01203376617397784,
+          0.057145633175010084,
+          0.05714887895900237
+        ]
+      ]
+    },
+    {
+      "link": "oberon_end_effector",
+      "source": "meshes/oberon7/parallel_gripper/visual/BaseGripper.dae",
+      "source_node": "Plane_021-mesh",
+      "source_sha256": "3fbbdd00681dcc6829fc1565c47eed02e6e65b73492739f172d76a57aee8b79c",
+      "source_bounds_m": [
+        [
+          0.035565760989583285,
+          -0.04800270000647414,
+          -0.03910508901534713
+        ],
+        [
+          0.053284353005593185,
+          0.048002291892012404,
+          0.03892664105359256
+        ]
+      ],
+      "source_triangles": 248,
+      "path": "collision/oberon_end_effector_002.stl",
+      "sha256": "d59ee9aadd88aad173c301789610aef2bbc9a43fb0d4ded9c20ae2d0a1ecfaca",
+      "hull_vertices": 75,
+      "hull_triangles": 146,
+      "hull_bounds_m": [
+        [
+          0.035565760989583285,
+          -0.04800270000647414,
+          -0.03910508901534713
+        ],
+        [
+          0.053284353005593185,
+          0.048002291892012404,
+          0.03892664105359256
+        ]
+      ]
+    },
+    {
+      "link": "oberon_end_effector",
+      "source": "meshes/oberon7/parallel_gripper/visual/BaseGripper.dae",
+      "source_node": "Plane_020-mesh",
+      "source_sha256": "3fbbdd00681dcc6829fc1565c47eed02e6e65b73492739f172d76a57aee8b79c",
+      "source_bounds_m": [
+        [
+          0.0384686810999381,
+          -0.02003618125094044,
+          -0.03910508442621718
+        ],
+        [
+          0.05031456134469745,
+          0.020035697438582037,
+          0.038926640315502865
+        ]
+      ],
+      "source_triangles": 248,
+      "path": "collision/oberon_end_effector_003.stl",
+      "sha256": "c2e1d386d36071f4ad6be9d58acd99a834114ec5b09cb09e4ba05bf2b3e6133a",
+      "hull_vertices": 70,
+      "hull_triangles": 136,
+      "hull_bounds_m": [
+        [
+          0.0384686810999381,
+          -0.02003618125094044,
+          -0.03910508442621718
+        ],
+        [
+          0.05031456134469745,
+          0.020035697438582037,
+          0.038926640315502865
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_left",
+      "source": "meshes/oberon7/parallel_gripper/visual/Finger.dae",
+      "source_node": "Circle_036-mesh",
+      "source_sha256": "369f7898baf904c1fc0a8cf0f9c2b14b219e5ffb0cd6e9f8ae7a38c73dbe9ac4",
+      "source_bounds_m": [
+        [
+          -0.021057197308878284,
+          -0.033239174969908934,
+          -0.015510853026557855
+        ],
+        [
+          0.07759545535275285,
+          0.01973074240877139,
+          0.015333214596455614
+        ]
+      ],
+      "source_triangles": 196,
+      "path": "collision/oberon_finger_left_000.stl",
+      "sha256": "63e5c6c9dcb58d0e982c75a2d84a5297c27ea282e62f66080e50f4275af81799",
+      "hull_vertices": 63,
+      "hull_triangles": 122,
+      "hull_bounds_m": [
+        [
+          -0.021057197308878284,
+          -0.033239174969908934,
+          -0.015510853026557855
+        ],
+        [
+          0.07759545535275285,
+          0.01973074240877139,
+          0.015333214596455614
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_left",
+      "source": "meshes/oberon7/parallel_gripper/visual/Finger.dae",
+      "source_node": "Plane_003-mesh",
+      "source_sha256": "369f7898baf904c1fc0a8cf0f9c2b14b219e5ffb0cd6e9f8ae7a38c73dbe9ac4",
+      "source_bounds_m": [
+        [
+          0.055471367290353076,
+          -0.008843411755287418,
+          -0.02426178136644685
+        ],
+        [
+          0.07315597873269522,
+          0.008841150806804376,
+          0.024261854230179812
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_finger_left_001.stl",
+      "sha256": "b07217f6b0b3b3edbb529d89d7d8ed66fb6bf3956aac0f0b53b8614e88c1c786",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.055471367290353076,
+          -0.008843411755287418,
+          -0.02426178136644685
+        ],
+        [
+          0.07315597873269522,
+          0.008841150806804376,
+          0.024261854230179812
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_tip_left",
+      "source": "meshes/oberon7/parallel_gripper/visual/FingerTip.dae",
+      "source_node": "Plane_003-mesh",
+      "source_sha256": "78482152d8fe12cbd6c126bcb4eb7969542ec1c3aecbf69ac31b9d6e5bb281c5",
+      "source_bounds_m": [
+        [
+          -0.008862355751527188,
+          -0.008862035719851146,
+          -0.024261846205005197
+        ],
+        [
+          0.008854960852705795,
+          0.008855469538222945,
+          0.02426178827623754
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_finger_tip_left_000.stl",
+      "sha256": "ac265caa262ed10b4323bfd726b8bd7e66ab605b5d33e87f1e034ac8d4dba876",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.008862355751527188,
+          -0.008862035719851146,
+          -0.024261846205005197
+        ],
+        [
+          0.008854960852705795,
+          0.008855469538222945,
+          0.02426178827623754
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_tip_left",
+      "source": "meshes/oberon7/parallel_gripper/visual/FingerTip.dae",
+      "source_node": "Circle_013-mesh",
+      "source_sha256": "78482152d8fe12cbd6c126bcb4eb7969542ec1c3aecbf69ac31b9d6e5bb281c5",
+      "source_bounds_m": [
+        [
+          -0.012330475458823568,
+          -0.013188381131881265,
+          -0.03150001269348619
+        ],
+        [
+          0.08971955381496802,
+          0.03726855961378598,
+          0.03149997214612406
+        ]
+      ],
+      "source_triangles": 296,
+      "path": "collision/oberon_finger_tip_left_001.stl",
+      "sha256": "802c2a62d1853326723752642045ae4f04adc7b4e6d523096b1087078576d49e",
+      "hull_vertices": 74,
+      "hull_triangles": 144,
+      "hull_bounds_m": [
+        [
+          -0.012330475458823568,
+          -0.013188381131881265,
+          -0.03150001269348619
+        ],
+        [
+          0.08971955381496802,
+          0.03726855961378598,
+          0.03149997214612406
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_right",
+      "source": "meshes/oberon7/parallel_gripper/visual/Finger.dae",
+      "source_node": "Circle_036-mesh",
+      "source_sha256": "369f7898baf904c1fc0a8cf0f9c2b14b219e5ffb0cd6e9f8ae7a38c73dbe9ac4",
+      "source_bounds_m": [
+        [
+          -0.021057197308878284,
+          -0.033239174969908934,
+          -0.015510853026557855
+        ],
+        [
+          0.07759545535275285,
+          0.01973074240877139,
+          0.015333214596455614
+        ]
+      ],
+      "source_triangles": 196,
+      "path": "collision/oberon_finger_right_000.stl",
+      "sha256": "63e5c6c9dcb58d0e982c75a2d84a5297c27ea282e62f66080e50f4275af81799",
+      "hull_vertices": 63,
+      "hull_triangles": 122,
+      "hull_bounds_m": [
+        [
+          -0.021057197308878284,
+          -0.033239174969908934,
+          -0.015510853026557855
+        ],
+        [
+          0.07759545535275285,
+          0.01973074240877139,
+          0.015333214596455614
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_right",
+      "source": "meshes/oberon7/parallel_gripper/visual/Finger.dae",
+      "source_node": "Plane_003-mesh",
+      "source_sha256": "369f7898baf904c1fc0a8cf0f9c2b14b219e5ffb0cd6e9f8ae7a38c73dbe9ac4",
+      "source_bounds_m": [
+        [
+          0.055471367290353076,
+          -0.008843411755287418,
+          -0.02426178136644685
+        ],
+        [
+          0.07315597873269522,
+          0.008841150806804376,
+          0.024261854230179812
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_finger_right_001.stl",
+      "sha256": "b07217f6b0b3b3edbb529d89d7d8ed66fb6bf3956aac0f0b53b8614e88c1c786",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          0.055471367290353076,
+          -0.008843411755287418,
+          -0.02426178136644685
+        ],
+        [
+          0.07315597873269522,
+          0.008841150806804376,
+          0.024261854230179812
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_tip_right",
+      "source": "meshes/oberon7/parallel_gripper/visual/FingerTip.dae",
+      "source_node": "Plane_003-mesh",
+      "source_sha256": "78482152d8fe12cbd6c126bcb4eb7969542ec1c3aecbf69ac31b9d6e5bb281c5",
+      "source_bounds_m": [
+        [
+          -0.008862355751527188,
+          -0.008862035719851146,
+          -0.024261846205005197
+        ],
+        [
+          0.008854960852705795,
+          0.008855469538222945,
+          0.02426178827623754
+        ]
+      ],
+      "source_triangles": 124,
+      "path": "collision/oberon_finger_tip_right_000.stl",
+      "sha256": "ac265caa262ed10b4323bfd726b8bd7e66ab605b5d33e87f1e034ac8d4dba876",
+      "hull_vertices": 64,
+      "hull_triangles": 124,
+      "hull_bounds_m": [
+        [
+          -0.008862355751527188,
+          -0.008862035719851146,
+          -0.024261846205005197
+        ],
+        [
+          0.008854960852705795,
+          0.008855469538222945,
+          0.02426178827623754
+        ]
+      ]
+    },
+    {
+      "link": "oberon_finger_tip_right",
+      "source": "meshes/oberon7/parallel_gripper/visual/FingerTip.dae",
+      "source_node": "Circle_013-mesh",
+      "source_sha256": "78482152d8fe12cbd6c126bcb4eb7969542ec1c3aecbf69ac31b9d6e5bb281c5",
+      "source_bounds_m": [
+        [
+          -0.012330475458823568,
+          -0.013188381131881265,
+          -0.03150001269348619
+        ],
+        [
+          0.08971955381496802,
+          0.03726855961378598,
+          0.03149997214612406
+        ]
+      ],
+      "source_triangles": 296,
+      "path": "collision/oberon_finger_tip_right_001.stl",
+      "sha256": "802c2a62d1853326723752642045ae4f04adc7b4e6d523096b1087078576d49e",
+      "hull_vertices": 74,
+      "hull_triangles": 144,
+      "hull_bounds_m": [
+        [
+          -0.012330475458823568,
+          -0.013188381131881265,
+          -0.03150001269348619
+        ],
+        [
+          0.08971955381496802,
+          0.03726855961378598,
+          0.03149997214612406
+        ]
+      ]
+    }
+  ]
+}

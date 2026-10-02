@@ -1,0 +1,40 @@
+{
+  "provenance": "Original procedural closed-bivalve surrogate and fixed hoop; not a biological scan",
+  "shell_bounds_m": [
+    [
+      -0.03843749999999999,
+      -0.02777893456630148,
+      -0.0125
+    ],
+    [
+      0.03843749999999999,
+      0.02777893456630148,
+      0.0125
+    ]
+  ],
+  "shell_mass_kg": 0.08,
+  "shell_displaced_volume_m3": 2.962962962962963e-05,
+  "volume_assumption": "flooded calcium-carbonate specimen; material density 2700 kg/m3",
+  "shell_static_friction": 0.7,
+  "shell_dynamic_friction": 0.6,
+  "hoop_inner_radius_m": 0.28,
+  "hoop_fixed": true,
+  "hoop_collision_segments": 64,
+  "files": {
+    "FanAlgae.usda": "4e009258012b873a7724be34cdc8d60a2603aed3205968150b0a9f8593b35d64",
+    "BranchCoral.usda": "4d23f9f27d4fca7a51f3482e83b5e503ba822da1e8e36175ff26c82054b6fd24",
+    "Hoop.usda": "31726737a654c6e9ba24ced9e99d96fa62007d03111afba45616b89a68bf1917",
+    "Seagrass.usda": "24c34bcb74c84566c2caa1a1244fcae875f7a41dd354b5449c045cedfc97dea9",
+    "Shell.usda": "4ac78a89b99495d870fcb1ac846d72c0a2110478fd1896e223cdad2c214c99a8",
+    "PlateCoral.usda": "21de8a6c2490947691d0eeeff14d8527c660941d68f66fe985288077835dc067",
+    "BoulderCoral.usda": "d726a6d2908da410fe5cf4448630bd1723f3d904ada681c551695a76838eb4ea",
+    "DistractorShell.usda": "e773436f5f9d6e94ea9ae1ec0958aa15b222c5bafef45b9b170c544936b1130b",
+    "RibbonKelp.usda": "1a3db4902959b581b1e92b84df4eabdea4909400d4caa8adf346dc9750c0225b"
+  },
+  "distractor_appearance": "dark green-grey, same referenced shell geometry/contact/mass",
+  "habitat": {
+    "provenance": "Original procedural geometry; illustrative vegetation, not a species or biomechanics model",
+    "plants": "Static double-sided ribbons, visual only; no deformation or collision",
+    "corals": "Fixed rigid collision geometry outside pickup and transfer corridor"
+  }
+}

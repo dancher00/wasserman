@@ -1,0 +1,13 @@
+*.urdf text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+
+# Preserve the exact pinned upstream bytes used by the physics-source audit.
+src/wasman/physics/data/rexrov2/HydrodynamicModel.cc -whitespace
+src/wasman/physics/data/rexrov2/rexrov2_snippets.xacro -whitespace
+# Native USD serialization ends with a blank line; its hash identifies recordings.
+src/wasman/assets/data/environments/standard_pool/pool.usda whitespace=-blank-at-eof
+
+# Keep the bundled official TeX class unchanged, including upstream CRLF.
+paper/ieeeconf.cls -text -whitespace

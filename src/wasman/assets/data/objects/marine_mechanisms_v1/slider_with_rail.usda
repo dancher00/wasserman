@@ -1,0 +1,919 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (500, 0, 0)
+                double radius = 5
+            }
+            dictionary Perspective = {
+                double3 position = (-0.04895722194728695, 0.7235075779137173, -0.012667634445088094)
+                double3 target = (-0.02125031136496389, -1.270829346200486e-7, -5.713011077268515e-7)
+            }
+            dictionary Right = {
+                double3 position = (0, -500, 0)
+                double radius = 5
+            }
+            dictionary Top = {
+                double3 position = (0, 0, 500)
+                double radius = 5
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./slider_with_rail.usd"
+        }
+        dictionary renderSettings = {
+        }
+    }
+    defaultPrim = "SliderWithRail"
+    doc = """Generated from Composed Stage of root layer /home/aida/wasman/src/wasman/assets/data/objects/ambench/slider_with_rail.usd
+"""
+    endTimeCode = 0
+    startTimeCode = -1
+    upAxis = "Z"
+)
+
+def "Render"
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures"
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+            )
+            {
+                rel camera = </OmniverseKit_Persp>
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:dlss:frameGeneration = 0
+                bool omni:rtx:material:db:nonVisualMaterialCSV:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                token omni:rtx:post:dlss:execMode = "performance"
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:lightcache:cached:dontResolveConflicts = 1
+                int omni:rtx:pt:maxSamplesPerLaunch = 2073600
+                int omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                bool omni:rtx:rt:demoire = 0
+                bool omni:rtx:rt:ecoMode:enabled
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                bool omni:rtx:scene:hydra:mdlMaterialWarmup = 1
+                uint omni:rtx:viewTile:limit = 4294967295
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1280, 720)
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+    )
+    {
+        rel products = </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>
+    }
+
+    def "Vars"
+    {
+        def RenderVar "LdrColor"
+        {
+            uniform string sourceName = "LdrColor"
+        }
+    }
+}
+
+def Xform "SliderWithRail" (
+    apiSchemas = None
+)
+{
+    double3 xformOp:rotateZYX = (0, 0, 0)
+    double3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateZYX", "xformOp:scale"]
+
+    def Xform "Xform"
+    {
+        quatd xformOp:orient = (6.123233995736766e-17, 0, 0, 1)
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Xform "Rail" (
+            apiSchemas = ["PhysxRigidBodyAPI", "PhysxArticulationAPI", "PhysicsArticulationRootAPI", "PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            vector3f physics:angularVelocity = (0, 0, 0)
+            bool physics:kinematicEnabled = 0
+            float physics:mass = 1
+            bool physics:rigidBodyEnabled = 1
+            rel physics:simulationOwner
+            vector3f physics:velocity = (0, 0, 0)
+            bool physxRigidBody:disableGravity = 1
+            quatd xformOp:orient = (1, 0, 0, 0)
+            double3 xformOp:scale = (1, 1.02, 1)
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Mesh "base" (
+                apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                rel material:binding = </SliderWithRail/Looks/Anodized> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+                rel physics:simulationOwner
+                point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token subdivisionScheme = "none"
+                token visibility = "inherited"
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (0.02, 1, 0.06)
+                double3 xformOp:translate = (0, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Mesh "upper_edge" (
+                apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                rel material:binding = </SliderWithRail/Looks/Steel> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+                rel physics:simulationOwner
+                point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token subdivisionScheme = "none"
+                token visibility = "inherited"
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (0.02, 1, 0.01)
+                double3 xformOp:translate = (0.02, 0, 0.025)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Mesh "lower_edge" (
+                apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                rel material:binding = </SliderWithRail/Looks/Steel> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+                rel physics:simulationOwner
+                point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token subdivisionScheme = "none"
+                token visibility = "inherited"
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (0.019999999552965164, 1, 0.009999999776482582)
+                double3 xformOp:translate = (0.02, 0, -0.025)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Mesh "upper_edge_cover" (
+                apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                rel material:binding = </SliderWithRail/Looks/Steel> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+                rel physics:simulationOwner
+                point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token subdivisionScheme = "none"
+                token visibility = "inherited"
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (0.01, 1, 0.02)
+                double3 xformOp:translate = (0.025, -2.4492935982947064e-18, 0.018)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Mesh "lower_edge_cover" (
+                apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+            )
+            {
+                float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                rel material:binding = </SliderWithRail/Looks/Steel> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+                normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token physics:approximation = "convexHull"
+                bool physics:collisionEnabled = 1
+                rel physics:simulationOwner
+                point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                    interpolation = "faceVarying"
+                )
+                uniform token subdivisionScheme = "none"
+                token visibility = "inherited"
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (0.009999999776482582, 1, 0.02)
+                double3 xformOp:translate = (0.025, -6.123233995736768e-19, -0.018)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+            }
+
+            def Cube "Mount" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Anodized>
+                double size = 1
+                float3 xformOp:scale = (0.012, 1.09, 0.16)
+                double3 xformOp:translate = (-0.016, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "EndBracket0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.065, 0.045, 0.13)
+                double3 xformOp:translate = (0.003, -0.525, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "Bolt00" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                point3f[] points = [(-0.003, 0.011, 0), (-0.003, 0.0055, 0.00952628), (-0.003, -0.0055, 0.00952628), (-0.003, -0.011, 1.3471115e-18), (-0.003, -0.0055, -0.00952628), (-0.003, 0.0055, -0.00952628), (0.003, 0.011, 0), (0.003, 0.0055, 0.00952628), (0.003, -0.0055, 0.00952628), (0.003, -0.011, 1.3471115e-18), (0.003, -0.0055, -0.00952628), (0.003, 0.0055, -0.00952628)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.04, -0.525, -0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Socket00" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Socket>
+                point3f[] points = [(-0.0005, 0.005, 0), (-0.0005, 0.0025, 0.004330127), (-0.0005, -0.0025, 0.004330127), (-0.0005, -0.005, 6.123234e-19), (-0.0005, -0.0025, -0.004330127), (-0.0005, 0.0025, -0.004330127), (0.0005, 0.005, 0), (0.0005, 0.0025, 0.004330127), (0.0005, -0.0025, 0.004330127), (0.0005, -0.005, 6.123234e-19), (0.0005, -0.0025, -0.004330127), (0.0005, 0.0025, -0.004330127)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.0435, -0.525, -0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Bolt01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                point3f[] points = [(-0.003, 0.011, 0), (-0.003, 0.0055, 0.00952628), (-0.003, -0.0055, 0.00952628), (-0.003, -0.011, 1.3471115e-18), (-0.003, -0.0055, -0.00952628), (-0.003, 0.0055, -0.00952628), (0.003, 0.011, 0), (0.003, 0.0055, 0.00952628), (0.003, -0.0055, 0.00952628), (0.003, -0.011, 1.3471115e-18), (0.003, -0.0055, -0.00952628), (0.003, 0.0055, -0.00952628)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.04, -0.525, 0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Socket01" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Socket>
+                point3f[] points = [(-0.0005, 0.005, 0), (-0.0005, 0.0025, 0.004330127), (-0.0005, -0.0025, 0.004330127), (-0.0005, -0.005, 6.123234e-19), (-0.0005, -0.0025, -0.004330127), (-0.0005, 0.0025, -0.004330127), (0.0005, 0.005, 0), (0.0005, 0.0025, 0.004330127), (0.0005, -0.0025, 0.004330127), (0.0005, -0.005, 6.123234e-19), (0.0005, -0.0025, -0.004330127), (0.0005, 0.0025, -0.004330127)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.0435, -0.525, 0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "EndBracket1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.065, 0.045, 0.13)
+                double3 xformOp:translate = (0.003, 0.525, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Mesh "Bolt10" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                point3f[] points = [(-0.003, 0.011, 0), (-0.003, 0.0055, 0.00952628), (-0.003, -0.0055, 0.00952628), (-0.003, -0.011, 1.3471115e-18), (-0.003, -0.0055, -0.00952628), (-0.003, 0.0055, -0.00952628), (0.003, 0.011, 0), (0.003, 0.0055, 0.00952628), (0.003, -0.0055, 0.00952628), (0.003, -0.011, 1.3471115e-18), (0.003, -0.0055, -0.00952628), (0.003, 0.0055, -0.00952628)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.04, 0.525, -0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Socket10" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Socket>
+                point3f[] points = [(-0.0005, 0.005, 0), (-0.0005, 0.0025, 0.004330127), (-0.0005, -0.0025, 0.004330127), (-0.0005, -0.005, 6.123234e-19), (-0.0005, -0.0025, -0.004330127), (-0.0005, 0.0025, -0.004330127), (0.0005, 0.005, 0), (0.0005, 0.0025, 0.004330127), (0.0005, -0.0025, 0.004330127), (0.0005, -0.005, 6.123234e-19), (0.0005, -0.0025, -0.004330127), (0.0005, 0.0025, -0.004330127)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.0435, 0.525, -0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Bolt11" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                point3f[] points = [(-0.003, 0.011, 0), (-0.003, 0.0055, 0.00952628), (-0.003, -0.0055, 0.00952628), (-0.003, -0.011, 1.3471115e-18), (-0.003, -0.0055, -0.00952628), (-0.003, 0.0055, -0.00952628), (0.003, 0.011, 0), (0.003, 0.0055, 0.00952628), (0.003, -0.0055, 0.00952628), (0.003, -0.011, 1.3471115e-18), (0.003, -0.0055, -0.00952628), (0.003, 0.0055, -0.00952628)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.04, 0.525, 0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Mesh "Socket11" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 6, 6]
+                int[] faceVertexIndices = [0, 1, 7, 6, 1, 2, 8, 7, 2, 3, 9, 8, 3, 4, 10, 9, 4, 5, 11, 10, 5, 0, 6, 11, 5, 4, 3, 2, 1, 0, 6, 7, 8, 9, 10, 11]
+                rel material:binding = </SliderWithRail/Looks/Socket>
+                point3f[] points = [(-0.0005, 0.005, 0), (-0.0005, 0.0025, 0.004330127), (-0.0005, -0.0025, 0.004330127), (-0.0005, -0.005, 6.123234e-19), (-0.0005, -0.0025, -0.004330127), (-0.0005, 0.0025, -0.004330127), (0.0005, 0.005, 0), (0.0005, 0.0025, 0.004330127), (0.0005, -0.0025, 0.004330127), (0.0005, -0.005, 6.123234e-19), (0.0005, -0.0025, -0.004330127), (0.0005, 0.0025, -0.004330127)]
+                uniform token subdivisionScheme = "none"
+                double3 xformOp:translate = (0.0435, 0.525, 0.051)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+            }
+
+            def Cube "Tick0" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, -0.48, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick1" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.44, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick2" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.39999999999999997, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick3" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.36, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick4" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, -0.31999999999999995, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick5" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.27999999999999997, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick6" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.24, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick7" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.19999999999999996, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick8" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, -0.15999999999999998, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick9" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.12, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick10" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.07999999999999996, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick11" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, -0.03999999999999998, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick12" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, 0, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick13" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.040000000000000036, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick14" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.08000000000000007, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick15" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.12, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick16" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, 0.16000000000000003, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick17" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.20000000000000007, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick18" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.24, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick19" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.28, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick20" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, 0.32000000000000006, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick21" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.36, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick22" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.4, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick23" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.008)
+                double3 xformOp:translate = (-0.009, 0.44000000000000006, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+
+            def Cube "Tick24" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </SliderWithRail/Looks/Steel>
+                double size = 1
+                float3 xformOp:scale = (0.001, 0.002, 0.016)
+                double3 xformOp:translate = (-0.009, 0.48, 0.059)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+            }
+        }
+
+        def Xform "Slider" (
+            apiSchemas = ["PhysicsRigidBodyAPI", "PhysxRigidBodyAPI", "MaterialBindingAPI"]
+        )
+        {
+            rel material:binding (
+                bindMaterialAs = "weakerThanDescendants"
+            )
+            vector3f physics:angularVelocity = (0, 0, 0)
+            bool physics:kinematicEnabled = 0
+            bool physics:rigidBodyEnabled = 1
+            rel physics:simulationOwner
+            vector3f physics:velocity = (0, 0, 0)
+            bool physxRigidBody:disableGravity = 1
+            quatd xformOp:orient = (0.9999999999999998, -2.257823718895945e-13, -1.3825182626134727e-29, -2.1073424254237494e-8)
+            double3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-1.2665987008647278e-7, -0.49999961256980896, 6.856737400084967e-13)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+            def Xform "Xform"
+            {
+                quatd xformOp:orient = (1, 0, 0, 0)
+                double3 xformOp:scale = (1, 1, 1)
+                double3 xformOp:translate = (0.017, 0, 0)
+                uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+                def Mesh "knob_base" (
+                    apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                    int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                    int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                    rel material:binding = </SliderWithRail/Looks/Anodized> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token physics:approximation = "convexHull"
+                    bool physics:collisionEnabled = 1
+                    rel physics:simulationOwner
+                    point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                    texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token subdivisionScheme = "none"
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (0.004999999888241291, 0.019999999552965164, 0.03)
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Mesh "knob_connector" (
+                    apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                    int[] faceVertexCounts = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+                    int[] faceVertexIndices = [0, 1, 33, 32, 1, 2, 34, 33, 2, 3, 35, 34, 3, 4, 36, 35, 4, 5, 37, 36, 5, 6, 38, 37, 6, 7, 39, 38, 7, 8, 40, 39, 8, 9, 41, 40, 9, 10, 42, 41, 10, 11, 43, 42, 11, 12, 44, 43, 12, 13, 45, 44, 13, 14, 46, 45, 14, 15, 47, 46, 15, 16, 48, 47, 16, 17, 49, 48, 17, 18, 50, 49, 18, 19, 51, 50, 19, 20, 52, 51, 20, 21, 53, 52, 21, 22, 54, 53, 22, 23, 55, 54, 23, 24, 56, 55, 24, 25, 57, 56, 25, 26, 58, 57, 26, 27, 59, 58, 27, 28, 60, 59, 28, 29, 61, 60, 29, 30, 62, 61, 30, 31, 63, 62, 31, 0, 32, 63, 0, 64, 1, 1, 64, 2, 2, 64, 3, 3, 64, 4, 4, 64, 5, 5, 64, 6, 6, 64, 7, 7, 64, 8, 8, 64, 9, 9, 64, 10, 10, 64, 11, 11, 64, 12, 12, 64, 13, 13, 64, 14, 14, 64, 15, 15, 64, 16, 16, 64, 17, 17, 64, 18, 18, 64, 19, 19, 64, 20, 20, 64, 21, 21, 64, 22, 22, 64, 23, 23, 64, 24, 24, 64, 25, 25, 64, 26, 26, 64, 27, 27, 64, 28, 28, 64, 29, 29, 64, 30, 30, 64, 31, 31, 64, 0, 32, 33, 65, 33, 34, 65, 34, 35, 65, 35, 36, 65, 36, 37, 65, 37, 38, 65, 38, 39, 65, 39, 40, 65, 40, 41, 65, 41, 42, 65, 42, 43, 65, 43, 44, 65, 44, 45, 65, 45, 46, 65, 46, 47, 65, 47, 48, 65, 48, 49, 65, 49, 50, 65, 50, 51, 65, 51, 52, 65, 52, 53, 65, 53, 54, 65, 54, 55, 65, 55, 56, 65, 56, 57, 65, 57, 58, 65, 58, 59, 65, 59, 60, 65, 60, 61, 65, 61, 62, 65, 62, 63, 65, 63, 32, 65]
+                    rel material:binding = </SliderWithRail/Looks/Steel> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    normal3f[] normals = [(50, 0, 0), (49.03926, 9.754517, 0), (49.03926, 9.754517, 0), (50, 0, 0), (49.03926, 9.754517, 0), (46.193974, 19.13417, 0), (46.193974, 19.13417, 0), (49.03926, 9.754517, 0), (46.193974, 19.13417, 0), (41.57348, 27.778513, 0), (41.57348, 27.778513, 0), (46.193974, 19.13417, 0), (41.57348, 27.778513, 0), (35.35534, 35.35534, 0), (35.35534, 35.35534, 0), (41.57348, 27.778513, 0), (35.35534, 35.35534, 0), (27.778513, 41.57348, 0), (27.778513, 41.57348, 0), (35.35534, 35.35534, 0), (27.778513, 41.57348, 0), (19.13417, 46.193974, 0), (19.13417, 46.193974, 0), (27.778513, 41.57348, 0), (19.13417, 46.193974, 0), (9.754517, 49.03926, 0), (9.754517, 49.03926, 0), (19.13417, 46.193974, 0), (9.754517, 49.03926, 0), (3.061617e-15, 50, 0), (3.061617e-15, 50, 0), (9.754517, 49.03926, 0), (3.061617e-15, 50, 0), (-9.754517, 49.03926, 0), (-9.754517, 49.03926, 0), (3.061617e-15, 50, 0), (-9.754517, 49.03926, 0), (-19.13417, 46.193974, 0), (-19.13417, 46.193974, 0), (-9.754517, 49.03926, 0), (-19.13417, 46.193974, 0), (-27.778513, 41.57348, 0), (-27.778513, 41.57348, 0), (-19.13417, 46.193974, 0), (-27.778513, 41.57348, 0), (-35.35534, 35.35534, 0), (-35.35534, 35.35534, 0), (-27.778513, 41.57348, 0), (-35.35534, 35.35534, 0), (-41.57348, 27.778513, 0), (-41.57348, 27.778513, 0), (-35.35534, 35.35534, 0), (-41.57348, 27.778513, 0), (-46.193974, 19.13417, 0), (-46.193974, 19.13417, 0), (-41.57348, 27.778513, 0), (-46.193974, 19.13417, 0), (-49.03926, 9.754517, 0), (-49.03926, 9.754517, 0), (-46.193974, 19.13417, 0), (-49.03926, 9.754517, 0), (-50, 6.123234e-15, 0), (-50, 6.123234e-15, 0), (-49.03926, 9.754517, 0), (-50, 6.123234e-15, 0), (-49.03926, -9.754517, 0), (-49.03926, -9.754517, 0), (-50, 6.123234e-15, 0), (-49.03926, -9.754517, 0), (-46.193974, -19.13417, 0), (-46.193974, -19.13417, 0), (-49.03926, -9.754517, 0), (-46.193974, -19.13417, 0), (-41.57348, -27.778513, 0), (-41.57348, -27.778513, 0), (-46.193974, -19.13417, 0), (-41.57348, -27.778513, 0), (-35.35534, -35.35534, 0), (-35.35534, -35.35534, 0), (-41.57348, -27.778513, 0), (-35.35534, -35.35534, 0), (-27.778513, -41.57348, 0), (-27.778513, -41.57348, 0), (-35.35534, -35.35534, 0), (-27.778513, -41.57348, 0), (-19.13417, -46.193974, 0), (-19.13417, -46.193974, 0), (-27.778513, -41.57348, 0), (-19.13417, -46.193974, 0), (-9.754517, -49.03926, 0), (-9.754517, -49.03926, 0), (-19.13417, -46.193974, 0), (-9.754517, -49.03926, 0), (-9.184851e-15, -50, 0), (-9.184851e-15, -50, 0), (-9.754517, -49.03926, 0), (-9.184851e-15, -50, 0), (9.754517, -49.03926, 0), (9.754517, -49.03926, 0), (-9.184851e-15, -50, 0), (9.754517, -49.03926, 0), (19.13417, -46.193974, 0), (19.13417, -46.193974, 0), (9.754517, -49.03926, 0), (19.13417, -46.193974, 0), (27.778513, -41.57348, 0), (27.778513, -41.57348, 0), (19.13417, -46.193974, 0), (27.778513, -41.57348, 0), (35.35534, -35.35534, 0), (35.35534, -35.35534, 0), (27.778513, -41.57348, 0), (35.35534, -35.35534, 0), (41.57348, -27.778513, 0), (41.57348, -27.778513, 0), (35.35534, -35.35534, 0), (41.57348, -27.778513, 0), (46.193974, -19.13417, 0), (46.193974, -19.13417, 0), (41.57348, -27.778513, 0), (46.193974, -19.13417, 0), (49.03926, -9.754517, 0), (49.03926, -9.754517, 0), (46.193974, -19.13417, 0), (49.03926, -9.754517, 0), (50, 0, 0), (50, 0, 0), (49.03926, -9.754517, 0), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token physics:approximation = "convexHull"
+                    bool physics:collisionEnabled = 1
+                    rel physics:simulationOwner
+                    point3f[] points = [(0.5, 0, -0.5), (0.4903926, 0.09754517, -0.5), (0.46193972, 0.1913417, -0.5), (0.4157348, 0.27778512, -0.5), (0.35355338, 0.35355338, -0.5), (0.27778512, 0.4157348, -0.5), (0.1913417, 0.46193972, -0.5), (0.09754517, 0.4903926, -0.5), (3.061617e-17, 0.5, -0.5), (-0.09754517, 0.4903926, -0.5), (-0.1913417, 0.46193972, -0.5), (-0.27778512, 0.4157348, -0.5), (-0.35355338, 0.35355338, -0.5), (-0.4157348, 0.27778512, -0.5), (-0.46193972, 0.1913417, -0.5), (-0.4903926, 0.09754517, -0.5), (-0.5, 6.123234e-17, -0.5), (-0.4903926, -0.09754517, -0.5), (-0.46193972, -0.1913417, -0.5), (-0.4157348, -0.27778512, -0.5), (-0.35355338, -0.35355338, -0.5), (-0.27778512, -0.4157348, -0.5), (-0.1913417, -0.46193972, -0.5), (-0.09754517, -0.4903926, -0.5), (-9.184851e-17, -0.5, -0.5), (0.09754517, -0.4903926, -0.5), (0.1913417, -0.46193972, -0.5), (0.27778512, -0.4157348, -0.5), (0.35355338, -0.35355338, -0.5), (0.4157348, -0.27778512, -0.5), (0.46193972, -0.1913417, -0.5), (0.4903926, -0.09754517, -0.5), (0.5, 0, 0.5), (0.4903926, 0.09754517, 0.5), (0.46193972, 0.1913417, 0.5), (0.4157348, 0.27778512, 0.5), (0.35355338, 0.35355338, 0.5), (0.27778512, 0.4157348, 0.5), (0.1913417, 0.46193972, 0.5), (0.09754517, 0.4903926, 0.5), (3.061617e-17, 0.5, 0.5), (-0.09754517, 0.4903926, 0.5), (-0.1913417, 0.46193972, 0.5), (-0.27778512, 0.4157348, 0.5), (-0.35355338, 0.35355338, 0.5), (-0.4157348, 0.27778512, 0.5), (-0.46193972, 0.1913417, 0.5), (-0.4903926, 0.09754517, 0.5), (-0.5, 6.123234e-17, 0.5), (-0.4903926, -0.09754517, 0.5), (-0.46193972, -0.1913417, 0.5), (-0.4157348, -0.27778512, 0.5), (-0.35355338, -0.35355338, 0.5), (-0.27778512, -0.4157348, 0.5), (-0.1913417, -0.46193972, 0.5), (-0.09754517, -0.4903926, 0.5), (-9.184851e-17, -0.5, 0.5), (0.09754517, -0.4903926, 0.5), (0.1913417, -0.46193972, 0.5), (0.27778512, -0.4157348, 0.5), (0.35355338, -0.35355338, 0.5), (0.4157348, -0.27778512, 0.5), (0.46193972, -0.1913417, 0.5), (0.4903926, -0.09754517, 0.5), (0, 0, -0.5), (0, 0, 0.5)]
+                    texCoord2f[] primvars:st = [(0, 0), (0.03125, 0), (0.03125, 1), (0, 1), (0.03125, 0), (0.0625, 0), (0.0625, 1), (0.03125, 1), (0.0625, 0), (0.09375, 0), (0.09375, 1), (0.0625, 1), (0.09375, 0), (0.125, 0), (0.125, 1), (0.09375, 1), (0.125, 0), (0.15625, 0), (0.15625, 1), (0.125, 1), (0.15625, 0), (0.1875, 0), (0.1875, 1), (0.15625, 1), (0.1875, 0), (0.21875, 0), (0.21875, 1), (0.1875, 1), (0.21875, 0), (0.25, 0), (0.25, 1), (0.21875, 1), (0.25, 0), (0.28125, 0), (0.28125, 1), (0.25, 1), (0.28125, 0), (0.3125, 0), (0.3125, 1), (0.28125, 1), (0.3125, 0), (0.34375, 0), (0.34375, 1), (0.3125, 1), (0.34375, 0), (0.375, 0), (0.375, 1), (0.34375, 1), (0.375, 0), (0.40625, 0), (0.40625, 1), (0.375, 1), (0.40625, 0), (0.4375, 0), (0.4375, 1), (0.40625, 1), (0.4375, 0), (0.46875, 0), (0.46875, 1), (0.4375, 1), (0.46875, 0), (0.5, 0), (0.5, 1), (0.46875, 1), (0.5, 0), (0.53125, 0), (0.53125, 1), (0.5, 1), (0.53125, 0), (0.5625, 0), (0.5625, 1), (0.53125, 1), (0.5625, 0), (0.59375, 0), (0.59375, 1), (0.5625, 1), (0.59375, 0), (0.625, 0), (0.625, 1), (0.59375, 1), (0.625, 0), (0.65625, 0), (0.65625, 1), (0.625, 1), (0.65625, 0), (0.6875, 0), (0.6875, 1), (0.65625, 1), (0.6875, 0), (0.71875, 0), (0.71875, 1), (0.6875, 1), (0.71875, 0), (0.75, 0), (0.75, 1), (0.71875, 1), (0.75, 0), (0.78125, 0), (0.78125, 1), (0.75, 1), (0.78125, 0), (0.8125, 0), (0.8125, 1), (0.78125, 1), (0.8125, 0), (0.84375, 0), (0.84375, 1), (0.8125, 1), (0.84375, 0), (0.875, 0), (0.875, 1), (0.84375, 1), (0.875, 0), (0.90625, 0), (0.90625, 1), (0.875, 1), (0.90625, 0), (0.9375, 0), (0.9375, 1), (0.90625, 1), (0.9375, 0), (0.96875, 0), (0.96875, 1), (0.9375, 1), (0.96875, 0), (1, 0), (1, 1), (0.96875, 1), (1, 0.5), (0.5, 0.5), (0.99039257, 0.40245485), (0.99039257, 0.40245485), (0.5, 0.5), (0.9619397, 0.3086583), (0.9619397, 0.3086583), (0.5, 0.5), (0.91573477, 0.22221488), (0.91573477, 0.22221488), (0.5, 0.5), (0.8535534, 0.14644659), (0.8535534, 0.14644659), (0.5, 0.5), (0.7777851, 0.08426523), (0.7777851, 0.08426523), (0.5, 0.5), (0.6913417, 0.038060308), (0.6913417, 0.038060308), (0.5, 0.5), (0.59754515, 0.009607434), (0.59754515, 0.009607434), (0.5, 0.5), (0.5, 0), (0.5, 0), (0.5, 0.5), (0.40245482, 0.009607434), (0.40245482, 0.009607434), (0.5, 0.5), (0.3086583, 0.038060308), (0.3086583, 0.038060308), (0.5, 0.5), (0.22221488, 0.08426523), (0.22221488, 0.08426523), (0.5, 0.5), (0.14644662, 0.14644659), (0.14644662, 0.14644659), (0.5, 0.5), (0.0842652, 0.22221488), (0.0842652, 0.22221488), (0.5, 0.5), (0.038060278, 0.3086583), (0.038060278, 0.3086583), (0.5, 0.5), (0.0096074045, 0.40245485), (0.0096074045, 0.40245485), (0.5, 0.5), (0, 0.5), (0, 0.5), (0.5, 0.5), (0.0096074045, 0.59754515), (0.0096074045, 0.59754515), (0.5, 0.5), (0.038060278, 0.6913417), (0.038060278, 0.6913417), (0.5, 0.5), (0.0842652, 0.7777851), (0.0842652, 0.7777851), (0.5, 0.5), (0.14644662, 0.8535534), (0.14644662, 0.8535534), (0.5, 0.5), (0.22221488, 0.91573477), (0.22221488, 0.91573477), (0.5, 0.5), (0.3086583, 0.9619397), (0.3086583, 0.9619397), (0.5, 0.5), (0.40245482, 0.99039257), (0.40245482, 0.99039257), (0.5, 0.5), (0.5, 1), (0.5, 1), (0.5, 0.5), (0.59754515, 0.99039257), (0.59754515, 0.99039257), (0.5, 0.5), (0.6913417, 0.9619397), (0.6913417, 0.9619397), (0.5, 0.5), (0.7777851, 0.91573477), (0.7777851, 0.91573477), (0.5, 0.5), (0.8535534, 0.8535534), (0.8535534, 0.8535534), (0.5, 0.5), (0.91573477, 0.7777851), (0.91573477, 0.7777851), (0.5, 0.5), (0.9619397, 0.6913417), (0.9619397, 0.6913417), (0.5, 0.5), (0.99039257, 0.59754515), (0.99039257, 0.59754515), (0.5, 0.5), (1, 0.5), (1, 0.5), (0.99039257, 0.59754515), (0.5, 0.5), (0.99039257, 0.59754515), (0.9619397, 0.6913417), (0.5, 0.5), (0.9619397, 0.6913417), (0.91573477, 0.7777851), (0.5, 0.5), (0.91573477, 0.7777851), (0.8535534, 0.8535534), (0.5, 0.5), (0.8535534, 0.8535534), (0.7777851, 0.91573477), (0.5, 0.5), (0.7777851, 0.91573477), (0.6913417, 0.9619397), (0.5, 0.5), (0.6913417, 0.9619397), (0.59754515, 0.99039257), (0.5, 0.5), (0.59754515, 0.99039257), (0.5, 1), (0.5, 0.5), (0.5, 1), (0.40245482, 0.99039257), (0.5, 0.5), (0.40245482, 0.99039257), (0.3086583, 0.9619397), (0.5, 0.5), (0.3086583, 0.9619397), (0.22221488, 0.91573477), (0.5, 0.5), (0.22221488, 0.91573477), (0.14644662, 0.8535534), (0.5, 0.5), (0.14644662, 0.8535534), (0.0842652, 0.7777851), (0.5, 0.5), (0.0842652, 0.7777851), (0.038060278, 0.6913417), (0.5, 0.5), (0.038060278, 0.6913417), (0.0096074045, 0.59754515), (0.5, 0.5), (0.0096074045, 0.59754515), (0, 0.5), (0.5, 0.5), (0, 0.5), (0.0096074045, 0.40245482), (0.5, 0.5), (0.0096074045, 0.40245482), (0.038060278, 0.3086583), (0.5, 0.5), (0.038060278, 0.3086583), (0.0842652, 0.22221488), (0.5, 0.5), (0.0842652, 0.22221488), (0.14644662, 0.14644662), (0.5, 0.5), (0.14644662, 0.14644662), (0.22221488, 0.0842652), (0.5, 0.5), (0.22221488, 0.0842652), (0.3086583, 0.038060278), (0.5, 0.5), (0.3086583, 0.038060278), (0.40245482, 0.0096074045), (0.5, 0.5), (0.40245482, 0.0096074045), (0.5, 0), (0.5, 0.5), (0.5, 0), (0.59754515, 0.0096074045), (0.5, 0.5), (0.59754515, 0.0096074045), (0.6913417, 0.038060278), (0.5, 0.5), (0.6913417, 0.038060278), (0.7777851, 0.0842652), (0.5, 0.5), (0.7777851, 0.0842652), (0.8535534, 0.14644662), (0.5, 0.5), (0.8535534, 0.14644662), (0.91573477, 0.22221488), (0.5, 0.5), (0.91573477, 0.22221488), (0.9619397, 0.3086583), (0.5, 0.5), (0.9619397, 0.3086583), (0.99039257, 0.40245482), (0.5, 0.5), (0.99039257, 0.40245482), (1, 0.5), (0.5, 0.5)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token subdivisionScheme = "none"
+                    quatd xformOp:orient = (0.7071067811865476, 0, 0.7071067811865475, 0)
+                    double3 xformOp:scale = (0.009999999776482582, 0.009999999776482582, 0.019999999552965164)
+                    double3 xformOp:translate = (0.01, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Mesh "knob_handle" (
+                    apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI", "PhysxCollisionAPI", "PhysxConvexHullCollisionAPI", "PhysicsMeshCollisionAPI"]
+                )
+                {
+                    float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                    int[] faceVertexCounts = [4, 4, 4, 4, 4, 4]
+                    int[] faceVertexIndices = [0, 1, 3, 2, 4, 6, 7, 5, 6, 2, 3, 7, 4, 5, 1, 0, 4, 0, 2, 6, 5, 7, 3, 1]
+                    rel material:binding = </SliderWithRail/Looks/Grip> (
+                        bindMaterialAs = "weakerThanDescendants"
+                    )
+                    normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 0, -1), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, 1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (0, -1, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (-1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0), (1, 0, 0)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token physics:approximation = "convexHull"
+                    bool physics:collisionEnabled = 1
+                    rel physics:simulationOwner
+                    point3f[] points = [(-0.5, -0.5, 0.5), (0.5, -0.5, 0.5), (-0.5, 0.5, 0.5), (0.5, 0.5, 0.5), (-0.5, -0.5, -0.5), (0.5, -0.5, -0.5), (-0.5, 0.5, -0.5), (0.5, 0.5, -0.5)]
+                    texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0), (0, 1), (0, 0), (1, 0), (1, 1), (0, 0), (1, 0), (1, 1), (0, 1), (0, 0), (1, 0), (1, 1), (0, 1), (1, 0), (1, 1), (0, 1), (0, 0)] (
+                        interpolation = "faceVarying"
+                    )
+                    uniform token subdivisionScheme = "none"
+                    quatd xformOp:orient = (1, 0, 0, 0)
+                    double3 xformOp:scale = (0.03999999910593033, 0.03999999910593033, 0.05999999865889549)
+                    double3 xformOp:translate = (0.035, 3.885780586188048e-16, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+                }
+
+                def Cube "GripInlay" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    rel material:binding = </SliderWithRail/Looks/SafetyOchre>
+                    double size = 1
+                    float3 xformOp:scale = (0.001, 0.026, 0.047)
+                    double3 xformOp:translate = (0.055, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+            }
+        }
+
+        def Scope "Looks"
+        {
+            def Material "OmniPBR"
+            {
+                token outputs:mdl:displacement.connect = </SliderWithRail/Xform/Looks/OmniPBR/Shader.outputs:out>
+                token outputs:mdl:surface.connect = </SliderWithRail/Xform/Looks/OmniPBR/Shader.outputs:out>
+                token outputs:mdl:volume.connect = </SliderWithRail/Xform/Looks/OmniPBR/Shader.outputs:out>
+                custom uniform bool paused = 0 (
+                    customData = {
+                        bool nonpersistant = 1
+                    }
+                    hidden = true
+                )
+
+                def Shader "Shader"
+                {
+                    uniform token info:implementationSource = "sourceAsset"
+                    uniform asset info:mdl:sourceAsset = @OmniPBR.mdl@
+                    uniform token info:mdl:sourceAsset:subIdentifier = "OmniPBR"
+                    color3f inputs:diffuse_color_constant = (1, 0, 0)
+                    token outputs:out (
+                        renderType = "material"
+                    )
+                }
+            }
+        }
+    }
+
+    def PhysicsPrismaticJoint "SliderJoint" (
+        apiSchemas = ["PhysicsDriveAPI:linear", "PhysxJointAxisAPI:linear"]
+    )
+    {
+        float drive:linear:physics:damping = 20
+        float drive:linear:physics:maxForce = 1000
+        float drive:linear:physics:stiffness = 1000
+        float drive:linear:physics:targetPosition = -0.5
+        float drive:linear:physics:targetVelocity = 0
+        uniform token drive:linear:physics:type = "force"
+        uniform token physics:axis = "Y"
+        rel physics:body0 = </SliderWithRail/Xform/Rail>
+        rel physics:body1 = </SliderWithRail/Xform/Slider>
+        float physics:breakForce = 3.4028235e38
+        float physics:breakTorque = 3.4028235e38
+        bool physics:collisionEnabled = 0
+        bool physics:jointEnabled = 1
+        point3f physics:localPos0 = (-4.5577874e-8, 0, 0)
+        point3f physics:localPos1 = (0, 0, 0)
+        quatf physics:localRot0 = (1, 0, 0, 0)
+        quatf physics:localRot1 = (1, 0, 0, 0)
+        float physics:lowerLimit = -0.5
+        float physics:upperLimit = 0.5
+    }
+
+    def "Looks"
+    {
+        def Material "Steel"
+        {
+            token outputs:surface.connect = </SliderWithRail/Looks/Steel/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.43, 0.49, 0.51)
+                float inputs:metallic = 0.82
+                float inputs:roughness = 0.29
+                token outputs:surface
+            }
+        }
+
+        def Material "Anodized"
+        {
+            token outputs:surface.connect = </SliderWithRail/Looks/Anodized/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.055, 0.085, 0.095)
+                float inputs:metallic = 0.65
+                float inputs:roughness = 0.38
+                token outputs:surface
+            }
+        }
+
+        def Material "Grip"
+        {
+            token outputs:surface.connect = </SliderWithRail/Looks/Grip/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.045, 0.055, 0.05)
+                float inputs:metallic = 0.02
+                float inputs:roughness = 0.72
+                token outputs:surface
+            }
+        }
+
+        def Material "SafetyOchre"
+        {
+            token outputs:surface.connect = </SliderWithRail/Looks/SafetyOchre/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.72, 0.4, 0.045)
+                float inputs:metallic = 0.25
+                float inputs:roughness = 0.43
+                token outputs:surface
+            }
+        }
+
+        def Material "Socket"
+        {
+            token outputs:surface.connect = </SliderWithRail/Looks/Socket/Surface.outputs:surface>
+
+            def Shader "Surface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (0.009, 0.014, 0.017)
+                float inputs:metallic = 0.05
+                float inputs:roughness = 0.7
+                token outputs:surface
+            }
+        }
+    }
+}
+

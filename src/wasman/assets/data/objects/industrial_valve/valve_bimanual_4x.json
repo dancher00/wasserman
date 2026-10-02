@@ -1,0 +1,15 @@
+{
+  "source_sha256": "e322e89c08f45498c06b1451c88e5702e22cfdf431964418df83cde1f864210d",
+  "scale": 4.0,
+  "wheel_diameter_m": 0.5058612,
+  "rim_center_radius_m": 0.236,
+  "rim_tube_radius_m": 0.0168,
+  "wheel_mass_kg": 11.52,
+  "wheel_principal_inertia_kg_m2": [
+    0.4608,
+    0.256,
+    0.256
+  ],
+  "wheel_displaced_volume_m3": 0.00384,
+  "assumption": "Geometric similarity with preserved source density and shape, not an identified commercial valve. Bearing coefficients must be explicitly configured in the new study; original fixture unchanged."
+}

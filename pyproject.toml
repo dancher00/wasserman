@@ -1,0 +1,100 @@
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13"]
+build-backend = "uv_build"
+
+[project]
+name = "wasserman-bench"
+version = "0.1.0"
+description = "WasserMan: a reproducible underwater manipulation benchmark for Isaac Lab."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "WasserMan contributors" }]
+requires-python = ">=3.12,<3.13"
+dependencies = ["isaaclab-dev[rsl-rl]"]
+
+[project.entry-points."isaaclab.tasks"]
+wasman = "wasman.tasks"
+
+[project.optional-dependencies]
+isaacsim = ["isaaclab-dev[isaacsim]"]
+rsl-rl = ["isaaclab-dev[rsl-rl]"]
+
+[dependency-groups]
+dev = ["pytest>=8.3", "ruff>=0.11"]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+prerelease = "allow"
+environments = ["sys_platform == 'linux' and platform_machine == 'x86_64'"]
+override-dependencies = [
+  "numpy>=2",
+  "mujoco~=3.12.0",
+  "mujoco-warp~=3.12.0",
+  "newton[sim]==1.6.0",
+  "newton-usd-schemas>=0.4.1",
+  "torch==2.12.0",
+  "torchvision==0.27.0",
+  "packaging>=20,<27",
+]
+
+[tool.uv.sources]
+isaaclab = { path = ".deps/IsaacLab/source/isaaclab", editable = true }
+isaaclab-assets = { path = ".deps/IsaacLab/source/isaaclab_assets", editable = true }
+isaaclab-contrib = { path = ".deps/IsaacLab/source/isaaclab_contrib", editable = true }
+isaaclab-dev = { path = ".deps/IsaacLab", editable = true }
+isaaclab-experimental = { path = ".deps/IsaacLab/source/isaaclab_experimental", editable = true }
+isaaclab-mimic = { path = ".deps/IsaacLab/source/isaaclab_mimic", editable = true }
+isaaclab-newton = { path = ".deps/IsaacLab/source/isaaclab_newton", editable = true }
+isaaclab-ov = { path = ".deps/IsaacLab/source/isaaclab_ov", editable = true }
+isaaclab-physx = { path = ".deps/IsaacLab/source/isaaclab_physx", editable = true }
+isaaclab-ppisp = { path = ".deps/IsaacLab/source/isaaclab_ppisp", editable = true }
+isaaclab-rl = { path = ".deps/IsaacLab/source/isaaclab_rl", editable = true }
+isaaclab-tasks = { path = ".deps/IsaacLab/source/isaaclab_tasks", editable = true }
+isaaclab-tasks-experimental = { path = ".deps/IsaacLab/source/isaaclab_tasks_experimental", editable = true }
+isaaclab-teleop = { path = ".deps/IsaacLab/source/isaaclab_teleop", editable = true }
+isaaclab-visualizers = { path = ".deps/IsaacLab/source/isaaclab_visualizers", editable = true }
+omniverseclient = { index = "pypi-public" }
+ovphysx = { index = "pypi-public" }
+ovrtx = { index = "pypi-public" }
+ovstage = { index = "pypi-public" }
+torch = { index = "pytorch-cu130" }
+torchaudio = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+
+[tool.uv.build-backend]
+module-name = "wasman"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["wasman"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F401", "F403"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+  "unit: isolated logic without launching Isaac Sim",
+  "integration: end-to-end simulator test",
+  "smoke: minimal installation, task, or RL test",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.nvidia.com"
+explicit = false
+
+[[tool.uv.index]]
+name = "pypi-public"
+url = "https://pypi.org/simple"
+explicit = true
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true

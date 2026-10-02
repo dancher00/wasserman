@@ -1,0 +1,27 @@
+{
+  "source": "https://polyhaven.com/a/concrete_wall_007",
+  "license": "CC0-1.0",
+  "texture_width_m": 2.0,
+  "resolution": "4k",
+  "scale_note": "Visual tiling assumption; no geometry displacement",
+  "panel_size_m": [
+    0.08,
+    1.15,
+    1.15
+  ],
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/concrete_wall_007/concrete_wall_007_diff_4k.jpg",
+      "sha256": "b6723cf2060520ac8341df5ae6d9cfa3f6714956749f86255c7d1fe695ecaa55"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/concrete_wall_007/concrete_wall_007_rough_4k.jpg",
+      "sha256": "263148ddcb4280425b6933f82479844280691c3dacefe4e38c8c22a6cabefeff"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/concrete_wall_007/concrete_wall_007_nor_gl_4k.jpg",
+      "sha256": "468198ef12971796d4e8d458423c8d94ceec4a46fec51705785465d304efc3fe"
+    }
+  },
+  "note": "Existing weathered surfaces used as subsea infrastructure appearances, not marine biology scans"
+}

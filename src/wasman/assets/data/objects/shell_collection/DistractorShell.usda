@@ -1,0 +1,17 @@
+#usda 1.0
+(
+    defaultPrim = "Shell"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+def Xform "Shell" (prepend references = @Shell.usda@</Shell>)
+{
+    over "Looks" {
+        over "Ivory" {
+            over "Surface" {
+                color3f inputs:diffuseColor.connect = None
+                color3f inputs:diffuseColor = (0.16, 0.24, 0.20)
+            }
+        }
+    }
+}

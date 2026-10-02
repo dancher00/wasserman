@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<!--
+  BlueROV2 Heavy + Reach Alpha 5 UVMS.
+
+  Kinematics, inertial parameters, and collision approximations are adapted from
+  the Angler/Blue and Alpha robot descriptions.  The detailed visual meshes are
+  redistributed under the notices beside this file.
+-->
+<robot name="bluerov2_alpha">
+  <material name="alpha_orange"><color rgba="0.95 0.34 0.05 1.0"/></material>
+  <material name="alpha_dark"><color rgba="0.08 0.10 0.12 1.0"/></material>
+  <material name="rov_cyan"><color rgba="0.08 0.62 0.72 1.0"/></material>
+
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.011"/>
+      <mass value="13.0"/>
+      <inertia ixx="0.26" ixy="0" ixz="0" iyy="0.23" iyz="0" izz="0.37"/>
+    </inertial>
+    <visual name="bluerov2_heavy_visual">
+      <!-- The source Collada model is authored around z=74.8 model units;
+           compensate after the 0.025 scale so it is centred on base_link. -->
+      <origin rpy="0 0 0" xyz="0 0 -1.87"/>
+      <geometry>
+        <mesh filename="meshes/blue/bluerov2_heavy_reach.dae" scale="0.025 0.025 0.025"/>
+      </geometry>
+      <material name="rov_cyan"/>
+    </visual>
+    <!-- Separate original Blue T200 propeller visuals. Mounts follow the Heavy
+         Reach xacro; mesh has an additional -pi/2 rotation about X.
+         CAD housing registration offset: (0.0978, -0.0244, 0.0115) m.
+         Cup-shaped rotors surround the stators inside each duct.
+         Visual-only: rotor animation must not change the trained articulation. -->
+    <visual name="thruster1_visual">
+      <origin xyz="0.1858 -0.1264 -0.0285" rpy="-3.14159265359 1.570796326795 -1.047197551197"/>
+      <geometry><mesh filename="meshes/blue/ccw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster2_visual">
+      <origin xyz="0.1858 0.0776 -0.0285" rpy="-3.14159265359 1.570796326795 -2.094395102393"/>
+      <geometry><mesh filename="meshes/blue/ccw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster3_visual">
+      <origin xyz="0.0098 -0.1264 -0.0285" rpy="-3.14159265359 1.570796326795 1.047197551197"/>
+      <geometry><mesh filename="meshes/blue/cw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster4_visual">
+      <origin xyz="0.0098 0.0776 -0.0285" rpy="-3.14159265359 1.570796326795 2.094395102393"/>
+      <geometry><mesh filename="meshes/blue/cw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster5_visual">
+      <origin xyz="0.2158 -0.2394 0.0755" rpy="-1.570796326795 0 0"/>
+      <geometry><mesh filename="meshes/blue/ccw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster6_visual">
+      <origin xyz="0.2158 0.1906 0.0755" rpy="-1.570796326795 0 0"/>
+      <geometry><mesh filename="meshes/blue/cw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster7_visual">
+      <origin xyz="-0.0202 -0.2394 0.0755" rpy="-1.570796326795 0 0"/>
+      <geometry><mesh filename="meshes/blue/cw_prop.dae"/></geometry>
+    </visual>
+    <visual name="thruster8_visual">
+      <origin xyz="-0.0202 0.1906 0.0755" rpy="-1.570796326795 0 0"/>
+      <geometry><mesh filename="meshes/blue/ccw_prop.dae"/></geometry>
+    </visual>
+    <collision name="base_link_collision">
+      <origin rpy="0 0 0" xyz="0 0 0.06"/>
+      <geometry><box size="0.457 0.575 0.18"/></geometry>
+    </collision>
+  </link>
+
+  <link name="alpha_m3_inline_link">
+    <inertial>
+      <origin xyz="-0.055 0 0"/>
+      <mass value="0.341"/>
+      <inertia ixx="0.0000682" ixy="0" ixz="0" iyy="0.000673" iyz="0" izz="0.000673"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/M3-INLINE.stl"/></geometry>
+      <material name="alpha_orange"/>
+    </visual>
+    <collision>
+      <origin rpy="0 1.57075 0" xyz="-0.055 0 0"/>
+      <geometry><cylinder length="0.150" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_mount_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.24 -0.099 0.029"/>
+    <parent link="base_link"/>
+    <child link="alpha_m3_inline_link"/>
+  </joint>
+
+  <link name="alpha_m2_1_1_link">
+    <inertial>
+      <origin xyz="0 0 0.0165"/>
+      <mass value="0.194"/>
+      <inertia ixx="0.000037" ixy="0" ixz="0" iyy="0.000037" iyz="0" izz="0.0000388"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/M2-1-1.stl"/></geometry>
+      <material name="alpha_dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0165"/>
+      <geometry><cylinder length="0.033" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_e" type="revolute">
+    <origin xyz="0 0 0.014"/>
+    <parent link="alpha_m3_inline_link"/>
+    <child link="alpha_m2_1_1_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="9.0" lower="0.0" upper="6.10" velocity="0.5"/>
+    <dynamics damping="0.08" friction="0.02"/>
+  </joint>
+
+  <link name="alpha_m2_joint_link">
+    <inertial>
+      <origin xyz="-0.02 0 -0.0725"/>
+      <mass value="0.429"/>
+      <inertia ixx="0.0008907" ixy="0" ixz="0" iyy="0.0008907" iyz="0" izz="0.0000858"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/M2.stl"/></geometry>
+      <material name="alpha_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.02 0 -0.0725"/>
+      <geometry><cylinder length="0.145" radius="0.020"/></geometry>
+    </collision>
+    <collision>
+      <origin rpy="1.5707 0 0" xyz="0 0 0"/>
+      <geometry><cylinder length="0.040" radius="0.020"/></geometry>
+    </collision>
+    <collision>
+      <origin rpy="1.5707 0 0" xyz="-0.040 0 -0.1453"/>
+      <geometry><cylinder length="0.040" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_d" type="revolute">
+    <origin xyz="-0.02 0 0.033"/>
+    <parent link="alpha_m2_1_1_link"/>
+    <child link="alpha_m2_joint_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="9.0" lower="-3.49" upper="3.49" velocity="0.5"/>
+    <dynamics damping="0.08" friction="0.02"/>
+  </joint>
+
+  <link name="alpha_m2_1_2_link">
+    <inertial>
+      <origin xyz="0.02 0 0.0165"/>
+      <mass value="0.115"/>
+      <inertia ixx="0.0000219" ixy="0" ixz="0" iyy="0.0000219" iyz="0" izz="0.000023"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/M2-1-3.stl"/></geometry>
+      <material name="alpha_dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0.02 0 0.0165"/>
+      <geometry><cylinder length="0.033" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_c" type="revolute">
+    <origin rpy="0 0 3.14159" xyz="-0.04 0 -0.1453"/>
+    <parent link="alpha_m2_joint_link"/>
+    <child link="alpha_m2_1_2_link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="9.0" lower="0.0" upper="3.22" velocity="0.5"/>
+    <dynamics damping="0.08" friction="0.02"/>
+  </joint>
+
+  <link name="alpha_m1_link">
+    <inertial>
+      <origin xyz="0 0 0.05"/>
+      <mass value="0.200"/>
+      <inertia ixx="0.0001867" ixy="0" ixz="0" iyy="0.0001867" iyz="0" izz="0.00004"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 -1.5707 0" xyz="0 0 0"/>
+      <geometry><mesh filename="meshes/alpha/RS1-100-101-123.stl"/></geometry>
+      <material name="alpha_orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05"/>
+      <geometry><cylinder length="0.1" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_b" type="revolute">
+    <origin rpy="0 0 2.09439" xyz="0.02 0 0.033"/>
+    <parent link="alpha_m2_1_2_link"/>
+    <child link="alpha_m1_link"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="9.0" lower="0.0" upper="3.22" velocity="0.5"/>
+    <dynamics damping="0.08" friction="0.02"/>
+  </joint>
+
+  <link name="alpha_jaw_base_link">
+    <inertial>
+      <origin xyz="0 0 0.004875"/>
+      <mass value="0.023"/>
+      <inertia ixx="0.000002422" ixy="0" ixz="0" iyy="0.000002422" iyz="0" izz="0.0000046"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/end_effectors/RS1-124.stl"/></geometry>
+      <material name="alpha_dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.004875"/>
+      <geometry><cylinder length="0.00975" radius="0.020"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_ee_joint" type="fixed">
+    <origin xyz="0 0 0.09975"/>
+    <parent link="alpha_m1_link"/>
+    <child link="alpha_jaw_base_link"/>
+  </joint>
+
+  <link name="alpha_push_rod_link">
+    <inertial>
+      <mass value="0.0001"/>
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001"/>
+    </inertial>
+  </link>
+  <joint name="alpha_axis_a" type="prismatic">
+    <origin xyz="0 0 0.009"/>
+    <parent link="alpha_jaw_base_link"/>
+    <child link="alpha_push_rod_link"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10.0" lower="0.0" upper="0.0098" velocity="0.05"/>
+    <dynamics damping="0.08" friction="0.01"/>
+  </joint>
+
+  <link name="alpha_left_finger_link">
+    <inertial>
+      <origin xyz="0 -0.008 0.045"/>
+      <mass value="0.055"/>
+      <inertia ixx="0.00004125" ixy="0" ixz="0" iyy="0.000037785" iyz="0" izz="0.000004785"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/end_effectors/RS1-130.stl"/></geometry>
+      <material name="alpha_dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.008 0.045"/>
+      <geometry><box size="0.012 0.03 0.09"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_left_finger_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.0155 0.0069"/>
+    <parent link="alpha_jaw_base_link"/>
+    <child link="alpha_left_finger_link"/>
+    <axis xyz="-1 0 0"/>
+    <limit lower="0" upper="0.5" effort="10" velocity="2"/>
+    <mimic joint="alpha_axis_a" multiplier="51" offset="0"/>
+  </joint>
+
+  <link name="alpha_right_finger_link">
+    <inertial>
+      <origin xyz="0 0.008 0.045"/>
+      <mass value="0.055"/>
+      <inertia ixx="0.00004125" ixy="0" ixz="0" iyy="0.000037785" iyz="0" izz="0.000004785"/>
+    </inertial>
+    <visual>
+      <geometry><mesh filename="meshes/alpha/end_effectors/RS1-139.stl"/></geometry>
+      <material name="alpha_dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0.008 0.045"/>
+      <geometry><box size="0.012 0.03 0.09"/></geometry>
+    </collision>
+  </link>
+  <joint name="alpha_right_finger_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.0155 0.0069"/>
+    <parent link="alpha_jaw_base_link"/>
+    <child link="alpha_right_finger_link"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0" upper="0.5" effort="10" velocity="2"/>
+    <mimic joint="alpha_left_finger_joint" multiplier="1" offset="0"/>
+  </joint>
+
+  <link name="alpha_tool_link">
+    <inertial>
+      <mass value="0.0001"/>
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001"/>
+    </inertial>
+  </link>
+  <joint name="alpha_tool_joint" type="fixed">
+    <origin rpy="0 -1.571 0" xyz="0 0 0.085"/>
+    <parent link="alpha_jaw_base_link"/>
+    <child link="alpha_tool_link"/>
+  </joint>
+</robot>

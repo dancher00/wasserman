@@ -1,0 +1,44 @@
+{
+  "license": "Apache-2.0",
+  "revisions": {
+    "uuv_simulator": "bfb40cb153684a0703173117b6bbf4258e8e71c5",
+    "rexrov2": "1546681610ce0d3a921447bb7d176a74967eea56"
+  },
+  "files": [
+    {
+      "path": "HydrodynamicModel.cc",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/uuv_simulator/bfb40cb153684a0703173117b6bbf4258e8e71c5/uuv_gazebo_plugins/uuv_gazebo_plugins/src/HydrodynamicModel.cc",
+      "sha256": "6f57d6bc6b8fc6224a3c404965e3ff2859a40c1270826dc4a9e2c3112455c974"
+    },
+    {
+      "path": "BuoyantObject.cc",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/uuv_simulator/bfb40cb153684a0703173117b6bbf4258e8e71c5/uuv_gazebo_plugins/uuv_gazebo_plugins/src/BuoyantObject.cc",
+      "sha256": "e4100cbb84f80858d33393c23ca82b0c888dea0052e2f47744f7b0b7d7728550"
+    },
+    {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/uuv_simulator/bfb40cb153684a0703173117b6bbf4258e8e71c5/LICENSE",
+      "sha256": "486526d15cf5ef999b0f2cb7d2bbfd8edd159e9e83a6359bf7d2841bf110d216"
+    },
+    {
+      "path": "NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/uuv_simulator/bfb40cb153684a0703173117b6bbf4258e8e71c5/NOTICE",
+      "sha256": "2c59a8101ab5923b647f4e7cb6278f15cbbc8bea13681ea5573048e5e54fee63"
+    },
+    {
+      "path": "thruster_manager.yaml",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/rexrov2/1546681610ce0d3a921447bb7d176a74967eea56/rexrov2_control/config/thruster_manager.yaml",
+      "sha256": "a956afefe627adbd442d8c85d0bfe9b797a2ec19f12e9da1c9a731e679e4a0fd"
+    },
+    {
+      "path": "TAM.yaml",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/rexrov2/1546681610ce0d3a921447bb7d176a74967eea56/rexrov2_control/config/TAM.yaml",
+      "sha256": "2c0cfa3fb13a20ff139eb3588399928e67086e55fa37d0e50a03ab07d3dd8c9f"
+    },
+    {
+      "path": "rexrov2_snippets.xacro",
+      "url": "https://raw.githubusercontent.com/uuvsimulator/rexrov2/1546681610ce0d3a921447bb7d176a74967eea56/rexrov2_description/urdf/rexrov2_snippets.xacro",
+      "sha256": "23fbd6e55c0ac07071350291551582acbe69bd0c6ea4d20a45888dbac8989273"
+    }
+  ]
+}

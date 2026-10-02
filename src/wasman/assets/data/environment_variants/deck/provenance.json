@@ -1,0 +1,22 @@
+{
+  "source": "https://polyhaven.com/a/weathered_planks",
+  "license": "CC0-1.0",
+  "resolution": "4k",
+  "texture_width_m": 2.0,
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/weathered_planks/weathered_planks_diff_4k.jpg",
+      "sha256": "e270daa7ac5aed9d8c0f55e1bdccb219405ec581d4fabce9eda8785acf5df484"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/weathered_planks/weathered_planks_nor_gl_4k.jpg",
+      "sha256": "61f8e3cf3bcdfc208f70b373883e07ce6136e96b9700d92862fbe50de4905fd7"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/weathered_planks/weathered_planks_rough_4k.jpg",
+      "sha256": "ba6a0db5c819717792d9727565259c310dd2d55a2a4996258491e8115e581bef"
+    }
+  },
+  "adaptation": "Blue shader tint for pool ceramic; weathered timber as a wreck-deck appearance, not a wreck scan.",
+  "scope": "Website illustration only; unchanged flat collision and training defaults."
+}

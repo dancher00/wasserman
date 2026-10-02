@@ -1,0 +1,16 @@
+{
+  "name": "WasserMan",
+  "short_name": "WasserMan",
+  "distribution": "wasserman-bench",
+  "website_package": "wasserman-website",
+  "compatibility": {
+    "python_module": "wasman",
+    "task_id_prefix": "Wasman-",
+    "environment_variable_prefix": "WASMAN_",
+    "repository_url": "https://github.com/dancher00/wasman",
+    "workspace_path": "/home/aida/wasman"
+  },
+  "reason": "Existing task registrations, checkpoints, frozen experiment sources and running jobs retain their technical identifiers.",
+  "publication_repository_url": "https://github.com/dancher00/wasserman",
+  "version": "0.1.0"
+}

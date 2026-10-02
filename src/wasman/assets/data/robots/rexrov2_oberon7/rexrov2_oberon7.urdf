@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rexrov2_oberon7">
+  <link name="base_link">
+    <inertial>
+      <mass value="1862.87" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="525.39" ixy="1.44" ixz="33.41" iyy="794.20" iyz="2.6" izz="691.23" />
+    </inertial>
+    <collision>
+      <origin xyz="0 0 -0.75" rpy="0 0 0" />
+      <geometry>
+        <box size="2.56 1.50 0.10" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0 0 0.60" rpy="0 0 0" />
+      <geometry>
+        <box size="2.56 1.50 0.40" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.20 0.70 -0.15" rpy="0 0 0" />
+      <geometry>
+        <box size="2.20 0.10 1.10" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.20 -0.70 -0.15" rpy="0 0 0" />
+      <geometry>
+        <box size="2.20 0.10 1.10" />
+      </geometry>
+    </collision>
+    <visual name="RexROV2_no_props_00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/rexrov2/RexROV2_no_props_00.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/rexrov2/RexROV2_no_props_01.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/rexrov2/RexROV2_no_props_02.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/rexrov2/RexROV2_no_props_03.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/rexrov2/RexROV2_no_props_04.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster_0">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.4878 0 0.2373" rpy="0.0 0.0 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_1">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.8217 0 0.589" rpy="0.0 -1.3089969389957472 0.0" />
+    </visual>
+    <visual name="thruster_2">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.8654 -0.5322 0.5332" rpy="0.0 -1.1780972450961724 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_3">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.8654 0.5322 0.5332" rpy="0.0 1.1780972450961724 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_4">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.7076 0.5129 0.2404" rpy="0.0 0.0 0.4363323129985824" />
+    </visual>
+    <visual name="thruster_5">
+      <geometry>
+        <mesh filename="meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.7076 -0.5129 0.2404" rpy="0.0 0.0 -0.4363323129985824" />
+    </visual>
+  </link>
+  <link name="oberon_base">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.101581 -0.001371 -0.009781" />
+      <mass value="9.674677170178402" />
+      <inertia ixx="0.051173167814727395" ixy="0.0" ixz="0.0" iyy="0.083677172414382" iyz="0.0" izz="0.09580329781516367" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/Base.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/collision/Base.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="oberon_shoulder_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.039670 0.005441 0.017383" />
+      <mass value="6.72225246900683" />
+      <inertia ixx="0.04258397382943181" ixy="0.0" ixz="0.0" iyy="0.05132575485641739" iyz="0.0" izz="0.02957654137768093" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/ShoulderLink.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.039670 0.005441 0.017383" />
+      <geometry>
+        <cylinder length="0.239627" radius="0.068184" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_azimuth" type="revolute">
+    <parent link="oberon_base" />
+    <child link="oberon_shoulder_link" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="100" friction="150" />
+    <limit effort="200" lower="-1.0471975800000002" upper="1.0471975800000002" velocity="0.17" />
+  </joint>
+  <link name="oberon_upper_arm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.312501 0.017478 -0.000002" />
+      <mass value="12.444399907248723" />
+      <inertia ixx="0.03782344832464449" ixy="0.0" ixz="0.0" iyy="0.41148818050402597" iyz="0.0" izz="0.41542085464478007" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/UpperArm.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5707963267948966 0" xyz="0.312501 0.017478 -0.000002" />
+      <geometry>
+        <cylinder length="0.616809" radius="0.0709445" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_shoulder" type="revolute">
+    <parent link="oberon_shoulder_link" />
+    <child link="oberon_upper_arm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.06955 0.00015 0.01536" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="50" friction="150" />
+    <limit effort="5000" lower="-1.57079637" upper="1.57079637" velocity=".17" />
+  </joint>
+  <link name="oberon_elbow_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.125269 -0.074675 0.0" />
+      <mass value="10.314508867497032" />
+      <inertia ixx="0.0717197873733233" ixy="0.0" ixz="0.0" iyy="0.07240908344378823" iyz="0.0" izz="0.10276175033951813" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/ElbowLink.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5707963267948966 1.5707963267948966" xyz="0.125269 -0.074675 0.0" />
+      <geometry>
+        <cylinder length="0.245312" radius="0.077562" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_elbow" type="revolute">
+    <parent link="oberon_upper_arm" />
+    <child link="oberon_elbow_link" />
+    <origin rpy="0 0 0" xyz="0.55616 -0.01229 0" />
+    <dynamics damping="50" friction="150" />
+    <axis xyz="0 0 1" />
+    <limit effort="300" lower="-1.57079637" upper="1.0471975800000002" velocity=".15" />
+  </joint>
+  <link name="oberon_forearm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.15797880314911714" />
+      <mass value="8.546261755853898" />
+      <inertia ixx="0.09617944207733116" ixy="0.0" ixz="0.0" iyy="0.09619023030837781" iyz="0.0" izz="0.03268402566917647" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/Forearm.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0.15797880314911714" />
+      <geometry>
+        <cylinder length="0.334827" radius="0.0757275" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_roll" type="revolute">
+    <parent link="oberon_elbow_link" />
+    <child link="oberon_forearm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.1349014 -0.1936267 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="300" friction="1000" />
+    <limit effort="1000" lower="-2.356194555" upper="2.356194555" velocity=".25" />
+  </joint>
+  <link name="oberon_wrist_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.104016 0.003308 -0.000027" />
+      <mass value="3.9024235776962013" />
+      <inertia ixx="0.010428220937889964" ixy="0.0" ixz="0.0" iyy="0.021153663661370576" iyz="0.0" izz="0.020526721978954304" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/serial_arm/visual/Wrist.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 1.5707963267948966 0" xyz="0.104016 0.003308 -0.000027" />
+      <geometry>
+        <cylinder length="0.219204" radius="0.065187" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_pitch" type="revolute">
+    <parent link="oberon_forearm" />
+    <child link="oberon_wrist_link" />
+    <origin rpy="-1.5707963267948966 -1.5707963267948966 0" xyz="0 0 0.31595760629823427" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="10" friction="10" />
+    <limit effort="50" lower="-1.57079637" upper="1.57079637" velocity=".3" />
+  </joint>
+  <link name="oberon_end_effector">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.024426 -0.000000 -0.000014" />
+      <mass value="3.4611458108218063" />
+      <inertia ixx="0.007745217406579397" ixy="0.0" ixz="0.0" iyy="0.005361426484543977" iyz="0.0" izz="0.005570556852600513" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/BaseGripper.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.024426 -0.000000 -0.000014" />
+      <geometry>
+        <box size="0.074326 0.117427 0.114298" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_wrist" type="revolute">
+    <parent link="oberon_wrist_link" />
+    <child link="oberon_end_effector" />
+    <origin rpy="-1.5707963267948966 0 0" xyz="0.19304 0 0" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="10" friction="5" />
+    <limit effort="10" lower="-6.283185307179586" upper="6.283185307179586" velocity="0.15" />
+  </joint>
+  <link name="oberon_finger_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_finger_left_joint" type="revolute">
+    <parent link="oberon_end_effector" />
+    <child link="oberon_finger_left" />
+    <origin rpy="0 0 0" xyz="0.0444267 0.0391376 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="oberon_finger_tip_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_finger_tip_left_joint" type="fixed">
+    <parent link="oberon_finger_left" />
+    <child link="oberon_finger_tip_left" />
+    <origin rpy="3.141592653589793 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <link name="oberon_finger_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_finger_right_joint" type="revolute">
+    <parent link="oberon_end_effector" />
+    <child link="oberon_finger_right" />
+    <origin rpy="3.141592653589793 3.141592653589793 3.141592653589793" xyz="0.0444267 -0.0391376 0" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="oberon_finger_tip_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="oberon_finger_tip_right_joint" type="fixed">
+    <parent link="oberon_finger_right" />
+    <child link="oberon_finger_tip_right" />
+    <origin rpy="0 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <joint name="oberon_mount" type="fixed">
+    <parent link="base_link" />
+    <child link="oberon_base" />
+    <origin xyz="1.3 -0.5 -0.665" rpy="0 0 0" />
+  </joint>
+</robot>

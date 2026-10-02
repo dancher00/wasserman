@@ -1,0 +1,38 @@
+{
+  "asset": "ambientCG Tiles107",
+  "source": "https://ambientcg.com/view?id=Tiles107",
+  "license": "CC0-1.0",
+  "license_source": "https://docs.ambientcg.com/license/",
+  "creation_method": "upstream procedural PBR material, not a photograph or AI-generated bitmap",
+  "download": "https://ambientcg.com/get?file=Tiles107_4K-JPG.zip",
+  "archive_sha256": "d33eb396c7529b30bc50a16d8f69800297681a053582f1aa4681ecdd700ea0e0",
+  "resolution_px": [
+    4096,
+    4096
+  ],
+  "maps": {
+    "diffuse": {
+      "member": "Tiles107_4K-JPG_Color.jpg",
+      "sha256": "c4ef58d825c9c16544aa848865078541681931a6baa45d95a92a29fa194bcf94",
+      "bytes": 2614785
+    },
+    "normal": {
+      "member": "Tiles107_4K-JPG_NormalGL.jpg",
+      "sha256": "29b4ee6e4aafa2b2e15774b41fba523493a715cb96d6b14f15cee8d20ab347af",
+      "bytes": 4938003
+    },
+    "roughness": {
+      "member": "Tiles107_4K-JPG_Roughness.jpg",
+      "sha256": "05280c78ce467c0a66a2cd732657b31ccee06ab1995021d189980b216b249027",
+      "bytes": 2049611
+    }
+  },
+  "adaptation": "Bytes unchanged. Native 8x8 tile repeat scaled to 0.4m = 50mm tile pitch; USD-only colours.",
+  "physical_scale": {
+    "texture_repeat_m": 0.4,
+    "tiles_per_repeat": 8,
+    "tile_pitch_m": 0.05
+  },
+  "reference": "https://www.ezarri.com/media/uploads/fichas/ft2025_custom_printed_mosaic_ezarri_eng.pdf",
+  "reference_scope": "50x50mm is an available pool-mosaic format, not a mandated sports standard."
+}

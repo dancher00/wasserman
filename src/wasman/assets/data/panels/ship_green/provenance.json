@@ -1,0 +1,27 @@
+{
+  "source": "https://polyhaven.com/a/green_metal_rust",
+  "license": "CC0-1.0",
+  "texture_width_m": 1.0,
+  "resolution": "2k",
+  "scale_note": "Visual tiling assumption; no geometry displacement",
+  "panel_size_m": [
+    0.08,
+    1.15,
+    1.15
+  ],
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/green_metal_rust/green_metal_rust_diff_2k.jpg",
+      "sha256": "727515554ffb6410be82d3625a2837fe46612cb186ec391f77c50bd52c4d7ab2"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/green_metal_rust/green_metal_rust_rough_2k.jpg",
+      "sha256": "0a691b35df773ab86dbbc86b787f8efaa81497780820abec0832b1e7aac309a6"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/green_metal_rust/green_metal_rust_nor_gl_2k.jpg",
+      "sha256": "45ec5d256c91ccf4a87dd4c4a90f6c58b460f3862287f014bfde432055ece239"
+    }
+  },
+  "note": "Existing weathered surfaces used as subsea infrastructure appearances, not marine biology scans"
+}

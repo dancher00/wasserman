@@ -1,0 +1,21 @@
+{
+  "version": "marine-mechanisms-v1",
+  "visuals": "Original authored industrial CAD dressing; not a sourced scan or calibrated hardware model.",
+  "assets": [
+    {
+      "source": "src/wasman/assets/data/objects/ambench/lever.usd",
+      "source_sha256": "05e200bed3b05a2cc0e2032bcb7c1a17751ccb4d795065e63d2b8453fe97b3ec",
+      "asset": "src/wasman/assets/data/objects/marine_mechanisms_v1/lever.usda",
+      "sha256": "7de62c1f2c2cdc1f39d5d90b314e832e35f61e5d35c47eda5151d26ec20ae83c",
+      "physical_definitions_unchanged": true
+    },
+    {
+      "source": "src/wasman/assets/data/objects/ambench/slider_with_rail.usd",
+      "source_sha256": "6e81e52a3a93645cffc2d4cad57175a7a69f99fcce0a1d5d6474e56808b7213e",
+      "asset": "src/wasman/assets/data/objects/marine_mechanisms_v1/slider_with_rail.usda",
+      "sha256": "99792a9aba1219bcc8ab4c770f3147d99f45d953bea54c4bd1a9c82603c375ff",
+      "physical_definitions_unchanged": true
+    }
+  ],
+  "panel": "src/wasman/assets/data/objects/marine_mechanisms_v1/grounded_panel.usda"
+}

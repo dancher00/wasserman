@@ -1,0 +1,86 @@
+#usda 1.0
+(
+    defaultPrim = "Panel"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "Panel" (
+    delete apiSchemas = ["PhysicsRigidBodyAPI"]
+)
+{
+    bool physics:kinematicEnabled = 1
+
+    def Material "Material"
+    {
+        token outputs:surface.connect = </Panel/Material/Surface.outputs:surface>
+
+        def Shader "Surface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor.connect = </Panel/Material/diffuse.outputs:rgb>
+            float inputs:metallic = 0
+            normal3f inputs:normal.connect = </Panel/Material/normal.outputs:rgb>
+            float inputs:roughness.connect = </Panel/Material/roughness.outputs:r>
+            token outputs:surface
+        }
+
+        def Shader "UV"
+        {
+            uniform token info:id = "UsdPrimvarReader_float2"
+            token inputs:varname = "st"
+            float2 outputs:result
+        }
+
+        def Shader "diffuse"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @diffuse.jpg@
+            token inputs:sourceColorSpace = "sRGB"
+            float2 inputs:st.connect = </Panel/Material/UV.outputs:result>
+            token inputs:wrapS = "repeat"
+            token inputs:wrapT = "repeat"
+            float3 outputs:rgb
+        }
+
+        def Shader "roughness"
+        {
+            uniform token info:id = "UsdUVTexture"
+            asset inputs:file = @roughness.jpg@
+            token inputs:sourceColorSpace = "raw"
+            float2 inputs:st.connect = </Panel/Material/UV.outputs:result>
+            token inputs:wrapS = "repeat"
+            token inputs:wrapT = "repeat"
+            float outputs:r
+        }
+
+        def Shader "normal"
+        {
+            uniform token info:id = "UsdUVTexture"
+            float4 inputs:bias = (-1, -1, -1, 0)
+            asset inputs:file = @normal.jpg@
+            float4 inputs:scale = (2, 2, 2, 1)
+            token inputs:sourceColorSpace = "raw"
+            float2 inputs:st.connect = </Panel/Material/UV.outputs:result>
+            token inputs:wrapS = "repeat"
+            token inputs:wrapT = "repeat"
+            float3 outputs:rgb
+        }
+    }
+
+    def Mesh "Sand" (
+        prepend apiSchemas = ["MaterialBindingAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        int[] faceVertexCounts = [4]
+        int[] faceVertexIndices = [0, 1, 2, 3]
+        rel material:binding = </Panel/Material>
+        normal3f[] normals = [(0, 0, 1), (0, 0, 1), (0, 0, 1), (0, 0, 1)]
+        point3f[] points = [(-100, -100, 0), (100, -100, 0), (100, 100, 0), (-100, 100, 0)]
+        texCoord2f[] primvars:st = [(0, 0), (100, 0), (100, 100), (0, 100)] (
+            interpolation = "vertex"
+        )
+        uniform token subdivisionScheme = "none"
+    }
+}
+

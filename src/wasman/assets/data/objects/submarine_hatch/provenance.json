@@ -1,0 +1,16 @@
+{
+  "origin": "Original WASMAN parametric marine hatch; not sourced CAD or a scan",
+  "license": "Apache-2.0",
+  "visual_triangles": 14552,
+  "lid_diameter_m": 0.55,
+  "aperture_diameter_m": 0.48,
+  "hinge_limits_deg": [
+    0,
+    105
+  ],
+  "lid_mass_kg": 2.0,
+  "displaced_volume_m3": 0.0018,
+  "assumptions": "Flooded compartment, pressure equalized, unlocked, buoyancy-assisted lid. No pressure or sediment excavation model. Lock wheel is visual only. Mass/inertia are uncalibrated fixture assumptions.",
+  "design_reference": "https://www.baiermarine.com/shop/hatches-by-materials/aluminum-hatches/internal-hinge-watertight-hatch-quick-acting-round-20-aluminum/",
+  "reference_note": "General marine-hatch construction reference only; not a reproduction or manufacturer claim."
+}

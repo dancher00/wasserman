@@ -1,0 +1,54 @@
+{
+  "source": "https://polyhaven.com/a/modular_industrial_pipes_01",
+  "author": "Jorge Camacho",
+  "license": "CC0-1.0",
+  "files": {
+    "pipes.usdc": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/usd/2k/modular_industrial_pipes_01/modular_industrial_pipes_01_2k.usdc",
+      "sha256": "ca4b9daee00c5c7a940e7c8239c1efc2537bc8339307a747ad710052bf29beaa"
+    },
+    "textures/modular_industrial_pipes_01_group02_nor_gl_2k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/modular_industrial_pipes_01/modular_industrial_pipes_01_group02_nor_gl_2k.png",
+      "sha256": "04e6e2dde90c8a286370058ab1627e97756d209ada16cbabec172882a9950856"
+    },
+    "textures/modular_industrial_pipes_01_group02_rough_2k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/modular_industrial_pipes_01/modular_industrial_pipes_01_group02_rough_2k.png",
+      "sha256": "8f970811a81e0ea1615da25815a2683870863e2ee8d15c5ba3730f4720f71064"
+    },
+    "textures/modular_industrial_pipes_01_group02_diff_2k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/modular_industrial_pipes_01/modular_industrial_pipes_01_group02_diff_2k.png",
+      "sha256": "a3a1da123ba067bbc3ab1923bae1ac49fde5b716a74815681f3dbc7ef32efccc"
+    },
+    "textures/modular_industrial_pipes_01_group02_metal_2k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/modular_industrial_pipes_01/modular_industrial_pipes_01_group02_metal_2k.png",
+      "sha256": "0440ddc094ad5cc9eb43372c8bc1a99c6323238f2538387118c59473051a4da8"
+    }
+  },
+  "uniform_scale": 0.65,
+  "source_bounds_m": [
+    [
+      -0.40355318784713745,
+      -0.17943133413791656,
+      -0.9137434512376785
+    ],
+    [
+      -0.13725818693637848,
+      0.12816093862056732,
+      -0.5349145829677582
+    ]
+  ],
+  "final_size_m": [
+    0.19993497729301452,
+    0.17309175059199333,
+    0.24623876437544823
+  ],
+  "wheel_diameter_m": 0.1264653,
+  "wheel_pivot_local_m": [
+    -0.19385144999999998,
+    0.0,
+    0.0
+  ],
+  "wheel_triangles": 2054,
+  "body_triangles": 3734,
+  "physics": "assumed mass/inertia/friction; not calibrated hardware"
+}

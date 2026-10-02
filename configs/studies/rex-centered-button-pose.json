@@ -1,0 +1,52 @@
+{
+  "joint_names": [
+    "oberon_azimuth",
+    "oberon_shoulder",
+    "oberon_elbow",
+    "oberon_roll",
+    "oberon_pitch",
+    "oberon_wrist",
+    "oberon_finger_left_joint",
+    "oberon_finger_right_joint"
+  ],
+  "targets": {
+    "wall": {
+      "q": [
+        -0.00015353750469736369,
+        0.7937449084017019,
+        0.2528400661825128,
+        -0.0003067495941886931,
+        0.5242113725973513,
+        0.0002655589364731962,
+        0.25,
+        0.25
+      ],
+      "position_error_m": 4.386516253759803e-14,
+      "orientation_error_rad": 4.121926970157443e-14,
+      "collisions": [],
+      "target_position_base_m": [
+        2.65,
+        0,
+        -0.3999999999999999
+      ],
+      "target_rotation_base": [
+        [
+          1.0,
+          4.440892098500626e-16,
+          -1.9721522630525295e-31
+        ],
+        [
+          -4.440892098500626e-16,
+          1.0,
+          -4.440892098500625e-16
+        ],
+        [
+          0.0,
+          4.440892098500625e-16,
+          1.0
+        ]
+      ]
+    }
+  },
+  "source": "artifacts/rexrov2_centered_cpu_v2/report.json"
+}

@@ -1,0 +1,1554 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rexrov2_bimanual_custom">
+  <link name="base_link">
+    <inertial>
+      <mass value="1862.87" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <inertia ixx="525.39" ixy="1.44" ixz="33.41" iyy="794.20" iyz="2.6" izz="691.23" />
+    </inertial>
+    <visual name="RexROV2_no_props_00">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/RexROV2_no_props_00.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_01">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/RexROV2_no_props_01.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_02">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/RexROV2_no_props_02.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_03">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/RexROV2_no_props_03.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="RexROV2_no_props_04">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/RexROV2_no_props_04.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster_0">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.4878 0 0.2373" rpy="0.0 0.0 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_1">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.8217 0 0.589" rpy="0.0 -1.3089969389957472 0.0" />
+    </visual>
+    <visual name="thruster_2">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.8654 -0.5322 0.5332" rpy="0.0 -1.1780972450961724 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_3">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="0.8654 0.5322 0.5332" rpy="0.0 1.1780972450961724 1.5707963267948966" />
+    </visual>
+    <visual name="thruster_4">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.7076 0.5129 0.2404" rpy="0.0 0.0 0.4363323129985824" />
+    </visual>
+    <visual name="thruster_5">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/rexrov2/Propeller.obj" />
+      </geometry>
+      <origin xyz="-0.7076 -0.5129 0.2404" rpy="0.0 0.0 -0.4363323129985824" />
+    </visual>
+    <collision name="base_link_cad_000">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_001">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_002">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_003">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_004">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_005">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_006">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_007">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_007.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_008">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_008.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_009">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_009.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_010">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_010.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_011">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_011.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_012">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_012.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_013">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_013.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_014">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_014.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_015">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_015.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_016">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_016.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_017">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_017.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_018">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_018.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_019">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_019.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_020">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_020.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_021">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_021.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_022">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_022.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_023">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_023.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_024">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_024.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_026">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_026.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_027">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_027.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_028">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_028.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_029">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_029.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_030">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_030.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_031">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_031.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_032">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_032.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_033">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_033.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_034">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_034.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_035">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_035.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_036">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_036.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_037">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_037.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_038">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_038.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_039">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_039.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_040">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_040.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_041">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_041.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_042">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_042.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_043">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_043.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_044">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_044.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_045">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_045.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_046">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_046.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_047">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_047.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_048">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_048.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_049">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_049.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_050">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_050.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_051">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_051.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_052">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_052.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_053">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_053.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_054">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_054.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_055">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_055.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_056">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_056.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_057">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_057.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_058">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_058.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_059">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_059.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_060">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_060.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_061">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_061.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_062">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_062.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_063">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_063.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_064">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_064.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_065">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_065.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_066">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_066.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_067">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_067.stl" />
+      </geometry>
+    </collision>
+    <collision name="base_link_cad_068">
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/base_link_068.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_oberon_base">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.101581 -0.001371 -0.009781" />
+      <mass value="9.674677170178402" />
+      <inertia ixx="0.051173167814727395" ixy="0.0" ixz="0.0" iyy="0.083677172414382" iyz="0.0" izz="0.09580329781516367" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Base.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_base_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_007.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_008">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_008.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_base_cad_009">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_009.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_oberon_shoulder_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.039670 0.005441 0.017383" />
+      <mass value="6.72225246900683" />
+      <inertia ixx="0.04258397382943181" ixy="0.0" ixz="0.0" iyy="0.05132575485641739" iyz="0.0" izz="0.02957654137768093" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/ShoulderLink.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_shoulder_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_shoulder_link_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_007.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_azimuth" type="revolute">
+    <parent link="left_oberon_base" />
+    <child link="left_oberon_shoulder_link" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="100" friction="150" />
+    <limit effort="200" lower="-1.0471975800000002" upper="1.0471975800000002" velocity="0.17" />
+  </joint>
+  <link name="left_oberon_upper_arm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.312501 0.017478 -0.000002" />
+      <mass value="12.444399907248723" />
+      <inertia ixx="0.03782344832464449" ixy="0.0" ixz="0.0" iyy="0.41148818050402597" iyz="0.0" izz="0.41542085464478007" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/UpperArm.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_upper_arm_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_upper_arm_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_007.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_shoulder" type="revolute">
+    <parent link="left_oberon_shoulder_link" />
+    <child link="left_oberon_upper_arm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.06955 0.00015 0.01536" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="50" friction="150" />
+    <limit effort="5000" lower="-1.57079637" upper="1.57079637" velocity=".17" />
+  </joint>
+  <link name="left_oberon_elbow_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.125269 -0.074675 0.0" />
+      <mass value="10.314508867497032" />
+      <inertia ixx="0.0717197873733233" ixy="0.0" ixz="0.0" iyy="0.07240908344378823" iyz="0.0" izz="0.10276175033951813" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/ElbowLink.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_elbow_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_elbow_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_elbow_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_elbow_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_003.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_elbow" type="revolute">
+    <parent link="left_oberon_upper_arm" />
+    <child link="left_oberon_elbow_link" />
+    <origin rpy="0 0 0" xyz="0.55616 -0.01229 0" />
+    <dynamics damping="50" friction="150" />
+    <axis xyz="0 0 1" />
+    <limit effort="300" lower="-1.57079637" upper="1.0471975800000002" velocity=".15" />
+  </joint>
+  <link name="left_oberon_forearm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.15797880314911714" />
+      <mass value="8.546261755853898" />
+      <inertia ixx="0.09617944207733116" ixy="0.0" ixz="0.0" iyy="0.09619023030837781" iyz="0.0" izz="0.03268402566917647" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Forearm.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_forearm_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_forearm_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_forearm_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_forearm_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_forearm_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_forearm_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_005.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_roll" type="revolute">
+    <parent link="left_oberon_elbow_link" />
+    <child link="left_oberon_forearm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.1349014 -0.1936267 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="300" friction="1000" />
+    <limit effort="1000" lower="-2.356194555" upper="2.356194555" velocity=".25" />
+  </joint>
+  <link name="left_oberon_wrist_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.104016 0.003308 -0.000027" />
+      <mass value="3.9024235776962013" />
+      <inertia ixx="0.010428220937889964" ixy="0.0" ixz="0.0" iyy="0.021153663661370576" iyz="0.0" izz="0.020526721978954304" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Wrist.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_wrist_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_007.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_008">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_008.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_wrist_link_cad_009">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_009.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_pitch" type="revolute">
+    <parent link="left_oberon_forearm" />
+    <child link="left_oberon_wrist_link" />
+    <origin rpy="-1.5707963267948966 -1.5707963267948966 0" xyz="0 0 0.31595760629823427" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="10" friction="10" />
+    <limit effort="50" lower="-1.57079637" upper="1.57079637" velocity=".3" />
+  </joint>
+  <link name="left_oberon_end_effector">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.024426 -0.000000 -0.000014" />
+      <mass value="3.4611458108218063" />
+      <inertia ixx="0.007745217406579397" ixy="0.0" ixz="0.0" iyy="0.005361426484543977" iyz="0.0" izz="0.005570556852600513" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/BaseGripper.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_end_effector_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_end_effector_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_end_effector_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_end_effector_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_003.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_wrist" type="revolute">
+    <parent link="left_oberon_wrist_link" />
+    <child link="left_oberon_end_effector" />
+    <origin rpy="-1.5707963267948966 0 0" xyz="0.19304 0 0" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="10" friction="5" />
+    <limit effort="10" lower="-6.283185307179586" upper="6.283185307179586" velocity="0.15" />
+  </joint>
+  <link name="left_oberon_finger_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_finger_left_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_left_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_finger_left_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_left_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_finger_left_joint" type="revolute">
+    <parent link="left_oberon_end_effector" />
+    <child link="left_oberon_finger_left" />
+    <origin rpy="0 0 0" xyz="0.0444267 0.0391376 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="left_oberon_finger_tip_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_finger_tip_left_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_left_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_finger_tip_left_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_left_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_finger_tip_left_joint" type="fixed">
+    <parent link="left_oberon_finger_left" />
+    <child link="left_oberon_finger_tip_left" />
+    <origin rpy="3.141592653589793 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <link name="left_oberon_finger_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_finger_right_cad_000">
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_right_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_finger_right_cad_001">
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_right_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_finger_right_joint" type="revolute">
+    <parent link="left_oberon_end_effector" />
+    <child link="left_oberon_finger_right" />
+    <origin rpy="3.141592653589793 3.141592653589793 3.141592653589793" xyz="0.0444267 -0.0391376 0" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="left_oberon_finger_tip_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision name="left_oberon_finger_tip_right_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_right_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="left_oberon_finger_tip_right_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_right_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_oberon_finger_tip_right_joint" type="fixed">
+    <parent link="left_oberon_finger_right" />
+    <child link="left_oberon_finger_tip_right" />
+    <origin rpy="0 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <joint name="left_oberon_mount" type="fixed">
+    <parent link="base_link" />
+    <child link="left_oberon_base" />
+    <origin xyz="1.3 0.5 -0.665" rpy="0 0 0" />
+  </joint>
+  <link name="right_oberon_base">
+    <inertial>
+      <origin rpy="0 0 0" xyz="-0.101581 -0.001371 -0.009781" />
+      <mass value="9.674677170178402" />
+      <inertia ixx="0.051173167814727395" ixy="0.0" ixz="0.0" iyy="0.083677172414382" iyz="0.0" izz="0.09580329781516367" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Base.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_base_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_007.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_008">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_008.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_base_cad_009">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_base_009.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_oberon_shoulder_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.039670 0.005441 0.017383" />
+      <mass value="6.72225246900683" />
+      <inertia ixx="0.04258397382943181" ixy="0.0" ixz="0.0" iyy="0.05132575485641739" iyz="0.0" izz="0.02957654137768093" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/ShoulderLink.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_shoulder_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_shoulder_link_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_shoulder_link_007.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_azimuth" type="revolute">
+    <parent link="right_oberon_base" />
+    <child link="right_oberon_shoulder_link" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="100" friction="150" />
+    <limit effort="200" lower="-1.0471975800000002" upper="1.0471975800000002" velocity="0.17" />
+  </joint>
+  <link name="right_oberon_upper_arm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.312501 0.017478 -0.000002" />
+      <mass value="12.444399907248723" />
+      <inertia ixx="0.03782344832464449" ixy="0.0" ixz="0.0" iyy="0.41148818050402597" iyz="0.0" izz="0.41542085464478007" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/UpperArm.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_upper_arm_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_upper_arm_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_upper_arm_007.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_shoulder" type="revolute">
+    <parent link="right_oberon_shoulder_link" />
+    <child link="right_oberon_upper_arm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.06955 0.00015 0.01536" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="50" friction="150" />
+    <limit effort="5000" lower="-1.57079637" upper="1.57079637" velocity=".17" />
+  </joint>
+  <link name="right_oberon_elbow_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.125269 -0.074675 0.0" />
+      <mass value="10.314508867497032" />
+      <inertia ixx="0.0717197873733233" ixy="0.0" ixz="0.0" iyy="0.07240908344378823" iyz="0.0" izz="0.10276175033951813" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/ElbowLink.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_elbow_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_elbow_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_elbow_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_elbow_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_elbow_link_003.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_elbow" type="revolute">
+    <parent link="right_oberon_upper_arm" />
+    <child link="right_oberon_elbow_link" />
+    <origin rpy="0 0 0" xyz="0.55616 -0.01229 0" />
+    <dynamics damping="50" friction="150" />
+    <axis xyz="0 0 1" />
+    <limit effort="300" lower="-1.57079637" upper="1.0471975800000002" velocity=".15" />
+  </joint>
+  <link name="right_oberon_forearm">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.15797880314911714" />
+      <mass value="8.546261755853898" />
+      <inertia ixx="0.09617944207733116" ixy="0.0" ixz="0.0" iyy="0.09619023030837781" iyz="0.0" izz="0.03268402566917647" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Forearm.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_forearm_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_forearm_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_forearm_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_forearm_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_forearm_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_forearm_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_forearm_005.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_roll" type="revolute">
+    <parent link="right_oberon_elbow_link" />
+    <child link="right_oberon_forearm" />
+    <origin rpy="1.5707963267948966 0 0" xyz="0.1349014 -0.1936267 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="300" friction="1000" />
+    <limit effort="1000" lower="-2.356194555" upper="2.356194555" velocity=".25" />
+  </joint>
+  <link name="right_oberon_wrist_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.104016 0.003308 -0.000027" />
+      <mass value="3.9024235776962013" />
+      <inertia ixx="0.010428220937889964" ixy="0.0" ixz="0.0" iyy="0.021153663661370576" iyz="0.0" izz="0.020526721978954304" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/serial_arm/visual/Wrist.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_wrist_link_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_003.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_004">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_004.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_005">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_005.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_006">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_006.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_007">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_007.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_008">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_008.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_wrist_link_cad_009">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_wrist_link_009.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_pitch" type="revolute">
+    <parent link="right_oberon_forearm" />
+    <child link="right_oberon_wrist_link" />
+    <origin rpy="-1.5707963267948966 -1.5707963267948966 0" xyz="0 0 0.31595760629823427" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="10" friction="10" />
+    <limit effort="50" lower="-1.57079637" upper="1.57079637" velocity=".3" />
+  </joint>
+  <link name="right_oberon_end_effector">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.024426 -0.000000 -0.000014" />
+      <mass value="3.4611458108218063" />
+      <inertia ixx="0.007745217406579397" ixy="0.0" ixz="0.0" iyy="0.005361426484543977" iyz="0.0" izz="0.005570556852600513" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/BaseGripper.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_end_effector_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_end_effector_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_001.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_end_effector_cad_002">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_002.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_end_effector_cad_003">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_end_effector_003.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_wrist" type="revolute">
+    <parent link="right_oberon_wrist_link" />
+    <child link="right_oberon_end_effector" />
+    <origin rpy="-1.5707963267948966 0 0" xyz="0.19304 0 0" />
+    <axis xyz="1 0 0" />
+    <dynamics damping="10" friction="5" />
+    <limit effort="10" lower="-6.283185307179586" upper="6.283185307179586" velocity="0.15" />
+  </joint>
+  <link name="right_oberon_finger_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_finger_left_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_left_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_finger_left_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_left_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_finger_left_joint" type="revolute">
+    <parent link="right_oberon_end_effector" />
+    <child link="right_oberon_finger_left" />
+    <origin rpy="0 0 0" xyz="0.0444267 0.0391376 0" />
+    <axis xyz="0 0 1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="right_oberon_finger_tip_left">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_finger_tip_left_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_left_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_finger_tip_left_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_left_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_finger_tip_left_joint" type="fixed">
+    <parent link="right_oberon_finger_left" />
+    <child link="right_oberon_finger_tip_left" />
+    <origin rpy="3.141592653589793 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <link name="right_oberon_finger_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.025268 -0.001931 -0.000079" />
+      <mass value="0.8797705118494835" />
+      <inertia ixx="0.0003783306058490381" ixy="0.0" ixz="0.0" iyy="0.0008861483302166204" iyz="0.0" izz="0.0009192308042804266" />
+    </inertial>
+    <visual>
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/Finger.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_finger_right_cad_000">
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_right_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_finger_right_cad_001">
+      <origin rpy="3.141592653589793 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_right_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_finger_right_joint" type="revolute">
+    <parent link="right_oberon_end_effector" />
+    <child link="right_oberon_finger_right" />
+    <origin rpy="3.141592653589793 3.141592653589793 3.141592653589793" xyz="0.0444267 -0.0391376 0" />
+    <axis xyz="0 0 -1" />
+    <dynamics damping="5" friction="10" />
+    <limit effort="30" lower="0" upper="1.047092831441478" velocity="0.15" />
+  </joint>
+  <link name="right_oberon_finger_tip_right">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.027744 0.017278 0.0" />
+      <mass value="1.1255052405358523" />
+      <inertia ixx="0.0006110470018193867" ixy="0.0" ixz="0.0" iyy="0.0013490308103904078" iyz="0.0" izz="0.001215556098573415" />
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7/meshes/oberon7/parallel_gripper/visual/FingerTip.obj" />
+      </geometry>
+    </visual>
+    <collision name="right_oberon_finger_tip_right_cad_000">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_right_000.stl" />
+      </geometry>
+    </collision>
+    <collision name="right_oberon_finger_tip_right_cad_001">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../rexrov2_oberon7_centered/collision/oberon_finger_tip_right_001.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_oberon_finger_tip_right_joint" type="fixed">
+    <parent link="right_oberon_finger_right" />
+    <child link="right_oberon_finger_tip_right" />
+    <origin rpy="0 0 0" xyz="0.06431 0 0" />
+  </joint>
+  <joint name="right_oberon_mount" type="fixed">
+    <parent link="base_link" />
+    <child link="right_oberon_base" />
+    <origin xyz="1.3 -0.5 -0.665" rpy="0 0 0" />
+  </joint>
+</robot>

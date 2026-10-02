@@ -1,0 +1,2027 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="bluerov2_alpha_registered_v1">
+  <material name="alpha_orange">
+    <color rgba="0.95 0.34 0.05 1.0" />
+  </material>
+  <material name="alpha_dark">
+    <color rgba="0.08 0.10 0.12 1.0" />
+  </material>
+  <material name="rov_cyan">
+    <color rgba="0.08 0.62 0.72 1.0" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0.011" />
+      <mass value="13.0" />
+      <inertia ixx="0.26" ixy="0" ixz="0" iyy="0.23" iyz="0" izz="0.37" />
+    </inertial>
+    <visual name="bluerov2_heavy_visual">
+      <origin rpy="0 0 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="meshes/bluerov2_heavy_reach.obj" scale="1 1 1" />
+      </geometry>
+      <material name="rov_cyan" />
+    </visual>
+    <visual name="thruster1_visual">
+      <origin xyz="0.088 -0.102 -0.04" rpy="-1.5707963267948966 1.5707963267948966 -1.0471975511965976" />
+      <geometry>
+        <mesh filename="meshes/ccw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster2_visual">
+      <origin xyz="0.088 0.102 -0.04" rpy="-1.5707963267948966 1.5707963267948966 -2.0943951023931953" />
+      <geometry>
+        <mesh filename="meshes/ccw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster3_visual">
+      <origin xyz="-0.088 -0.102 -0.04" rpy="-1.5707963267948966 1.5707963267948966 1.0471975511965976" />
+      <geometry>
+        <mesh filename="meshes/cw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster4_visual">
+      <origin xyz="-0.088 0.102 -0.04" rpy="-1.5707963267948966 1.5707963267948966 2.0943951023931953" />
+      <geometry>
+        <mesh filename="meshes/cw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster5_visual">
+      <origin xyz="0.118 -0.215 0.064" rpy="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="meshes/ccw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster6_visual">
+      <origin xyz="0.118 0.215 0.064" rpy="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="meshes/cw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster7_visual">
+      <origin xyz="-0.118 -0.215 0.064" rpy="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="meshes/cw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <visual name="thruster8_visual">
+      <origin xyz="-0.118 0.215 0.064" rpy="0.0 0.0 0.0" />
+      <geometry>
+        <mesh filename="meshes/ccw_prop.obj" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision name="body_component_000">
+      <geometry>
+        <mesh filename="collision/part_000.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_001">
+      <geometry>
+        <mesh filename="collision/part_001.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_002">
+      <geometry>
+        <mesh filename="collision/part_002.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_003">
+      <geometry>
+        <mesh filename="collision/part_003.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_004">
+      <geometry>
+        <mesh filename="collision/part_004.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_005">
+      <geometry>
+        <mesh filename="collision/part_005.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_006">
+      <geometry>
+        <mesh filename="collision/part_006.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_007">
+      <geometry>
+        <mesh filename="collision/part_007.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_008">
+      <geometry>
+        <mesh filename="collision/part_008.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_009">
+      <geometry>
+        <mesh filename="collision/part_009.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_010">
+      <geometry>
+        <mesh filename="collision/part_010.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_011">
+      <geometry>
+        <mesh filename="collision/part_011.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_012">
+      <geometry>
+        <mesh filename="collision/part_012.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_013">
+      <geometry>
+        <mesh filename="collision/part_013.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_014">
+      <geometry>
+        <mesh filename="collision/part_014.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_015">
+      <geometry>
+        <mesh filename="collision/part_015.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_016">
+      <geometry>
+        <mesh filename="collision/part_016.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_017">
+      <geometry>
+        <mesh filename="collision/part_017.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_018">
+      <geometry>
+        <mesh filename="collision/part_018.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_019">
+      <geometry>
+        <mesh filename="collision/part_019.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_020">
+      <geometry>
+        <mesh filename="collision/part_020.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_021">
+      <geometry>
+        <mesh filename="collision/part_021.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_022">
+      <geometry>
+        <mesh filename="collision/part_022.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_023">
+      <geometry>
+        <mesh filename="collision/part_023.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_024">
+      <geometry>
+        <mesh filename="collision/part_024.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_025">
+      <geometry>
+        <mesh filename="collision/part_025.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_026">
+      <geometry>
+        <mesh filename="collision/part_026.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_027">
+      <geometry>
+        <mesh filename="collision/part_027.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_028">
+      <geometry>
+        <mesh filename="collision/part_028.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_029">
+      <geometry>
+        <mesh filename="collision/part_029.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_030">
+      <geometry>
+        <mesh filename="collision/part_030.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_031">
+      <geometry>
+        <mesh filename="collision/part_031.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_032">
+      <geometry>
+        <mesh filename="collision/part_032.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_033">
+      <geometry>
+        <mesh filename="collision/part_033.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_034">
+      <geometry>
+        <mesh filename="collision/part_034.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_035">
+      <geometry>
+        <mesh filename="collision/part_035.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_036">
+      <geometry>
+        <mesh filename="collision/part_036.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_037">
+      <geometry>
+        <mesh filename="collision/part_037.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_038">
+      <geometry>
+        <mesh filename="collision/part_038.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_039">
+      <geometry>
+        <mesh filename="collision/part_039.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_040">
+      <geometry>
+        <mesh filename="collision/part_040.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_041">
+      <geometry>
+        <mesh filename="collision/part_041.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_042">
+      <geometry>
+        <mesh filename="collision/part_042.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_043">
+      <geometry>
+        <mesh filename="collision/part_043.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_044">
+      <geometry>
+        <mesh filename="collision/part_044.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_045">
+      <geometry>
+        <mesh filename="collision/part_045.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_046">
+      <geometry>
+        <mesh filename="collision/part_046.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_047">
+      <geometry>
+        <mesh filename="collision/part_047.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_048">
+      <geometry>
+        <mesh filename="collision/part_048.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_049">
+      <geometry>
+        <mesh filename="collision/part_049.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_050">
+      <geometry>
+        <mesh filename="collision/part_050.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_051">
+      <geometry>
+        <mesh filename="collision/part_051.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_052">
+      <geometry>
+        <mesh filename="collision/part_052.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_053">
+      <geometry>
+        <mesh filename="collision/part_053.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_054">
+      <geometry>
+        <mesh filename="collision/part_054.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_055">
+      <geometry>
+        <mesh filename="collision/part_055.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_056">
+      <geometry>
+        <mesh filename="collision/part_056.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_057">
+      <geometry>
+        <mesh filename="collision/part_057.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_058">
+      <geometry>
+        <mesh filename="collision/part_058.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_059">
+      <geometry>
+        <mesh filename="collision/part_059.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_060">
+      <geometry>
+        <mesh filename="collision/part_060.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_061">
+      <geometry>
+        <mesh filename="collision/part_061.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_062">
+      <geometry>
+        <mesh filename="collision/part_062.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_063">
+      <geometry>
+        <mesh filename="collision/part_063.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_064">
+      <geometry>
+        <mesh filename="collision/part_064.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_065">
+      <geometry>
+        <mesh filename="collision/part_065.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_066">
+      <geometry>
+        <mesh filename="collision/part_066.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_067">
+      <geometry>
+        <mesh filename="collision/part_067.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_068">
+      <geometry>
+        <mesh filename="collision/part_068.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_069">
+      <geometry>
+        <mesh filename="collision/part_069.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_070">
+      <geometry>
+        <mesh filename="collision/part_070.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_071">
+      <geometry>
+        <mesh filename="collision/part_071.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_072">
+      <geometry>
+        <mesh filename="collision/part_072.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_073">
+      <geometry>
+        <mesh filename="collision/part_073.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_074">
+      <geometry>
+        <mesh filename="collision/part_074.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_075">
+      <geometry>
+        <mesh filename="collision/part_075.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_076">
+      <geometry>
+        <mesh filename="collision/part_076.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_077">
+      <geometry>
+        <mesh filename="collision/part_077.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_078">
+      <geometry>
+        <mesh filename="collision/part_078.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_079">
+      <geometry>
+        <mesh filename="collision/part_079.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_080">
+      <geometry>
+        <mesh filename="collision/part_080.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_081">
+      <geometry>
+        <mesh filename="collision/part_081.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_082">
+      <geometry>
+        <mesh filename="collision/part_082.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_083">
+      <geometry>
+        <mesh filename="collision/part_083.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_084">
+      <geometry>
+        <mesh filename="collision/part_084.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_085">
+      <geometry>
+        <mesh filename="collision/part_085.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_086">
+      <geometry>
+        <mesh filename="collision/part_086.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_087">
+      <geometry>
+        <mesh filename="collision/part_087.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_088">
+      <geometry>
+        <mesh filename="collision/part_088.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_089">
+      <geometry>
+        <mesh filename="collision/part_089.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_090">
+      <geometry>
+        <mesh filename="collision/part_090.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_091">
+      <geometry>
+        <mesh filename="collision/part_091.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_092">
+      <geometry>
+        <mesh filename="collision/part_092.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_093">
+      <geometry>
+        <mesh filename="collision/part_093.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_094">
+      <geometry>
+        <mesh filename="collision/part_094.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_095">
+      <geometry>
+        <mesh filename="collision/part_095.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_096">
+      <geometry>
+        <mesh filename="collision/part_096.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_097">
+      <geometry>
+        <mesh filename="collision/part_097.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_098">
+      <geometry>
+        <mesh filename="collision/part_098.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_099">
+      <geometry>
+        <mesh filename="collision/part_099.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_100">
+      <geometry>
+        <mesh filename="collision/part_100.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_101">
+      <geometry>
+        <mesh filename="collision/part_101.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_102">
+      <geometry>
+        <mesh filename="collision/part_102.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_103">
+      <geometry>
+        <mesh filename="collision/part_103.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_104">
+      <geometry>
+        <mesh filename="collision/part_104.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_105">
+      <geometry>
+        <mesh filename="collision/part_105.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_106">
+      <geometry>
+        <mesh filename="collision/part_106.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_107">
+      <geometry>
+        <mesh filename="collision/part_107.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_108">
+      <geometry>
+        <mesh filename="collision/part_108.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_109">
+      <geometry>
+        <mesh filename="collision/part_109.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_110">
+      <geometry>
+        <mesh filename="collision/part_110.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_111">
+      <geometry>
+        <mesh filename="collision/part_111.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_112">
+      <geometry>
+        <mesh filename="collision/part_112.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_113">
+      <geometry>
+        <mesh filename="collision/part_113.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_122">
+      <geometry>
+        <mesh filename="collision/part_122.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_123">
+      <geometry>
+        <mesh filename="collision/part_123.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_124">
+      <geometry>
+        <mesh filename="collision/part_124.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_125">
+      <geometry>
+        <mesh filename="collision/part_125.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_126">
+      <geometry>
+        <mesh filename="collision/part_126.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_127">
+      <geometry>
+        <mesh filename="collision/part_127.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_128">
+      <geometry>
+        <mesh filename="collision/part_128.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_129">
+      <geometry>
+        <mesh filename="collision/part_129.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_130">
+      <geometry>
+        <mesh filename="collision/part_130.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_131">
+      <geometry>
+        <mesh filename="collision/part_131.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_132">
+      <geometry>
+        <mesh filename="collision/part_132.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_133">
+      <geometry>
+        <mesh filename="collision/part_133.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_134">
+      <geometry>
+        <mesh filename="collision/part_134.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_135">
+      <geometry>
+        <mesh filename="collision/part_135.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_136">
+      <geometry>
+        <mesh filename="collision/part_136.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_138">
+      <geometry>
+        <mesh filename="collision/part_138.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_139">
+      <geometry>
+        <mesh filename="collision/part_139.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_140">
+      <geometry>
+        <mesh filename="collision/part_140.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_141">
+      <geometry>
+        <mesh filename="collision/part_141.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_142">
+      <geometry>
+        <mesh filename="collision/part_142.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_143">
+      <geometry>
+        <mesh filename="collision/part_143.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_144">
+      <geometry>
+        <mesh filename="collision/part_144.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_145">
+      <geometry>
+        <mesh filename="collision/part_145.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_146">
+      <geometry>
+        <mesh filename="collision/part_146.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_147">
+      <geometry>
+        <mesh filename="collision/part_147.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_148">
+      <geometry>
+        <mesh filename="collision/part_148.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_149">
+      <geometry>
+        <mesh filename="collision/part_149.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_150">
+      <geometry>
+        <mesh filename="collision/part_150.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_151">
+      <geometry>
+        <mesh filename="collision/part_151.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_152">
+      <geometry>
+        <mesh filename="collision/part_152.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_153">
+      <geometry>
+        <mesh filename="collision/part_153.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_154">
+      <geometry>
+        <mesh filename="collision/part_154.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_155">
+      <geometry>
+        <mesh filename="collision/part_155.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_156">
+      <geometry>
+        <mesh filename="collision/part_156.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_157">
+      <geometry>
+        <mesh filename="collision/part_157.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_158">
+      <geometry>
+        <mesh filename="collision/part_158.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_159">
+      <geometry>
+        <mesh filename="collision/part_159.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_160">
+      <geometry>
+        <mesh filename="collision/part_160.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_161">
+      <geometry>
+        <mesh filename="collision/part_161.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_162">
+      <geometry>
+        <mesh filename="collision/part_162.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_163">
+      <geometry>
+        <mesh filename="collision/part_163.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_164">
+      <geometry>
+        <mesh filename="collision/part_164.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_165">
+      <geometry>
+        <mesh filename="collision/part_165.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_166">
+      <geometry>
+        <mesh filename="collision/part_166.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_167">
+      <geometry>
+        <mesh filename="collision/part_167.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_168">
+      <geometry>
+        <mesh filename="collision/part_168.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_169">
+      <geometry>
+        <mesh filename="collision/part_169.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_170">
+      <geometry>
+        <mesh filename="collision/part_170.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_171">
+      <geometry>
+        <mesh filename="collision/part_171.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_172">
+      <geometry>
+        <mesh filename="collision/part_172.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_173">
+      <geometry>
+        <mesh filename="collision/part_173.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_174">
+      <geometry>
+        <mesh filename="collision/part_174.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_175">
+      <geometry>
+        <mesh filename="collision/part_175.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_176">
+      <geometry>
+        <mesh filename="collision/part_176.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_177">
+      <geometry>
+        <mesh filename="collision/part_177.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_178">
+      <geometry>
+        <mesh filename="collision/part_178.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_179">
+      <geometry>
+        <mesh filename="collision/part_179.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_180">
+      <geometry>
+        <mesh filename="collision/part_180.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_181">
+      <geometry>
+        <mesh filename="collision/part_181.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_182">
+      <geometry>
+        <mesh filename="collision/part_182.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_183">
+      <geometry>
+        <mesh filename="collision/part_183.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_184">
+      <geometry>
+        <mesh filename="collision/part_184.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_185">
+      <geometry>
+        <mesh filename="collision/part_185.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_186">
+      <geometry>
+        <mesh filename="collision/part_186.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_187">
+      <geometry>
+        <mesh filename="collision/part_187.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_188">
+      <geometry>
+        <mesh filename="collision/part_188.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_189">
+      <geometry>
+        <mesh filename="collision/part_189.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_190">
+      <geometry>
+        <mesh filename="collision/part_190.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_191">
+      <geometry>
+        <mesh filename="collision/part_191.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_192">
+      <geometry>
+        <mesh filename="collision/part_192.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_193">
+      <geometry>
+        <mesh filename="collision/part_193.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_194">
+      <geometry>
+        <mesh filename="collision/part_194.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_195">
+      <geometry>
+        <mesh filename="collision/part_195.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_196">
+      <geometry>
+        <mesh filename="collision/part_196.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_197">
+      <geometry>
+        <mesh filename="collision/part_197.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_198">
+      <geometry>
+        <mesh filename="collision/part_198.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_199">
+      <geometry>
+        <mesh filename="collision/part_199.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_200">
+      <geometry>
+        <mesh filename="collision/part_200.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_201">
+      <geometry>
+        <mesh filename="collision/part_201.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_202">
+      <geometry>
+        <mesh filename="collision/part_202.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_203">
+      <geometry>
+        <mesh filename="collision/part_203.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_204">
+      <geometry>
+        <mesh filename="collision/part_204.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_205">
+      <geometry>
+        <mesh filename="collision/part_205.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_206">
+      <geometry>
+        <mesh filename="collision/part_206.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_207">
+      <geometry>
+        <mesh filename="collision/part_207.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_208">
+      <geometry>
+        <mesh filename="collision/part_208.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_209">
+      <geometry>
+        <mesh filename="collision/part_209.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_210">
+      <geometry>
+        <mesh filename="collision/part_210.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_211">
+      <geometry>
+        <mesh filename="collision/part_211.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_212">
+      <geometry>
+        <mesh filename="collision/part_212.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_213">
+      <geometry>
+        <mesh filename="collision/part_213.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_214">
+      <geometry>
+        <mesh filename="collision/part_214.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_215">
+      <geometry>
+        <mesh filename="collision/part_215.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_216">
+      <geometry>
+        <mesh filename="collision/part_216.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_217">
+      <geometry>
+        <mesh filename="collision/part_217.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_218">
+      <geometry>
+        <mesh filename="collision/part_218.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_219">
+      <geometry>
+        <mesh filename="collision/part_219.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_220">
+      <geometry>
+        <mesh filename="collision/part_220.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_221">
+      <geometry>
+        <mesh filename="collision/part_221.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_222">
+      <geometry>
+        <mesh filename="collision/part_222.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_223">
+      <geometry>
+        <mesh filename="collision/part_223.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_224">
+      <geometry>
+        <mesh filename="collision/part_224.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_225">
+      <geometry>
+        <mesh filename="collision/part_225.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_226">
+      <geometry>
+        <mesh filename="collision/part_226.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_227">
+      <geometry>
+        <mesh filename="collision/part_227.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_228">
+      <geometry>
+        <mesh filename="collision/part_228.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_229">
+      <geometry>
+        <mesh filename="collision/part_229.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_230">
+      <geometry>
+        <mesh filename="collision/part_230.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_231">
+      <geometry>
+        <mesh filename="collision/part_231.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_232">
+      <geometry>
+        <mesh filename="collision/part_232.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_233">
+      <geometry>
+        <mesh filename="collision/part_233.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_234">
+      <geometry>
+        <mesh filename="collision/part_234.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_235">
+      <geometry>
+        <mesh filename="collision/part_235.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_236">
+      <geometry>
+        <mesh filename="collision/part_236.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_237">
+      <geometry>
+        <mesh filename="collision/part_237.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_238">
+      <geometry>
+        <mesh filename="collision/part_238.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_239">
+      <geometry>
+        <mesh filename="collision/part_239.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_240">
+      <geometry>
+        <mesh filename="collision/part_240.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_241">
+      <geometry>
+        <mesh filename="collision/part_241.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_242">
+      <geometry>
+        <mesh filename="collision/part_242.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_243">
+      <geometry>
+        <mesh filename="collision/part_243.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_244">
+      <geometry>
+        <mesh filename="collision/part_244.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_245">
+      <geometry>
+        <mesh filename="collision/part_245.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_246">
+      <geometry>
+        <mesh filename="collision/part_246.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_247">
+      <geometry>
+        <mesh filename="collision/part_247.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_248">
+      <geometry>
+        <mesh filename="collision/part_248.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_249">
+      <geometry>
+        <mesh filename="collision/part_249.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_250">
+      <geometry>
+        <mesh filename="collision/part_250.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_251">
+      <geometry>
+        <mesh filename="collision/part_251.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_252">
+      <geometry>
+        <mesh filename="collision/part_252.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_253">
+      <geometry>
+        <mesh filename="collision/part_253.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_254">
+      <geometry>
+        <mesh filename="collision/part_254.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_255">
+      <geometry>
+        <mesh filename="collision/part_255.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_256">
+      <geometry>
+        <mesh filename="collision/part_256.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_257">
+      <geometry>
+        <mesh filename="collision/part_257.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_258">
+      <geometry>
+        <mesh filename="collision/part_258.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_259">
+      <geometry>
+        <mesh filename="collision/part_259.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_260">
+      <geometry>
+        <mesh filename="collision/part_260.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_261">
+      <geometry>
+        <mesh filename="collision/part_261.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_262">
+      <geometry>
+        <mesh filename="collision/part_262.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_263">
+      <geometry>
+        <mesh filename="collision/part_263.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_264">
+      <geometry>
+        <mesh filename="collision/part_264.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_265">
+      <geometry>
+        <mesh filename="collision/part_265.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_266">
+      <geometry>
+        <mesh filename="collision/part_266.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_267">
+      <geometry>
+        <mesh filename="collision/part_267.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_268">
+      <geometry>
+        <mesh filename="collision/part_268.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_269">
+      <geometry>
+        <mesh filename="collision/part_269.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_270">
+      <geometry>
+        <mesh filename="collision/part_270.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_271">
+      <geometry>
+        <mesh filename="collision/part_271.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_272">
+      <geometry>
+        <mesh filename="collision/part_272.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_273">
+      <geometry>
+        <mesh filename="collision/part_273.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_274">
+      <geometry>
+        <mesh filename="collision/part_274.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_275">
+      <geometry>
+        <mesh filename="collision/part_275.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_276">
+      <geometry>
+        <mesh filename="collision/part_276.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_277">
+      <geometry>
+        <mesh filename="collision/part_277.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_278">
+      <geometry>
+        <mesh filename="collision/part_278.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_279">
+      <geometry>
+        <mesh filename="collision/part_279.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_280">
+      <geometry>
+        <mesh filename="collision/part_280.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_281">
+      <geometry>
+        <mesh filename="collision/part_281.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_282">
+      <geometry>
+        <mesh filename="collision/part_282.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_283">
+      <geometry>
+        <mesh filename="collision/part_283.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_284">
+      <geometry>
+        <mesh filename="collision/part_284.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_285">
+      <geometry>
+        <mesh filename="collision/part_285.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_286">
+      <geometry>
+        <mesh filename="collision/part_286.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_287">
+      <geometry>
+        <mesh filename="collision/part_287.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_288">
+      <geometry>
+        <mesh filename="collision/part_288.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_289">
+      <geometry>
+        <mesh filename="collision/part_289.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_290">
+      <geometry>
+        <mesh filename="collision/part_290.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_291">
+      <geometry>
+        <mesh filename="collision/part_291.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_292">
+      <geometry>
+        <mesh filename="collision/part_292.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_293">
+      <geometry>
+        <mesh filename="collision/part_293.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_294">
+      <geometry>
+        <mesh filename="collision/part_294.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_295">
+      <geometry>
+        <mesh filename="collision/part_295.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_296">
+      <geometry>
+        <mesh filename="collision/part_296.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_297">
+      <geometry>
+        <mesh filename="collision/part_297.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_298">
+      <geometry>
+        <mesh filename="collision/part_298.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_299">
+      <geometry>
+        <mesh filename="collision/part_299.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_300">
+      <geometry>
+        <mesh filename="collision/part_300.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_301">
+      <geometry>
+        <mesh filename="collision/part_301.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_302">
+      <geometry>
+        <mesh filename="collision/part_302.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_303">
+      <geometry>
+        <mesh filename="collision/part_303.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_304">
+      <geometry>
+        <mesh filename="collision/part_304.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_305">
+      <geometry>
+        <mesh filename="collision/part_305.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_306">
+      <geometry>
+        <mesh filename="collision/part_306.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_307">
+      <geometry>
+        <mesh filename="collision/part_307.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_308">
+      <geometry>
+        <mesh filename="collision/part_308.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_309">
+      <geometry>
+        <mesh filename="collision/part_309.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_310">
+      <geometry>
+        <mesh filename="collision/part_310.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_311">
+      <geometry>
+        <mesh filename="collision/part_311.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_312">
+      <geometry>
+        <mesh filename="collision/part_312.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_313">
+      <geometry>
+        <mesh filename="collision/part_313.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_314">
+      <geometry>
+        <mesh filename="collision/part_314.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_315">
+      <geometry>
+        <mesh filename="collision/part_315.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_316">
+      <geometry>
+        <mesh filename="collision/part_316.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_317">
+      <geometry>
+        <mesh filename="collision/part_317.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_318">
+      <geometry>
+        <mesh filename="collision/part_318.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_319">
+      <geometry>
+        <mesh filename="collision/part_319.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_320">
+      <geometry>
+        <mesh filename="collision/part_320.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_321">
+      <geometry>
+        <mesh filename="collision/part_321.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_322">
+      <geometry>
+        <mesh filename="collision/part_322.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_323">
+      <geometry>
+        <mesh filename="collision/part_323.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_324">
+      <geometry>
+        <mesh filename="collision/part_324.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_325">
+      <geometry>
+        <mesh filename="collision/part_325.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_326">
+      <geometry>
+        <mesh filename="collision/part_326.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_327">
+      <geometry>
+        <mesh filename="collision/part_327.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_328">
+      <geometry>
+        <mesh filename="collision/part_328.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_329">
+      <geometry>
+        <mesh filename="collision/part_329.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_330">
+      <geometry>
+        <mesh filename="collision/part_330.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_331">
+      <geometry>
+        <mesh filename="collision/part_331.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_332">
+      <geometry>
+        <mesh filename="collision/part_332.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_333">
+      <geometry>
+        <mesh filename="collision/part_333.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_334">
+      <geometry>
+        <mesh filename="collision/part_334.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_335">
+      <geometry>
+        <mesh filename="collision/part_335.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_336">
+      <geometry>
+        <mesh filename="collision/part_336.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_337">
+      <geometry>
+        <mesh filename="collision/part_337.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_338">
+      <geometry>
+        <mesh filename="collision/part_338.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_339">
+      <geometry>
+        <mesh filename="collision/part_339.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_340">
+      <geometry>
+        <mesh filename="collision/part_340.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_341">
+      <geometry>
+        <mesh filename="collision/part_341.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_342">
+      <geometry>
+        <mesh filename="collision/part_342.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_343">
+      <geometry>
+        <mesh filename="collision/part_343.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_344">
+      <geometry>
+        <mesh filename="collision/part_344.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_345">
+      <geometry>
+        <mesh filename="collision/part_345.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_346">
+      <geometry>
+        <mesh filename="collision/part_346.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_347">
+      <geometry>
+        <mesh filename="collision/part_347.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_348">
+      <geometry>
+        <mesh filename="collision/part_348.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <collision name="body_component_349">
+      <geometry>
+        <mesh filename="collision/part_349.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="alpha_m3_inline_link">
+    <inertial>
+      <origin xyz="-0.055 0 0" />
+      <mass value="0.341" />
+      <inertia ixx="0.0000682" ixy="0" ixz="0" iyy="0.000673" iyz="0" izz="0.000673" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/M3-INLINE.stl" />
+      </geometry>
+      <material name="alpha_orange" />
+    </visual>
+    <collision>
+      <origin rpy="0 1.57075 0" xyz="-0.055 0 0" />
+      <geometry>
+        <cylinder length="0.150" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_mount_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.24 -0.099 0.029" />
+    <parent link="base_link" />
+    <child link="alpha_m3_inline_link" />
+  </joint>
+  <link name="alpha_m2_1_1_link">
+    <inertial>
+      <origin xyz="0 0 0.0165" />
+      <mass value="0.194" />
+      <inertia ixx="0.000037" ixy="0" ixz="0" iyy="0.000037" iyz="0" izz="0.0000388" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/M2-1-1.stl" />
+      </geometry>
+      <material name="alpha_dark" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0165" />
+      <geometry>
+        <cylinder length="0.033" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_e" type="revolute">
+    <origin xyz="0 0 0.014" />
+    <parent link="alpha_m3_inline_link" />
+    <child link="alpha_m2_1_1_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="9.0" lower="0.0" upper="6.10" velocity="0.5" />
+    <dynamics damping="0.08" friction="0.02" />
+  </joint>
+  <link name="alpha_m2_joint_link">
+    <inertial>
+      <origin xyz="-0.02 0 -0.0725" />
+      <mass value="0.429" />
+      <inertia ixx="0.0008907" ixy="0" ixz="0" iyy="0.0008907" iyz="0" izz="0.0000858" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/M2.stl" />
+      </geometry>
+      <material name="alpha_orange" />
+    </visual>
+    <collision>
+      <origin xyz="-0.02 0 -0.0725" />
+      <geometry>
+        <cylinder length="0.145" radius="0.020" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="1.5707 0 0" xyz="0 0 0" />
+      <geometry>
+        <cylinder length="0.040" radius="0.020" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="1.5707 0 0" xyz="-0.040 0 -0.1453" />
+      <geometry>
+        <cylinder length="0.040" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_d" type="revolute">
+    <origin xyz="-0.02 0 0.033" />
+    <parent link="alpha_m2_1_1_link" />
+    <child link="alpha_m2_joint_link" />
+    <axis xyz="0 1 0" />
+    <limit effort="9.0" lower="-3.49" upper="3.49" velocity="0.5" />
+    <dynamics damping="0.08" friction="0.02" />
+  </joint>
+  <link name="alpha_m2_1_2_link">
+    <inertial>
+      <origin xyz="0.02 0 0.0165" />
+      <mass value="0.115" />
+      <inertia ixx="0.0000219" ixy="0" ixz="0" iyy="0.0000219" iyz="0" izz="0.000023" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/M2-1-3.stl" />
+      </geometry>
+      <material name="alpha_dark" />
+    </visual>
+    <collision>
+      <origin xyz="0.02 0 0.0165" />
+      <geometry>
+        <cylinder length="0.033" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_c" type="revolute">
+    <origin rpy="0 0 3.14159" xyz="-0.04 0 -0.1453" />
+    <parent link="alpha_m2_joint_link" />
+    <child link="alpha_m2_1_2_link" />
+    <axis xyz="0 1 0" />
+    <limit effort="9.0" lower="0.0" upper="3.22" velocity="0.5" />
+    <dynamics damping="0.08" friction="0.02" />
+  </joint>
+  <link name="alpha_m1_link">
+    <inertial>
+      <origin xyz="0 0 0.05" />
+      <mass value="0.200" />
+      <inertia ixx="0.0001867" ixy="0" ixz="0" iyy="0.0001867" iyz="0" izz="0.00004" />
+    </inertial>
+    <visual>
+      <origin rpy="0 -1.5707 0" xyz="0 0 0" />
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/RS1-100-101-123.stl" />
+      </geometry>
+      <material name="alpha_orange" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.05" />
+      <geometry>
+        <cylinder length="0.1" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_axis_b" type="revolute">
+    <origin rpy="0 0 2.09439" xyz="0.02 0 0.033" />
+    <parent link="alpha_m2_1_2_link" />
+    <child link="alpha_m1_link" />
+    <axis xyz="0 0 -1" />
+    <limit effort="9.0" lower="0.0" upper="3.22" velocity="0.5" />
+    <dynamics damping="0.08" friction="0.02" />
+  </joint>
+  <link name="alpha_jaw_base_link">
+    <inertial>
+      <origin xyz="0 0 0.004875" />
+      <mass value="0.023" />
+      <inertia ixx="0.000002422" ixy="0" ixz="0" iyy="0.000002422" iyz="0" izz="0.0000046" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/end_effectors/RS1-124.stl" />
+      </geometry>
+      <material name="alpha_dark" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.004875" />
+      <geometry>
+        <cylinder length="0.00975" radius="0.020" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_ee_joint" type="fixed">
+    <origin xyz="0 0 0.09975" />
+    <parent link="alpha_m1_link" />
+    <child link="alpha_jaw_base_link" />
+  </joint>
+  <link name="alpha_push_rod_link">
+    <inertial>
+      <mass value="0.0001" />
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+    </inertial>
+  </link>
+  <joint name="alpha_axis_a" type="prismatic">
+    <origin xyz="0 0 0.009" />
+    <parent link="alpha_jaw_base_link" />
+    <child link="alpha_push_rod_link" />
+    <axis xyz="0 0 1" />
+    <limit effort="10.0" lower="0.0" upper="0.0098" velocity="0.05" />
+    <dynamics damping="0.08" friction="0.01" />
+  </joint>
+  <link name="alpha_left_finger_link">
+    <inertial>
+      <origin xyz="0 -0.008 0.045" />
+      <mass value="0.055" />
+      <inertia ixx="0.00004125" ixy="0" ixz="0" iyy="0.000037785" iyz="0" izz="0.000004785" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/end_effectors/RS1-130.stl" />
+      </geometry>
+      <material name="alpha_dark" />
+    </visual>
+    <collision>
+      <origin xyz="0 -0.008 0.045" />
+      <geometry>
+        <box size="0.012 0.03 0.09" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_left_finger_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 0.0155 0.0069" />
+    <parent link="alpha_jaw_base_link" />
+    <child link="alpha_left_finger_link" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="0.5" effort="10" velocity="2" />
+    <mimic joint="alpha_axis_a" multiplier="51" offset="0" />
+  </joint>
+  <link name="alpha_right_finger_link">
+    <inertial>
+      <origin xyz="0 0.008 0.045" />
+      <mass value="0.055" />
+      <inertia ixx="0.00004125" ixy="0" ixz="0" iyy="0.000037785" iyz="0" izz="0.000004785" />
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="../bluerov2_alpha/meshes/alpha/end_effectors/RS1-139.stl" />
+      </geometry>
+      <material name="alpha_dark" />
+    </visual>
+    <collision>
+      <origin xyz="0 0.008 0.045" />
+      <geometry>
+        <box size="0.012 0.03 0.09" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="alpha_right_finger_joint" type="revolute">
+    <origin rpy="0 0 0" xyz="0 -0.0155 0.0069" />
+    <parent link="alpha_jaw_base_link" />
+    <child link="alpha_right_finger_link" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0.5" effort="10" velocity="2" />
+    <mimic joint="alpha_left_finger_joint" multiplier="1" offset="0" />
+  </joint>
+  <link name="alpha_tool_link">
+    <inertial>
+      <mass value="0.0001" />
+      <inertia ixx="0.000001" ixy="0" ixz="0" iyy="0.000001" iyz="0" izz="0.000001" />
+    </inertial>
+  </link>
+  <joint name="alpha_tool_joint" type="fixed">
+    <origin rpy="0 -1.571 0" xyz="0 0 0.085" />
+    <parent link="alpha_jaw_base_link" />
+    <child link="alpha_tool_link" />
+  </joint>
+</robot>

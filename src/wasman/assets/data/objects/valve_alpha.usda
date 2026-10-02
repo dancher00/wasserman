@@ -1,0 +1,23 @@
+#usda 1.0
+(
+    defaultPrim = "valve"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+# Robot-compatible manufactured test handle, not a commercial valve calibration.
+# Original AM-Bench fixture retained by reference. Handle: 20 x 160 x 20 mm,
+# assumed solid aluminium density 2700 kg/m^3; displaced volume 64 cm^3.
+def Xform "valve" (
+    prepend references = @ambench/valve.usd@
+)
+{
+    over "handle_link"
+    {
+        float physics:mass = 0.1728
+        over "handle_link"
+        {
+            double3 xformOp:scale = (0.020, 0.160, 0.020)
+        }
+    }
+}

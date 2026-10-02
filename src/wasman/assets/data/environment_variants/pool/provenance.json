@@ -1,0 +1,22 @@
+{
+  "source": "https://polyhaven.com/a/interior_tiles",
+  "license": "CC0-1.0",
+  "resolution": "4k",
+  "texture_width_m": 1.9,
+  "maps": {
+    "diffuse": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/interior_tiles/interior_tiles_diff_4k.jpg",
+      "sha256": "fbddc82b449e12ec7b570e46064d9ef24b9678d10cb843e3e977527fe395362f"
+    },
+    "normal": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/interior_tiles/interior_tiles_nor_gl_4k.jpg",
+      "sha256": "563f2abf6c22b5e8bc70736993308cc0702b7e1f7a328a6bd360eb33e4af3742"
+    },
+    "roughness": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/4k/interior_tiles/interior_tiles_rough_4k.jpg",
+      "sha256": "3171a354e99fe01de11a5b027231c2a311cf00c63a0cbe5617877db967a38f1c"
+    }
+  },
+  "adaptation": "Blue shader tint for pool ceramic; weathered timber as a wreck-deck appearance, not a wreck scan.",
+  "scope": "Website illustration only; unchanged flat collision and training defaults."
+}
