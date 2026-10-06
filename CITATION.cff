@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite this software release. The accompanying manuscript presents the benchmark and experiments."
+message: "If you use WasserMan, please cite the accompanying arXiv paper."
 type: software
 title: "WasserMan: Benchmark for Underwater Manipulation Policy Learning"
 authors:
@@ -9,6 +9,23 @@ date-released: 2026-09-26
 license: Apache-2.0
 repository-code: "https://github.com/dancher00/wasserman"
 url: "https://github.com/dancher00/wasserman"
+preferred-citation:
+  type: article
+  title: "WasserMan: Benchmark for Underwater Manipulation Policy Learning"
+  authors:
+    - family-names: Belov
+      given-names: Danil
+    - family-names: Erkhov
+      given-names: Artem
+    - family-names: Parsegov
+      given-names: Sergei
+    - family-names: Osinenko
+      given-names: Pavel
+  year: 2026
+  journal: arXiv
+  doi: "10.48550/arXiv.2610.04536"
+  url: "https://arxiv.org/abs/2610.04536"
+  date-published: "2026-10-03"
 keywords:
   - underwater manipulation
   - robotics

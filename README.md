@@ -2,7 +2,7 @@
 
 **Benchmark for Underwater Manipulation Policy Learning.**
 
-[![Isaac Sim](https://img.shields.io/badge/IsaacSim-6.1-silver.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![Python](https://img.shields.io/badge/Python-3.12-087fbd.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![Platform](https://img.shields.io/badge/Platform-Linux--64-163e52.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![License](https://img.shields.io/badge/License-Apache--2.0-087fbd.svg)](LICENSE) [![Scope](https://img.shields.io/badge/Scope-Simulation-163e52.svg)](https://dancher00.github.io/wasserman/docs/benchmark/)
+[![Isaac Sim](https://img.shields.io/badge/IsaacSim-6.1-silver.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![Python](https://img.shields.io/badge/Python-3.12-087fbd.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![Platform](https://img.shields.io/badge/Platform-Linux--64-163e52.svg)](https://dancher00.github.io/wasserman/docs/installation/) [![License](https://img.shields.io/badge/License-Apache--2.0-087fbd.svg)](LICENSE) [![arXiv](https://img.shields.io/badge/arXiv-2610.04536-b31b1b.svg)](https://arxiv.org/abs/2610.04536)
 
 
 <p align="center">
@@ -76,16 +76,22 @@ The [website source](https://github.com/dancher00/dancher00.github.io) lives in 
 
 ## Citation
 
+Please cite the [WasserMan paper on arXiv](https://arxiv.org/abs/2610.04536):
+
 ```bibtex
-@software{wasserman2026,
+@misc{belov2026wasserman,
   title = {{WasserMan}: Benchmark for Underwater Manipulation Policy Learning},
+  author = {Belov, Danil and Erkhov, Artem and Parsegov, Sergei and Osinenko, Pavel},
   year = {2026},
-  version = {0.1.0},
-  url = {https://github.com/dancher00/wasserman}
+  eprint = {2610.04536},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.RO},
+  doi = {10.48550/arXiv.2610.04536},
+  url = {https://arxiv.org/abs/2610.04536}
 }
 ```
 
-Software citation metadata: [CITATION.cff](CITATION.cff).
+Machine-readable citation metadata: [CITATION.cff](CITATION.cff).
 
 ## License
 
