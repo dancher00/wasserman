@@ -27,6 +27,7 @@ def parse_args():
     parser.add_argument("--turn-speed", type=float, default=0.45, help="Angular speed in rad/s")
     parser.add_argument("--steps", type=int, default=0, help="Stop after N control steps (0: unlimited)")
     parser.add_argument("--smoke-test", action="store_true", help="Exercise thrust, locked joints and reset")
+    parser.add_argument("--water-test", action="store_true", help="Verify live water controls and camera with physics")
     parser.add_argument("--report", type=Path, help="Write small JSON telemetry for verification")
     parser.add_argument("--no-realtime", action="store_true", help="Run a bounded check as fast as possible")
     if "--list-envs" in sys.argv:
@@ -40,8 +41,11 @@ def parse_args():
     args = parser.parse_args()
     if args.speed <= 0 or args.turn_speed <= 0 or args.steps < 0:
         parser.error("Speeds must be positive and steps nonnegative")
-    if args.headless and not (args.smoke_test or args.steps):
-        parser.error("Headless mode requires --smoke-test or --steps")
+    if args.headless and not (args.smoke_test or args.water_test or args.steps):
+        parser.error("Headless mode requires --smoke-test, --water-test or --steps")
+    if args.water_test:
+        args.smoke_test = True
+    args.enable_cameras = not args.headless or args.water_test
     if args.visualizer is not None and args.visualizer != (["none"] if args.headless else ["kit"]):
         parser.error("Keyboard teleop uses --viz kit; headless checks use --viz none")
     args.visualizer = ["none"] if args.headless else ["kit"]
@@ -124,6 +128,8 @@ class Pilot:
         self.keys.clear()
         self.env._station_keeper.reset()
         self.resets += 1
+        if hasattr(self, "water"):
+            self.water.apply(force=True)
 
     def hold(self):
         self.keys.clear()
@@ -166,24 +172,40 @@ def run(args, launcher):
     from isaaclab_tasks.utils import resolve_task_config
 
     import wasman.tasks  # noqa: F401
+    from wasman.teleop_environment import BaseCameraFeed, CameraPanel, WaterControls, WaterPanel
 
     torch.set_num_threads(4)
     cfg, _ = resolve_task_config(args.env, "", overrides=("physics=isaacsim_physx",))
     cfg.scene.num_envs, cfg.seed = 1, args.seed
     cfg.ui_window_class_type = None
+    if args.enable_cameras:
+        from isaaclab_physx.renderers import IsaacRtxRendererCfg
+
+        from wasman.assets.robot_cameras import add_robot_cameras
+
+        add_robot_cameras(cfg, width=640, height=360)
+        cfg.scene.gripper_camera = None
+        cfg.scene.base_camera.offset.rot = (0.0, 0.0, 0.0, 1.0)
+        cfg.scene.base_camera.update_period = 1 / 30
+        cfg.scene.base_camera.data_types = ["rgb", "distance_to_camera"]
+        cfg.scene.base_camera.renderer_cfg = IsaacRtxRendererCfg()
     env = gym.make(args.env, cfg=cfg)
     keys, keyboard, window = KeyboardState(), None, None
+    water_panel = camera_panel = None
     samples = []
     try:
         if not all(hasattr(env.unwrapped, name) for name in ("robot", "_station_keeper", "_base_target_pos_w")):
             raise ValueError("This environment does not expose the BlueROV2 swimming controller")
         pilot = Pilot(env, keys)
+        water = pilot.water = WaterControls(env.unwrapped)
+        feed = BaseCameraFeed(env.unwrapped, water) if args.enable_cameras else None
         initial_pos, initial_quat = pilot.pose()
         follow, quit_requested = True, False
         if not args.headless:
             import omni.ui as ui
 
             keyboard = Keyboard(keys)
+            water_panel, camera_panel = WaterPanel(water), CameraPanel()
             window = ui.Window("WasserMan - keyboard pilot", width=460, height=290)
             with window.frame, ui.VStack(spacing=8):
                 ui.Label(args.task or args.env, height=24)
@@ -199,6 +221,8 @@ def run(args, launcher):
         index = 0
         smoke_reset = False
         was_focused = True
+        water_stages = set()
+        turbidity_difference = None
         while launcher.app.is_running() and not quit_requested and (not steps or index < steps):
             focused = keyboard is None or keyboard.window.is_focused()
             if was_focused and not focused:
@@ -223,6 +247,18 @@ def run(args, launcher):
                 start = time.monotonic() - index * env.unwrapped.step_dt
                 continue
             t = index * env.unwrapped.step_dt
+            if args.water_test:
+                if t >= 1.0 and 1 not in water_stages:
+                    water.set(current=(0.25, 0.10, 0.0), density=1050, viscosity=1.5, resistance=1.25)
+                    water_stages.add(1)
+                if t >= 2.0 and 2 not in water_stages:
+                    water.set(turbidity=0.8, radius=3)
+                    water_stages.add(2)
+                if t >= 6.0 and 3 not in water_stages:
+                    water.rotate_current()
+                    water.reverse_current()
+                    water_stages.add(3)
+            water.apply()
             if args.smoke_test:
                 smoke_keys(t, keys)
                 if t >= 9.5 and not smoke_reset:
@@ -230,6 +266,12 @@ def run(args, launcher):
                     smoke_reset = True
             pilot.step(args.speed, args.turn_speed)
             pos, quat = pilot.pose()
+            if feed:
+                image = feed.image()
+                if camera_panel:
+                    camera_panel.update(image)
+                if args.water_test and t >= 3.0 and turbidity_difference is None:
+                    turbidity_difference = float((image.float() - feed.last_raw.float()).abs().mean())
             if follow and not args.headless:
                 env.unwrapped.sim.set_camera_view(pos + np.array([-1.5, -2.0, 1.1]), pos + [0.2, 0, 0])
             if not args.headless and index % 10 == 0:
@@ -242,6 +284,7 @@ def run(args, launcher):
                         "quaternion_xyzw": quat.tolist(),
                         "keys": sorted(keys.held),
                         "resets": pilot.resets,
+                        "water": water.metadata(),
                     }
                 )
             index += 1
@@ -254,6 +297,9 @@ def run(args, launcher):
             "resets": pilot.resets,
             "keyboard_events": keyboard.events if keyboard else 0,
             "samples": samples,
+            "water": water.metadata(),
+            "water_changes": water.changes,
+            "camera": feed.metadata() if feed else None,
         }
         if args.smoke_test:
 
@@ -270,6 +316,16 @@ def run(args, launcher):
             report["passed"] = bool(
                 retreat > 0.03 and ascent > 0.03 and turn > 0.03 and pilot.max_arm_drift < 0.005 and smoke_reset
             )
+        if args.water_test:
+            report["turbidity_difference_rgb"] = turbidity_difference
+            report["passed"] = bool(
+                report["passed"]
+                and feed.frames > 50
+                and feed.metadata()["raw_std"] > 1
+                and turbidity_difference > 2
+                and water.changes >= 5
+                and env.unwrapped._hydrodynamics.water_density == water.settings.density
+            )
         if args.report:
             args.report.parent.mkdir(parents=True, exist_ok=True)
             args.report.write_text(json.dumps(report, indent=2) + "\n")
@@ -281,12 +337,16 @@ def run(args, launcher):
             keyboard.close()
         if window:
             window.destroy()
+        if water_panel:
+            water_panel.close()
+        if camera_panel:
+            camera_panel.close()
         env.close()
 
 
 if __name__ == "__main__":
     args, app_launcher = parse_args()
-    launcher = app_launcher(args)
+    launcher = app_launcher(vars(args).copy())
     import numpy as np
 
     try:

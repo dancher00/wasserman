@@ -87,12 +87,28 @@ continue until you reset or exit; benchmark episode limits do not interrupt them
 
 The pilot supports the seven listed BlueROV2 scenes, using the `v0.1.0` runtime
 and the public procedural asset profile. Pretrained models are optional.
+
+During interactive piloting, a separate window shows the live forward camera
+mounted on the vehicle (640 × 360, up to 30 Hz). The water panel changes the
+world-frame current vector, density, viscosity, drag multiplier and local
+turbidity immediately. Buttons rotate/reverse the current, stop it, adjust each
+value or restore the initial water settings. Water settings persist when you
+reset the scene.
+
+Density scales buoyancy, quadratic drag and added mass. The viscosity control
+scales the empirical linear damping relative to a nominal 1 mPa·s; the drag
+multiplier scales both damping terms. Turbidity changes the base-camera image
+using depth-dependent absorption/backscatter through a sphere around the
+vehicle, with an adjustable radius. These controls are for manual exploration.
+
 A headless physics check exercises movement, joint locking and reset:
 
 ```bash
 ./teleop.sh --task Pool --headless --smoke-test --no-realtime \
   --report artifacts/teleop/pool.json
 ```
+
+Add `--water-test` to also check camera frames and live water changes.
 
 ## Documentation
 
