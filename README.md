@@ -65,6 +65,35 @@ stepping; it does not measure success. Follow the [training guide](https://danch
 and [frozen protocol](https://dancher00.github.io/wasserman/docs/revision-v2-protocol/)
 for full experiments. No pretrained visual-policy download is needed to start.
 
+## Keyboard swimming
+
+Start the pilot and choose an environment from the terminal menu:
+
+```bash
+./teleop.sh
+./teleop.sh --task Pool
+./teleop.sh --task RotateValve
+./teleop.sh --list-envs
+```
+
+Focus the simulator window and use the English keyboard layout. **W/S** move
+forward/back, **A/D** strafe, **R/F** ascend/descend, and **Q/E** turn. **T/G**
+control pitch and **Z/X** roll. Hold **Shift** for speed or **Ctrl** for precision.
+Release keys to hold position; **Space** brakes at the current pose.
+**Backspace** resets the scene, **C** toggles the follow camera, and **Esc** exits.
+The arm, gripper and fingers are physically locked at their reset pose. Swimming
+uses the native station keeper, thrusters and water physics. Manual sessions
+continue until you reset or exit; benchmark episode limits do not interrupt them.
+
+The pilot supports the seven listed BlueROV2 scenes, using the `v0.1.0` runtime
+and the public procedural asset profile. Pretrained models are optional.
+A headless physics check exercises movement, joint locking and reset:
+
+```bash
+./teleop.sh --task Pool --headless --smoke-test --no-realtime \
+  --report artifacts/teleop/pool.json
+```
+
 ## Documentation
 
 [Guides](https://dancher00.github.io/wasserman/docs/) cover collection, training, evaluation and extending the
