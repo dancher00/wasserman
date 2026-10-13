@@ -13,8 +13,8 @@
   </picture>
 </p>
 
-WasserMan is a simulation benchmark for underwater vehicle–arm manipulation,
-with contact tasks, water forces and visual policy learning.
+To our knowledge, WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
+The suite combines contact tasks, underwater dynamics and paired execution studies.
 
 ## Key Features
 
