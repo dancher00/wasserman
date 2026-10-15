@@ -16,13 +16,27 @@
 To our knowledge, WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
 The suite combines contact tasks, underwater dynamics and paired execution studies.
 
+## Policy and execution studies
+
+Fixed-policy evaluations vary water appearance, lighting, RGB feedback, contact
+parameters, actuator delay, arm properties and mechanism pose. Matched expert
+references establish feasibility under the same physical task tests. Controlled
+training ablations compare observation history and expert trajectory mixtures;
+graded placement tests expose their condition-dependent effects.
+
+Complete expert candidate streams make demonstration selection inspectable.
+Contact, tracking, actuator and full-episode contract records explain execution
+beyond a completion score. The [study guide](https://dancher00.github.io/wasserman/docs/policy-studies/)
+links every comparison to its public [datasets, models and evaluation records](https://huggingface.co/datasets/dancher00/WasserMan-Review-v3).
+
+
 ## Key Features
 
 - **10 tasks** — contact, recovery, delivery and underwater intervention; nine have learned-policy evaluations.
 - **Two robot platforms** — BlueROV2 Heavy + Alpha 5 and RexROV2 + Oberon7, plus bimanual valve manipulation.
 - **Visual baselines** — ACT, Diffusion Policy and chunked BC on six tasks; SmolVLA on three tasks, each with three training seeds.
 - **Underwater physics and control** — currents, buoyancy, thruster response, PID/PD comparisons, optional wall/seabed effects and camera imaging.
-- **Reproducible evaluations** — task contracts, splits, checkpoints and recorded outcomes: 3,780 learning/intervention episodes and 270 SmolVLA test episodes.
+- **Auditable evaluations** — fixed task contracts and splits, paired policy studies, complete expert candidate streams, checkpoints and per-episode physical records.
 
 ## Installation
 
@@ -68,7 +82,7 @@ for full experiments. No pretrained visual-policy download is needed to start.
 ## Documentation
 
 [Guides](https://dancher00.github.io/wasserman/docs/) cover collection, training, evaluation and extending the
-benchmark. See [models and evidence](https://dancher00.github.io/wasserman/docs/artifacts/),
+benchmark. See [models and evidence](https://dancher00.github.io/wasserman/docs/revision-v2-packages/),
 [policy results, including SmolVLA](https://dancher00.github.io/wasserman/docs/benchmark-results/),
 [bimanual studies](https://dancher00.github.io/wasserman/docs/studies/bimanual-valve-v1-reproduction/) and
 [Contributing](CONTRIBUTING.md).
