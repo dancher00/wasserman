@@ -9,7 +9,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/teaser-dark.png">
     <source media="(prefers-color-scheme: light)" srcset="assets/teaser-light.png">
-    <img src="assets/teaser-light.png" width="100%" alt="WasserMan overview: robots, tasks, policies and underwater physics." />
+    <img src="assets/teaser-light.png" width="100%" alt="WasserMan overview: control, BlueROV2 and twin-arm RexROV2, tasks, policies, physical disturbances, low light and water optics." />
   </picture>
 </p>
 
