@@ -13,8 +13,7 @@
   </picture>
 </p>
 
-To our knowledge, WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
-The suite combines contact tasks, underwater dynamics and paired execution studies.
+WasserMan is the first multi-task simulation benchmark focused on visuomotor policy learning for manipulating articulated underwater mechanisms.
 
 ## Policy and execution studies
 
